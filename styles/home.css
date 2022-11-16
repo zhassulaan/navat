@@ -1,0 +1,87 @@
+.home .title {
+	margin-top: 5rem;
+}
+
+.home .subtitle {
+	position: relative;
+	margin-top: 1.875rem;
+	padding-left: 6.875rem;
+}
+
+.home .subtitle:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 5.625rem;
+	height: 0.125rem;
+	background-color: var(--clr-white);
+}
+
+.home .button {
+	margin-top: 3.75rem;
+}
+
+.home .button p {
+	font-size: 28px;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 8.75rem;
+}
+
+.boxes,
+.buttons {
+	display: flex;
+}
+
+.feature {
+	width: 17.5rem;
+	margin-right: 1.25rem;
+}
+
+.counter {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+	padding-bottom: 1rem;
+}
+
+.counter:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 0.1875rem;
+	background-color: var(--clr-white);
+}
+
+.feature p {
+	line-height: 1.25rem;
+	font-size: 20px;
+}
+
+.counter p {
+	font-family: HistoryPro-Two;
+	font-weight: 400;
+}
+
+.circle {
+	width: 3.75rem;
+	height: 3.75rem;
+	border: 2px solid var(--clr-white);
+	border-radius: 50%;
+	background-color: var(--clr-primary-2);
+}
+
+.text {
+	margin-top: 1.1875rem;
+}
+
+.buttons {
+	gap: 1.875rem;
+	margin: 4.6875rem 0.625rem 0 0;
+}
