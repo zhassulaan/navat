@@ -1,0 +1,99 @@
+/* General */
+:root {
+	--clr-white: #FFF;
+	--clr-black: #000;
+	--clr-primary-1: #BCA48D;
+}
+
+@font-face {
+	font-family: HistoryPro-Two;
+	src: local("HistoryPro-Two"),
+	url(/fonts/HistoryPro-Two.ttf);
+}
+
+@font-face {
+	font-family: MazzardM-Light;
+	src: local("MazzardM-Light"),
+	url(/fonts/MazzardM-Light.ttf);
+}
+	
+@font-face {
+	font-family: MazzardM-Regular;
+	src: local("MazzardM-Regular"),
+	url(/fonts/MazzardM-Regular.ttf);
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	font-weight: 300;
+   font-style: normal;
+	color: var(--clr-white);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	font-family: MazzardM-Light;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: HistoryPro-Two;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 300px;
+}
+
+h2 {
+	line-height: 13.125rem;
+	font-size: 180px;
+}
+
+h3 {
+	line-height: 10rem;
+	font-size: 140px;
+}
+
+h4 {
+	line-height: 7.5rem;
+	font-size: 100px;
+}
+
+h5 {
+	line-height: 3.125rem;
+	font-family: MazzardM-Light;
+	font-size: 50px;
+	font-weight: 300;
+}
+
+p {
+	font-family: MazzardM-Light;
+}
+
+.container {
+	display: grid;
+  	justify-content: center;
+	height: 100vh;
+	background-color: var(--clr-black);
+}
+
+.content {
+	width: 111.25rem;
+}

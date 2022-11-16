@@ -1,0 +1,50 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 8.125rem;
+	padding: 1.875rem 0;
+}
+
+.header div {
+	display: flex;
+	align-items: center;
+}
+
+.header .logo {
+	height: 4.375rem;
+}
+
+.nav-menu {
+	display: flex;
+	margin-left: 5.25rem;
+}
+
+.nav-item {
+	position: relative;
+	margin-right: 1.25rem;
+}
+
+.active {
+	padding-bottom: 0.625rem;
+}
+
+.active:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 80%;
+	height: 0.125rem;
+	background-color: var(--clr-white);
+}
+
+.nav-link {
+	line-height: 1.875rem;
+	font-size: 27px;
+	cursor: pointer;
+}
+
+.toggle {
+	margin-left: 1.875rem;
+	cursor: pointer;
+}
