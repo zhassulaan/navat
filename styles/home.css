@@ -1,3 +1,35 @@
+.home.container {
+	background-color: var(--clr-black);
+}
+
+.home .nav-item:before {
+	background-color: var(--clr-white);
+}
+
+.home .nav-item:hover::before {
+	background-color: var(--clr-primary-1);
+}
+
+.home .nav-link {
+	color: var(--clr-white);
+}
+
+.home .nav-link:hover {
+	color: var(--clr-primary-1);
+}
+
+.home .toggle {
+	stroke: var(--clr-white);
+}
+
+.home .toggle-btn:hover .nav-link {
+	color: var(--clr-primary-1);
+}
+
+.home .toggle-btn:hover .toggle {
+	stroke: var(--clr-primary-1);
+}
+
 .home .title {
 	margin-top: 5rem;
 }
@@ -29,10 +61,10 @@
 .footer {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 8.75rem;
+	margin: 8.75rem 0 4.375rem;
 }
 
-.boxes,
+.footer .boxes,
 .buttons {
 	display: flex;
 }
@@ -77,8 +109,8 @@
 	background-color: var(--clr-primary-2);
 }
 
-.text {
-	margin-top: 1.1875rem;
+.footer .text {
+	margin-top: 1.5rem;
 }
 
 .buttons {

@@ -1,0 +1,130 @@
+.about.container {
+	background-color: var(--clr-primary-0);
+}
+
+.about.content {
+	display: flex;
+	align-items: end;
+	margin-bottom: 5rem;
+}
+
+.corner-box {
+	width: 8.125rem;
+	margin-right: 1.25rem;
+}
+
+.corner-box .text {
+	-webkit-transform: rotate(-90deg);
+	-webkit-transform-origin: left top;
+	-moz-transform: rotate(-90deg);
+	-moz-transform-origin: left top;
+	-ms-transform: rotate(-90deg);
+	-ms-transform-origin: left top;
+	-o-transform: rotate(-90deg);
+	-o-transform-origin: left top;
+	transform: rotate(-90deg);
+	transform-origin: left top;
+
+	position: relative;
+	width: max-content;
+	line-height: 2.1875rem;
+	color: var(--clr-primary-1);
+	margin-left: 3.1875rem;
+	margin-bottom: -auto;
+	padding-left: 4.9375rem;
+}
+
+.corner-box .text:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 3.125rem;
+	height: 0.0625rem;
+	background-color: var(--clr-primary-1);
+}
+
+.big-corner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 32.9375rem;
+	height: 43.125rem;
+	border: 2px solid var(--clr-primary-1);
+	border-radius: 48% 48% 0 0;
+	background-color: var(--clr-white);
+	margin-right: .8125rem;
+}
+
+.big-corner p {
+	line-height: 3.125rem;
+	font-family: MazzardM-Regular;
+	font-size: 30px;
+	color: var(--clr-black);
+}
+
+.small-corner {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 16.25rem;
+	height: 21.25rem;
+	border: 2px solid var(--clr-primary-1);
+	border-radius: 48% 48% 0 0;
+	background-color: var(--clr-white);
+	margin-right: 4.375rem;
+}
+
+.small-corner p {
+	font-family: MazzardM-Regular;
+	line-height: 1.875rem;
+	font-size: 17px;
+	color: var(--clr-black);
+}
+
+.small-corner-2 {
+	position: absolute;
+	width: 16.25rem;
+	height: 21.25rem;
+	border: 2px solid var(--clr-primary-1);
+	border-radius: 48% 48% 0 0;
+	margin: 0 0 6.25rem 3.75rem;
+}
+
+.about .text-box {
+	width: 36.25rem;
+	margin-bottom: 1.875rem;
+}
+
+.about .title {
+	width: max-content;
+	line-height: 13.125rem;
+	margin: 0 0 2.5rem -18.75rem;
+}
+
+.about .text {
+	line-height: 2.1875rem;
+	font-size: 23px;
+}
+
+.about .paragraph {
+	height: 20.625rem;
+	margin-bottom: 2.8125rem;
+}
+
+.footer-text {
+	position: relative;
+	width: max-content;
+	padding-left: 5rem;
+}
+
+.footer-text::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 3.75rem;
+	height: 0.125rem;
+	background-color: var(--clr-white);
+}

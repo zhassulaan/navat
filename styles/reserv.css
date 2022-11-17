@@ -1,0 +1,46 @@
+.reserv.container {
+	background-color: var(--clr-primary-0);
+}
+
+.reserv.content {
+	display: flex;
+	justify-content: center;
+	gap: 6.875rem;
+	margin-bottom: 10rem;
+}
+
+.reserv .title {
+	line-height: 9.375rem;
+	color: var(--clr-primary-1);
+	margin: 3.125rem 0;
+}
+
+.reserv .paragraph {
+	width: 28.75rem;
+	height: 14.375rem;
+	margin-bottom: 2.5rem;
+}
+
+.reserv .text {
+	line-height: 2.1875rem;
+	font-size: 20px;
+}
+
+.reserv .feature {
+	display: flex;
+	gap: 1.25rem;
+}
+
+.reserv .feature-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 5.625rem;
+	height: 5.625rem;
+	border: 2px solid var(--clr-primary-1);
+}
+
+.reserv .feature-box h6 {
+	font-size: 26px;
+	color: var(--clr-primary-1);
+}
