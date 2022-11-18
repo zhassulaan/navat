@@ -1,5 +1,6 @@
 .home.container {
 	background-color: var(--clr-black);
+	height: 100vh;
 }
 
 .home .nav-item:before {
@@ -61,7 +62,7 @@
 .home .footer {
 	display: flex;
 	justify-content: space-between;
-	margin: 8.75rem 0 4.375rem;
+	margin-top: 8.75rem;
 }
 
 .home .footer .boxes {

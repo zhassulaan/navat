@@ -1,11 +1,11 @@
 .about.container {
+	height: 100vh;
 	background-color: var(--clr-primary-0);
 }
 
 .about.content {
 	display: flex;
 	align-items: end;
-	margin-bottom: 5rem;
 }
 
 .corner-box {

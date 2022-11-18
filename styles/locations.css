@@ -1,3 +1,7 @@
+.locations.container {
+	height: 100vh;
+}
+
 .locations.content {
 	display: flex;
 	justify-content: space-between;

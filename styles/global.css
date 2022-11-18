@@ -11,19 +11,19 @@
 @font-face {
 	font-family: HistoryPro-Two;
 	src: local("HistoryPro-Two"),
-	url(/fonts/HistoryPro-Two.ttf);
+	url(../fonts/HistoryPro-Two.ttf);
 }
 
 @font-face {
 	font-family: MazzardM-Light;
 	src: local("MazzardM-Light"),
-	url(/fonts/MazzardM-Light.ttf);
+	url(../fonts/MazzardM-Light.ttf);
 }
 	
 @font-face {
 	font-family: MazzardM-Regular;
 	src: local("MazzardM-Regular"),
-	url(/fonts/MazzardM-Regular.ttf);
+	url(../fonts/MazzardM-Regular.ttf);
 }
 
 * {
@@ -122,6 +122,9 @@ p {
 	gap: 1.875rem;
 }
 
+.buttons {
+	cursor: pointer;
+}
 
 .button {
 	width: 23.125rem;
@@ -129,6 +132,7 @@ p {
 	text-align: center;
 	background-color: var(--clr-primary-1);
 	padding: 1.5625rem 0;
+	cursor: pointer;
 }
 
 .button-text1 {

@@ -1,9 +1,10 @@
 .reserv.container {
+	height: 100vh;
 	background-color: var(--clr-primary-0);
 }
 
 .reserv.content {
-	margin: 3.125rem 0 10rem;
+	margin-top: 3.125rem;
 }
 
 .reserv form {
