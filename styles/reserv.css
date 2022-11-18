@@ -3,16 +3,19 @@
 }
 
 .reserv.content {
+	margin: 3.125rem 0 10rem;
+}
+
+.reserv form {
 	display: flex;
 	justify-content: center;
 	gap: 6.875rem;
-	margin-bottom: 10rem;
 }
 
 .reserv .title {
 	line-height: 9.375rem;
 	color: var(--clr-primary-1);
-	margin: 3.125rem 0;
+	margin-bottom: 3.125rem;
 }
 
 .reserv .paragraph {
@@ -23,7 +26,6 @@
 
 .reserv .text {
 	line-height: 2.1875rem;
-	font-size: 20px;
 }
 
 .reserv .feature {
@@ -40,7 +42,61 @@
 	border: 2px solid var(--clr-primary-1);
 }
 
+.active-btn {
+	background-color: var(--clr-white);
+}
+
 .reserv .feature-box h6 {
 	font-size: 26px;
 	color: var(--clr-primary-1);
+}
+
+.reserv .form-box {
+	width: 55rem;
+	margin-top: 0.625rem;
+}
+
+.form-box .input-box {
+	border-bottom: 0.1875rem solid var(--clr-primary-1);
+	margin-top: 3.75rem;
+	padding-bottom: 1.875rem;
+}
+
+.form-box input {
+	width: 100%;
+	height: 2.5rem;
+	font-family: MazzardM-Light;
+	font-size: 30px;
+	color: var(--clr-white);
+	background: transparent;
+	border: none;
+}
+
+.form-box input::placeholder {
+	font-family: MazzardM-Light;
+	font-size: 30px;
+	color: var(--clr-white);
+}
+
+.confirm {
+	display: flex;
+	align-items: center;
+	gap: 2.625rem;
+	margin-top: 4.375rem;
+}
+
+.reserv .button {
+	width: 17.5rem;
+	height: 5.625rem;
+	padding: 1.875rem 0;
+}
+
+.reserv .button-text {
+	font-size: 30px;
+}
+
+.confirm .text {
+	width: 28.75rem;
+	line-height: 1.875rem;
+	font-size: 22px;
 }

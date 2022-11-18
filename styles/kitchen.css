@@ -1,0 +1,57 @@
+.kitchen.content {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.625rem;
+	gap: 1.25rem;
+}
+
+.text-box {
+	width: 36.25rem;
+}
+
+.kitchen .title,
+.kitchen .counter {
+	color: var(--clr-primary-1);
+}
+
+.kitchen .title {
+	line-height: 10rem;
+	margin-bottom: 1.875rem;
+}
+
+.kitchen .paragraph {
+	height: 18.125rem;
+	margin-bottom: 3.125rem;
+}
+
+.kitchen .text {
+	line-height: 2.03125rem;
+	color: var(--clr-black);
+}
+
+.kitchen .counter {
+	line-height: 5.625rem;
+	font-size: 90px;
+	opacity: 0.2;
+}
+
+.image-box {
+	width: 78.125rem;
+	overflow: hidden;
+	margin: 1.875rem -4.375rem 0 0;
+}
+
+.images {
+	display: flex;
+	gap: 1.25rem;
+}
+
+.image {
+	min-width: 36.25rem;
+	height: 35rem;
+	background-color: var(--clr-primary-3);
+}
+
+.main-img {
+	height: 30rem;
+}

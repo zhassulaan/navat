@@ -1,3 +1,9 @@
 .contact.container {
 	background-color: var(--clr-primary-0);
 }
+
+.contact .title {
+	text-align: right;
+	line-height: 11.875rem;
+	font-size: 160px;
+}

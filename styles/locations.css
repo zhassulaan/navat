@@ -1,0 +1,45 @@
+.locations.content {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.625rem;
+}
+
+.map-box {
+	width: 65.5rem;
+	height: 47.5rem;
+	background-color: var(--clr-primary-3);
+	margin-left: -4.375rem;
+}
+
+.text-box {
+	width: 45.625rem;
+}
+
+.locations .title,
+.locations .text {
+	text-align: right;
+}
+
+.locations .title {
+	position: relative;
+	line-height: 9.375rem;
+	color: var(--clr-primary-1);
+	margin-bottom: 1.875rem;
+	padding-bottom: 0.625rem;
+}
+
+.locations .title::before {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 17.5rem;
+	height: 0.1875rem;
+	background-color: var(--clr-primary-1);
+}
+
+.locations .text {
+	line-height: 2.03125rem;
+	color: var(--clr-black);
+	margin-left: auto;
+}

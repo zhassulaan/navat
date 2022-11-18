@@ -5,6 +5,7 @@
 	--clr-primary-0: #1B3E3D;
 	--clr-primary-1: #BCA48D;
 	--clr-primary-2: #D9D9D9;
+	--clr-primary-3: #D9D9D9;
 }
 
 @font-face {
@@ -96,6 +97,10 @@ p {
 	font-size: 20px;
 }
 
+.text {
+	font-size: 23px;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -120,6 +125,6 @@ p {
 	padding: 1.5625rem 0;
 }
 
-.button p {
+.button-text1 {
 	line-height: 1.875rem;
 }
