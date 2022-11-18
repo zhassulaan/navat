@@ -58,23 +58,22 @@
 	font-size: 28px;
 }
 
-.footer {
+.home .footer {
 	display: flex;
 	justify-content: space-between;
 	margin: 8.75rem 0 4.375rem;
 }
 
-.footer .boxes,
-.buttons {
+.home .footer .boxes {
 	display: flex;
 }
 
-.feature {
+.home .feature {
 	width: 17.5rem;
 	margin-right: 1.25rem;
 }
 
-.counter {
+.home .counter {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
@@ -82,7 +81,7 @@
 	padding-bottom: 1rem;
 }
 
-.counter:before {
+.home .counter:before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -91,17 +90,17 @@
 	background-color: var(--clr-white);
 }
 
-.feature p {
+.home .feature p {
 	line-height: 1.25rem;
 	font-size: 20px;
 }
 
-.counter p {
+.home .counter p {
 	font-family: HistoryPro-Two;
 	font-weight: 400;
 }
 
-.circle {
+.home .circle {
 	width: 3.75rem;
 	height: 3.75rem;
 	border: 2px solid var(--clr-white);
@@ -109,11 +108,10 @@
 	background-color: var(--clr-primary-2);
 }
 
-.footer .text {
+.home .footer .text {
 	margin-top: 1.5rem;
 }
 
-.buttons {
-	gap: 1.875rem;
+.home .buttons {
 	margin: 4.6875rem 0.625rem 0 0;
 }

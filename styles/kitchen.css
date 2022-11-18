@@ -29,10 +29,20 @@
 	color: var(--clr-black);
 }
 
+.kitchen .footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
 .kitchen .counter {
 	line-height: 5.625rem;
 	font-size: 90px;
 	opacity: 0.2;
+}
+
+.kitchen .buttons {
+	margin-bottom: 0.3125rem;
 }
 
 .image-box {
@@ -41,17 +51,50 @@
 	margin: 1.875rem -4.375rem 0 0;
 }
 
-.images {
+.kitchen .images {
 	display: flex;
 	gap: 1.25rem;
 }
 
-.image {
+.kitchen .image-container {
 	min-width: 36.25rem;
 	height: 35rem;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
 	background-color: var(--clr-primary-3);
 }
 
-.main-img {
+.kitchen .main-img {
 	height: 30rem;
+}
+
+.kitchen h6 {
+	line-height: 2.5rem;
+}
+
+.kitchen .subtitle {
+	position: relative;
+	font-size: 24px;
+	color: var(--clr-primary-1);
+	margin-top: 1.5625rem;
+	padding-top: 0.9375rem;
+}
+
+.kitchen .subtitle::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 0.1875rem;
+	background-color: var(--clr-primary-1);
+}
+
+.image-text {
+	font-size: 40px;
+	text-align: center;
+	color: var(--clr-black);
+	padding-top: 15rem;
 }

@@ -1,0 +1,124 @@
+.menues.content {
+	margin-top: 1.875rem;
+}
+
+.menues.content .header {
+	text-align: center;
+	width: 55rem;
+	margin: 0 auto 3.75rem;
+}
+
+.menues .title,
+.menues .counter {
+	color: var(--clr-primary-1);
+}
+
+.menues .subtitle,
+.menues .text,
+.image-text {
+	color: var(--clr-black);
+}
+
+.menues .title {
+	position: relative;
+	line-height: 6.875rem;
+	margin-bottom: 1.875rem;
+	padding-bottom: 1.875rem;
+}
+
+.menues .title:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - (8.75rem / 2));
+	width: 8.75rem;
+	height: 0.125rem;
+	background-color: var(--clr-primary-1);
+}
+
+.menues .text {
+	line-height: 2.0833rem;
+}
+
+.menues .boxes {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.text-box,
+.image-box {
+	width: 100%;
+	height: 36.25rem;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	background-color: var(--clr-primary-3);
+}
+
+.image-text,
+.counter {
+	line-height: 3.125rem;
+	font-size: 40px;
+}
+
+.image-text {
+	text-align: center;
+	color: var(--clr-black);
+	padding-top: 15rem;
+}
+
+.right .counter {
+	text-align: right;
+}
+
+.counter {
+	margin: 1.25rem 0 5rem;
+}
+
+.paragraph {
+	width: 36.25rem;
+}
+
+.right .paragraph {
+	margin: 0 9.375rem 0 10rem;
+}
+
+.left .paragraph {
+	margin: 0 10rem 0 9.375rem;
+}
+
+.left .subtitle,
+.left .text {
+	text-align: right;
+}
+
+.subtitle {
+	position: relative;
+	line-height: 2.5rem;
+	font-size: 30px;
+	margin-bottom: 1.875rem;
+	padding-bottom: 1.25rem;
+}
+
+.subtitle:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 8.125rem;
+	height: 0.125rem;
+	background-color: var(--clr-primary-1);
+}
+
+.left .subtitle:before {
+	right: 0;
+}
+
+.right .subtitle:before {
+	left: 0;
+}
+
+.paragraph .text {
+	line-height: 1.875rem;
+}
