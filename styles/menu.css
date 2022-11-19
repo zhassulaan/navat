@@ -64,10 +64,11 @@
 	color: var(--clr-primary-1);
 }
 
-.menu-box img {
+.menu-item img {
 	position: absolute;
 	display: block;
-	height: max-content;
+	width: 41.875rem;
+	height: 100%;
 	top: 0.625rem;
 	margin-left: 17.5rem;
 }

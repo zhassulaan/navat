@@ -69,7 +69,9 @@
 			<h5 class="subtitle">Чайхана Navat</h5>
 
 			<div class="button">
-				<p class="button-text">Забронировать место</p>
+				<a href="pages/reserv.html">
+					<p class="button-text">Забронировать место</p>
+				</a>
 			</div>
 		</main>
 
@@ -77,66 +79,51 @@
 		<footer class="footer content">
 			<div class="boxes">
 				<div class="feature">
-					<div class="counter">
-						<p>01</p>
-						<div class="circle" onclick="currentSlide(1)">
-							<img src="assets/home/mini-img-1.png" alt="mini image 1" class="mini-image">
-						</div>
+					<p>01</p>
+					<div class="circle" onclick="currentSlide(1)">
+						<img src="assets/home/mini-img-1.png" alt="mini image 1" class="mini-image">
 					</div>
-					<p class="text">Название зоны</p>
 				</div>
 
 				<div class="feature">
-					<div class="counter">
-						<p>02</p>
-						<div class="circle" onclick="currentSlide(2)">
-							<img src="assets/home/mini-img-2.png" alt="mini image 2" class="mini-image">
-						</div>
+					<p>02</p>
+					<div class="circle" onclick="currentSlide(2)">
+						<img src="assets/home/mini-img-2.png" alt="mini image 2" class="mini-image">
 					</div>
-					<p class="text">Название зоны</p>
 				</div>
 
 				<div class="feature">
-					<div class="counter">
-						<p>03</p>
-						<div class="circle" onclick="currentSlide(3)">
-							<img src="assets/home/mini-img-3.png" alt="mini image 3" class="mini-image">
-						</div>
+					<p>03</p>
+					<div class="circle" onclick="currentSlide(3)">
+						<img src="assets/home/mini-img-3.png" alt="mini image 3" class="mini-image">
 					</div>
-					<p class="text">Название зоны</p>
 				</div>
 
 				<div class="feature">
-					<div class="counter">
-						<p>04</p>
-						<div class="circle" onclick="currentSlide(4)">
-							<img src="assets/home/mini-img-4.png" alt="mini image 4" class="mini-image">
-						</div>
+					<p>04</p>
+					<div class="circle" onclick="currentSlide(4)">
+						<img src="assets/home/mini-img-4.png" alt="mini image 4" class="mini-image">
 					</div>
-					<p class="text">Название зоны</p>
 				</div>
 
 				<div class="feature">
-					<div class="counter">
-						<p>05</p>
-						<div class="circle" onclick="currentSlide(5)">
-							<img src="assets/home/mini-img-5.png" alt="mini image 5" class="mini-image">
-						</div>
+					<p>05</p>
+					<div class="circle" onclick="currentSlide(5)">
+						<img src="assets/home/mini-img-5.png" alt="mini image 5" class="mini-image">
 					</div>
-					<p class="text">Название зоны</p>
 				</div>
 			</div>
 
 			<div class="buttons">
-				<div onclick="plusSlides(-1)">
-					<svg width="60" height="12" viewBox="0 0 60 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M-3.8147e-06 5.99999L10 0.226493L10 11.7735L-3.8147e-06 5.99999ZM60 7L9 7L9 5L60 5L60 7Z" fill="white"/>
+				<div class="arrow-btn" onclick="plusSlides(-1)">
+					<svg width="60" height="12" viewBox="0 0 60 12" fill="white" xmlns="http://www.w3.org/2000/svg">
+						<path d="M-3.8147e-06 5.99999L10 0.226493L10 11.7735L-3.8147e-06 5.99999ZM60 7L9 7L9 5L60 5L60 7Z"/>
 					</svg>
 				</div>
 				
-				<div onclick="plusSlides(1)">
-					<svg width="60" height="12" viewBox="0 0 60 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M60 5.99999L50 0.226493L50 11.7735L60 5.99999ZM8.74228e-08 7L51 7L51 5L-8.74228e-08 5L8.74228e-08 7Z" fill="white"/>
+				<div class="arrow-btn" onclick="plusSlides(1)">
+					<svg width="60" height="12" viewBox="0 0 60 12" fill="white" xmlns="http://www.w3.org/2000/svg">
+						<path d="M60 5.99999L50 0.226493L50 11.7735L60 5.99999ZM8.74228e-08 7L51 7L51 5L-8.74228e-08 5L8.74228e-08 7Z"/>
 					</svg>
 				</div>
 			</div>
@@ -177,27 +164,27 @@
 					<ul>
 						<li class="menu-item">
 							<a href="main.html" class="main">Главная</a>
-							<img src="assets/about.png" alt="about" class="main">
+							<img src="assets/menu/home.png" alt="about" class="main">
 						</li>
 						<li class="menu-item">
 							<a href="pages/about.html" class="about">О нас</a>
-							<img src="assets/about.png" alt="about" class="about">
+							<img src="assets/menu/about.png" alt="about" class="about">
 						</li>
 						<li class="menu-item">
 							<a href="pages/locations.html" class="location">Локация</a>
-							<img src="assets/about.png" alt="about" class="location">
+							<img src="assets/menu/locations.png" alt="about" class="location">
 						</li>
 						<li class="menu-item">
 							<a href="pages/kitchen.html" class="kitchen">Кухня</a>
-							<img src="assets/about.png" alt="about" class="kitchen">
+							<img src="assets/menu/kitchen.png" alt="about" class="kitchen">
 						</li>
 						<li class="menu-item">
 							<a href="pages/reserv.html" class="reserv">Резерв</a>
-							<img src="assets/about.png" alt="about" class="reserv">
+							<img src="assets/menu/reserv.png" alt="about" class="reserv">
 						</li>
 						<li class="menu-item">
 							<a href="pages/contacts.html" class="contact">Контакты</a>
-							<img src="assets/about.png" alt="about" class="contact">
+							<img src="assets/menu/contacts.png" alt="about" class="contact">
 						</li>
 					</ul>
 				</div>

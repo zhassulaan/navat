@@ -109,18 +109,15 @@
 
 .feature {
 	width: 17.5rem;
+	height: max-content;
 	margin-right: 1.25rem;
-}
-
-.counter {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	align-items: end;
 	padding-bottom: 1rem;
 }
 
-.counter:before {
+.feature:before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -130,11 +127,6 @@
 }
 
 .feature p {
-	line-height: 1.25rem;
-	font-size: 20px;
-}
-
-.counter p {
 	font-family: HistoryPro-Two;
 	font-weight: 400;
 }
@@ -158,5 +150,5 @@
 }
 
 .buttons {
-	margin: 4.6875rem 0.625rem 0 0;
+	margin: 3.125rem 0.3125rem 0 0;
 }

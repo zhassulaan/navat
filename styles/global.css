@@ -50,6 +50,7 @@ ul {
 a {
 	text-decoration: none;
 	font-family: MazzardM-Light;
+	color: var(--clr-white);
 }
 
 h1,
@@ -119,11 +120,7 @@ p {
 
 .buttons {
 	display: flex;
-	gap: 1.875rem;
-}
-
-.buttons {
-	cursor: pointer;
+	gap: 1.25rem;
 }
 
 .button {
@@ -131,10 +128,29 @@ p {
 	height: 5rem;
 	text-align: center;
 	background-color: var(--clr-primary-1);
-	padding: 1.5625rem 0;
+	transition: all 0.5s ease-in-out;
 	cursor: pointer;
 }
 
-.button-text1 {
+.button:hover {
+	border: 2px solid var(--clr-white);
+}
+
+.button-text {
 	line-height: 1.875rem;
+	padding: 1.5625rem 0;
+}
+
+.arrow-btn {
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+	padding: 0.984375rem 0.3125rem;
+}
+
+.arrow-btn:hover {
+	background-color: var(--clr-white);
+}
+
+.arrow-btn:hover svg {
+	fill: var(--clr-black);
 }
