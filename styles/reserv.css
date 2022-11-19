@@ -89,11 +89,11 @@
 .reserv .button {
 	width: 17.5rem;
 	height: 5.625rem;
-	padding: 1.875rem 0;
 }
 
 .reserv .button-text {
 	font-size: 30px;
+	padding: 1.875rem 0;
 }
 
 .confirm .text {

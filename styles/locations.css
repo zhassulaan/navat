@@ -2,21 +2,37 @@
 	height: 100vh;
 }
 
+.locations .nav-item:hover::before {
+	background-color: var(--clr-black);
+}
+
+.locations .nav-link:hover {
+	color: var(--clr-black);
+}
+
+.locations .toggle-btn:hover .nav-link {
+	color: var(--clr-black);
+}
+
+.locations .toggle-btn:hover .toggle {
+	stroke: var(--clr-black);
+}
+
 .locations.content {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 0.625rem;
+	margin-top: 3.125rem;
 }
 
 .map-box {
-	width: 65.5rem;
-	height: 47.5rem;
+	width: 64.375rem;
+	height: 37.5rem;
 	background-color: var(--clr-primary-3);
-	margin-left: -4.375rem;
 }
 
 .text-box {
 	width: 45.625rem;
+	margin-top: 6.875rem;
 }
 
 .locations .title,
