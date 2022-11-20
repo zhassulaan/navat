@@ -5,6 +5,35 @@
 
 .contact .title {
 	text-align: center;
-	line-height: 11.875rem;
-	font-size: 160px;
+	line-height: 7.5rem;
+	font-size: 120px;
+	margin-top: 1.875rem;
+}
+
+.contact .boxes {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: space-between;
+	gap: 0 25%;
+	margin-top: 1.25rem;
+}
+
+.info-box {
+	margin-top: 3.75rem;
+}
+
+.contact .subtitle {
+	line-height: 1.875rem;
+	font-size: 20px;
+	color: var(--clr-primary-1);
+	margin-bottom: 0.625rem;
+}
+
+.right {
+	text-align: right;
+}
+
+.contact .text {
+	line-height: 3.75rem;
+	font-size: 40px;
 }

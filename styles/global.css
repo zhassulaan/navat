@@ -5,7 +5,8 @@
 	--clr-primary-0: #1B3E3D;
 	--clr-primary-1: #BCA48D;
 	--clr-primary-2: #D9D9D9;
-	--clr-primary-3: #D9D9D9;
+	--clr-primary-3: #9B9B9B;
+	;
 }
 
 @font-face {
@@ -62,7 +63,7 @@ h4 {
 }
 
 h1 {
-	font-size: 300px;
+	font-size: 15.625vw;
 	color: var(--clr-primary-1);
 }
 
@@ -110,7 +111,7 @@ p {
 }
 
 .content {
-	width: 111.25rem;
+	width: 92.70834vw;
 	margin: 0 auto;
 }
 
@@ -120,7 +121,7 @@ p {
 
 .buttons {
 	display: flex;
-	gap: 1.25rem;
+	gap: 1.042vw;
 }
 
 .button {

@@ -7,7 +7,7 @@
 	margin-top: 3.125rem;
 }
 
-.reserv form {
+form {
 	display: flex;
 	justify-content: center;
 	gap: 6.875rem;
@@ -19,7 +19,7 @@
 	margin-bottom: 3.125rem;
 }
 
-.reserv .paragraph {
+.paragraph {
 	width: 28.75rem;
 	height: 14.375rem;
 	margin-bottom: 2.5rem;
@@ -29,12 +29,12 @@
 	line-height: 2.1875rem;
 }
 
-.reserv .feature {
+.feature {
 	display: flex;
 	gap: 1.25rem;
 }
 
-.reserv .feature-box {
+.feature-box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -47,12 +47,12 @@
 	background-color: var(--clr-white);
 }
 
-.reserv .feature-box h6 {
+.feature-box h6 {
 	font-size: 26px;
 	color: var(--clr-primary-1);
 }
 
-.reserv .form-box {
+.form-box {
 	width: 55rem;
 	margin-top: 0.625rem;
 }
@@ -86,12 +86,12 @@
 	margin-top: 4.375rem;
 }
 
-.reserv .button {
+.button {
 	width: 17.5rem;
 	height: 5.625rem;
 }
 
-.reserv .button-text {
+.button-text {
 	font-size: 30px;
 	padding: 1.875rem 0;
 }

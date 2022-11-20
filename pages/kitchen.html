@@ -12,13 +12,12 @@
 	<link rel="stylesheet" href="../styles/kitchen.css">
 	<link rel="stylesheet" href="../styles/kitchenMenu.css">
 	<link rel="stylesheet" href="../styles/menu.css">
-</head>
 <body>
-	<div class="container" id="main">
+	<div class="kitchen container" id="main" onscroll="scrolling()">
 		<!-- HEADER -->
 		<header class="header content">
 			<div>
-				<img src="../assets/logo2.svg" alt="Navat's logo" class="logo">
+				<img src="../assets/logo.svg" alt="Navat's logo" class="logo">
 				<ul class="nav-menu">
 					<li class="nav-item active">
 						<a class="nav-link">Rus</a>
@@ -41,7 +40,7 @@
 		</header>
 
 		<!-- KITCHEN PAGE -->
-		<main class="kitchen content">
+		<main class="kitchen content" id="kitchen">
 			<div class="text-box">
 				<h3 class="title">Кухня</h3>
 
@@ -55,24 +54,28 @@
 					<h6 class="counter">01</h6>
 
 					<div class="buttons">
-						<svg width="60" height="12" viewBox="0 0 60 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M-3.8147e-06 5.99999L10 0.226493L10 11.7735L-3.8147e-06 5.99999ZM60 7L9 7L9 5L60 5L60 7Z" fill="black"/>
-						</svg>
+						<div class="arrow-btn" onclick="carousel(-1)">
+							<svg width="60" height="12" viewBox="0 0 60 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M-3.8147e-06 5.99999L10 0.226493L10 11.7735L-3.8147e-06 5.99999ZM60 7L9 7L9 5L60 5L60 7Z" fill="black"/>
+							</svg>
+						</div>
 		
-						<svg width="60" height="12" viewBox="0 0 60 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M60 5.99999L50 0.226493L50 11.7735L60 5.99999ZM8.74228e-08 7L51 7L51 5L-8.74228e-08 5L8.74228e-08 7Z" fill="black"/>
-						</svg>
+						<div class="arrow-btn" onclick="carousel(1)">
+							<svg width="60" height="12" viewBox="0 0 60 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M60 5.99999L50 0.226493L50 11.7735L60 5.99999ZM8.74228e-08 7L51 7L51 5L-8.74228e-08 5L8.74228e-08 7Z" fill="black"/>
+							</svg>
+						</div>
 					</div>
 				</div>
 			</div>
 			
 			<div class="image-box">
-				<img src="../assets/decoration1.svg" alt="decoration">
+				<img src="../assets/kitchen/decoration1.svg" alt="decoration" class="decoration">
 
 				<div class="images">
 					<div class="image-container">
 						<div class="image main-img">
-							<h6 class="image-text">ФОТО</h6>
+							<h6 class="image-text" id="box1">ФОТО1</h6>
 						</div>
 
 						<h6 class="subtitle">НАЦИОНАЛЬНАЯ КУХНЯ</h6>
@@ -80,21 +83,23 @@
 
 					<div class="image-container">
 						<div class="image">
-							<h6 class="image-text">ФОТО</h6>
+							<h6 class="image-text" id="box2">ФОТО2</h6>
 						</div>
 					</div>
 
 					<div class="image-container">
 						<div class="image">
-							<h6 class="image-text">ФОТО</h6>
+							<h6 class="image-text" id="box3">ФОТО3</h6>
 						</div>
 					</div>
 				</div>
 			</div>
 		</main>
 
+		<script src="../script/kitchenCarousel.js"></script>
+
 		<!-- MENU PAGE -->
-		<main class="menues content">
+		<main class="menues content" id="menues">
 			<div class="header">
 				<h4 class="title">МЕНЮ</h4>
 				<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -113,6 +118,7 @@
 						<p class="subtitle">Заголовок</p>
 						<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
+					<img src="../assets/kitchen/decoration2.svg" alt="decoration" class="decoration">
 				</div>
 
 				<div class="text-box left">
@@ -121,6 +127,7 @@
 						<p class="subtitle">Заголовок</p>
 						<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
+					<img src="../assets/kitchen/decoration2.svg" alt="decoration" class="decoration">
 				</div>
 
 				<div class="image-box">
@@ -141,6 +148,7 @@
 						<p class="subtitle">Заголовок</p>
 						<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
+					<img src="../assets/kitchen/decoration2.svg" alt="decoration" class="decoration">
 				</div>
 				
 				<div class="text-box left">
@@ -149,6 +157,7 @@
 						<p class="subtitle">Заголовок</p>
 						<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
+					<img src="../assets/kitchen/decoration2.svg" alt="decoration" class="decoration">
 				</div>
 
 				<div class="image-box">
@@ -174,11 +183,13 @@
 		</main>
 	</div>
 
+	<script src="../script/kitchenPage.js"></script>
+
 	<div class="menu container" id="menu">
 		<!-- HEADER -->
 		<header class="header content">
 			<div>
-				<img src="../assets/logo2.svg" alt="Navat's logo" class="logo">
+				<img src="../assets/logo.svg" alt="Navat's logo" class="logo">
 				<ul class="nav-menu">
 					<li class="nav-item active">
 						<a class="nav-link">Rus</a>
@@ -206,27 +217,27 @@
 					<ul>
 						<li class="menu-item">
 							<a href="../main.html" class="main">Главная</a>
-							<img src="../assets/about.png" alt="about" class="main">
+							<img src="../assets/menu/home.png" alt="about" class="main">
 						</li>
 						<li class="menu-item">
 							<a href="about.html" class="about">О нас</a>
-							<img src="../assets/about.png" alt="about" class="about">
+							<img src="../assets/menu/about.png" alt="about" class="about">
 						</li>
 						<li class="menu-item">
 							<a href="locations.html" class="location">Локация</a>
-							<img src="../assets/about.png" alt="about" class="location">
+							<img src="../assets/menu/locations.png" alt="about" class="location">
 						</li>
 						<li class="menu-item">
 							<a href="kitchen.html" class="kitchen">Кухня</a>
-							<img src="../assets/about.png" alt="about" class="kitchen">
+							<img src="../assets/menu/kitchen.png" alt="about" class="kitchen">
 						</li>
 						<li class="menu-item">
 							<a href="reserv.html" class="reserv">Резерв</a>
-							<img src="../assets/about.png" alt="about" class="reserv">
+							<img src="../assets/menu/reserv.png" alt="about" class="reserv">
 						</li>
 						<li class="menu-item">
 							<a href="contacts.html" class="contact">Контакты</a>
-							<img src="../assets/about.png" alt="about" class="contact">
+							<img src="../assets/menu/contacts.png" alt="about" class="contact">
 						</li>
 					</ul>
 				</div>
@@ -248,7 +259,7 @@
 				</div>
 			</div>
 			
-			<img src="/assets/arrow.svg" alt="gold arrow" class="arrow">
+			<img src="../assets/menu/arrow.svg" alt="gold arrow" class="arrow">
 			<h1>Меню</h1>
 		</div>
 	</div>

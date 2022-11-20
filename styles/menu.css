@@ -1,6 +1,6 @@
 .menu.container {
+	height: 100vh;
 	background-color: transparent;
-	margin-bottom: 7.5rem;
 }
 
 .menu {
@@ -28,10 +28,11 @@
 	display: block;
 }
 
-.menu-container {
+.menu-container.content {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 1.875rem;
+	margin: 1.875rem auto;
+	padding-bottom: 5.625rem;
 }
 
 .menu .boxes {
@@ -45,7 +46,7 @@
 }
 
 .menu-box ul {
-	width: 17.5rem;
+	width: 14.583v
 }
 
 .menu-item {
@@ -67,8 +68,8 @@
 .menu-item img {
 	position: absolute;
 	display: block;
-	width: 41.875rem;
-	height: 100%;
+	width: 34.896vw;
+	height: 24.375rem;
 	top: 0.625rem;
 	margin-left: 17.5rem;
 }
@@ -98,7 +99,7 @@
 }
 
 h1 {
-	width: 37.5rem;
+	width: 31.25vw;
 	text-align: right;
 	word-wrap: break-word;
 }
@@ -112,7 +113,7 @@ h1 {
 	position: relative;
 	display: flex;
 	gap: 1.25rem;
-	width: 59.375rem;
+	width: 49.479vw;
 	padding-top: 1.875rem;
 }
 
@@ -126,7 +127,7 @@ h1 {
 }
 
 .contact-box {
-	width: 17.5rem;
+	width: 14.583vw;
 }
 
 .contact-box p {
@@ -140,7 +141,7 @@ h1 {
 }
 
 .contact-box .text {
-	width: 15rem;
+	width: 12.5vw;
 	line-height: 1.875rem;
 	font-size: 18px;
 	margin-top: 0.625rem;

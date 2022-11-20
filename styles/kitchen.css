@@ -1,3 +1,39 @@
+@keyframes fade {
+	from {
+		opacity: 0;
+	} to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeCounter {
+	from {
+		opacity: 0;
+	} to {
+		opacity: 0.2;
+	}
+}
+
+.kitchen .nav-item:hover::before {
+	background-color: var(--clr-black);
+}
+
+.kitchen .nav-link:hover {
+	color: var(--clr-black);
+}
+
+.kitchen .toggle-btn:hover .nav-link {
+	color: var(--clr-black);
+}
+
+.kitchen .toggle-btn:hover .toggle {
+	stroke: var(--clr-black);
+}
+
+.container {
+	height: 100vh;
+}
+
 .kitchen.content {
 	display: flex;
 	justify-content: space-between;
@@ -6,7 +42,7 @@
 }
 
 .kitchen .text-box {
-	width: 36.25rem;
+	width: 30.208vw;
 }
 
 .kitchen .title,
@@ -46,9 +82,13 @@
 }
 
 .kitchen .image-box {
-	width: 78.125rem;
+	width: 65.104vw;
 	overflow: hidden;
 	margin: 1.875rem -4.375rem 0 0;
+}
+
+.kitchen .decoration {
+	width: 65.104vw;
 }
 
 .kitchen .images {
@@ -57,7 +97,7 @@
 }
 
 .kitchen .image-container {
-	min-width: 36.25rem;
+	min-width: 30.208vw;
 	height: 35rem;
 }
 
@@ -71,7 +111,7 @@
 	height: 30rem;
 }
 
-.kitchen h6 {
+.kitchen .image-text {
 	line-height: 2.5rem;
 }
 

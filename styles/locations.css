@@ -25,13 +25,13 @@
 }
 
 .map-box {
-	width: 64.375rem;
+	width: 53.646vw;
 	height: 37.5rem;
 	background-color: var(--clr-primary-3);
 }
 
 .text-box {
-	width: 45.625rem;
+	width: 38.021vw;
 	margin-top: 6.875rem;
 }
 

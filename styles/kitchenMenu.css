@@ -47,7 +47,7 @@
 
 .menues .text-box,
 .menues .image-box {
-	width: 100%;
+	width: 46.354vw;
 	height: 36.25rem;
 }
 
@@ -121,4 +121,9 @@
 
 .menues .paragraph .text {
 	line-height: 1.875rem;
+}
+
+.menues .decoration {
+	width: 46.354vw;
+	margin-top: 9.375rem;
 }
