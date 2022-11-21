@@ -155,3 +155,29 @@ p {
 .arrow-btn:hover svg {
 	fill: var(--clr-black);
 }
+
+@media (max-width: 1700px) {
+	h2 {
+		line-height: 11.25rem;
+		font-size: 160px;
+	}
+
+	h3 {
+		line-height: 8.125rem;
+		font-size: 120px;
+	}
+
+	h4 {
+		line-height: 7.1875rem;
+		font-size: 85px;
+	}
+	
+	h5 {
+		line-height: 3.0625rem;
+		font-size: 42px;
+	}
+
+	.text {
+		font-size: 20px;
+	}
+}

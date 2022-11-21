@@ -1,7 +1,6 @@
 .about.container {
 	height: 100vh;
 	background-color: var(--clr-primary-0);
-	margin-bottom: 5rem;
 }
 
 .about.content {
@@ -111,7 +110,6 @@
 
 .about .title {
 	width: max-content;
-	line-height: 13.125rem;
 	margin: 0 0 2.5rem -18.75rem;
 }
 
@@ -138,4 +136,42 @@
 	width: 3.75rem;
 	height: 0.125rem;
 	background-color: var(--clr-white);
+}
+
+@media (max-width: 1700px) {
+	.corner-box,
+	.corner-box img {
+		width: 6.09375rem;
+	}
+
+	.corner-box .text {
+		margin-left: 2.171875rem;
+	}
+
+	.big-corner,
+	.big-corner img {
+		width: 24.703125rem;
+		height: 32.34375rem;
+	}
+
+	.small-corner,
+	.small-corner img,
+	.small-corner-2 {
+		width: 12.1875rem;
+		height: 15.9375rem;
+	}
+
+	.about .title {
+		width: max-content;
+		margin: 0 0 1.875rem -18.75rem;
+	}
+
+	.about .text {
+		line-height: 2.0625rem;
+	}
+
+	.paragraph {
+		height: 17.75rem;
+		margin-bottom: 2.1875rem;
+	}
 }

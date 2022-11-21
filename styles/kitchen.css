@@ -14,19 +14,19 @@
 	}
 }
 
-.kitchen .nav-item:hover::before {
+.kitchenHeader .nav-item:hover::before {
 	background-color: var(--clr-black);
 }
 
-.kitchen .nav-link:hover {
+.kitchenHeader .nav-link:hover {
 	color: var(--clr-black);
 }
 
-.kitchen .toggle-btn:hover .nav-link {
+.kitchenHeader .toggle-btn:hover .nav-link {
 	color: var(--clr-black);
 }
 
-.kitchen .toggle-btn:hover .toggle {
+.kitchenHeader .toggle-btn:hover .toggle {
 	stroke: var(--clr-black);
 }
 
@@ -51,7 +51,6 @@
 }
 
 .kitchen .title {
-	line-height: 10rem;
 	margin-bottom: 1.875rem;
 }
 
@@ -137,4 +136,27 @@
 	text-align: center;
 	color: var(--clr-black);
 	padding-top: 15rem;
+}
+
+@media (max-width: 1700px) {
+	.kitchen .paragraph {
+		height: 16.25rem;
+		margin-bottom: 2.5rem;
+	}
+	
+	.kitchen .text {
+		line-height: 1.875rem;
+	}
+
+	.kitchen .image-container {
+		height: 28.75rem;
+	}
+
+	.kitchen .main-img {
+		height: 24.6428571rem;
+	}
+
+	.kitchen .image-text {
+		padding-top: 11.875rem;
+	}
 }

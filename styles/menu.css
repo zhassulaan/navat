@@ -31,8 +31,7 @@
 .menu-container.content {
 	display: flex;
 	justify-content: space-between;
-	margin: 1.875rem auto;
-	padding-bottom: 5.625rem;
+	margin-top: 1.875rem;
 }
 
 .menu .boxes {
@@ -46,7 +45,7 @@
 }
 
 .menu-box ul {
-	width: 14.583v
+	width: 14.583vw;
 }
 
 .menu-item {
@@ -71,7 +70,7 @@
 	width: 34.896vw;
 	height: 24.375rem;
 	top: 0.625rem;
-	margin-left: 17.5rem;
+	margin-left: 14.583vw;
 }
 
 .menu-item .main:not(:hover) + img.main {
@@ -145,4 +144,24 @@ h1 {
 	line-height: 1.875rem;
 	font-size: 18px;
 	margin-top: 0.625rem;
+}
+
+@media (max-width: 1700px) {
+	.menu .boxes {
+		margin: 1.875rem 0 0 3.75rem;
+	}
+
+	.menu-item img {
+		height: 20.625rem;
+	}
+
+	.menu-item a {
+		line-height: 3.125rem;
+		font-size: 34px;
+	}
+
+	.menu .arrow {
+		width: 13.125rem;
+		margin: 7.5rem -7.1875rem 0 0;
+	}
 }

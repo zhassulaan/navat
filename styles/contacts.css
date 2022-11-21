@@ -15,7 +15,8 @@
 	grid-template-columns: repeat(2, 1fr);
 	justify-content: space-between;
 	gap: 0 25%;
-	margin-top: 1.25rem;
+	width: 77%;
+	margin: 1.25rem auto 0;
 }
 
 .info-box {
@@ -36,4 +37,23 @@
 .contact .text {
 	line-height: 3.75rem;
 	font-size: 40px;
+}
+
+@media (max-width: 1700px) {
+	.contact .title {
+		line-height: 6.875rem;
+		font-size: 100px;
+	}
+
+	.contact .boxes {
+		width: 80%;
+	}
+	
+	.contact .subtitle {
+		font-size: 18px;
+	}
+	
+	.contact .text {
+		font-size: 34px;
+	}	
 }

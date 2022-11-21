@@ -27,7 +27,7 @@
 .map-box {
 	position: relative;
 	width: 53.646vw;
-	height: 37.5rem;
+	height: 66.667vh;
 	background-color: var(--clr-primary-3);
 }
 
@@ -67,7 +67,7 @@
 }
 
 .map::after {
-	bottom: calc(-1.875rem - 37.5rem);
+	bottom: calc(-1.875rem - 66.667vh);
 	left: 1.875rem;
 	width: 2px;
 	height: 1.875rem;
@@ -102,8 +102,54 @@
 }
 
 .locations .text {
-	width: 36.25rem;
+	width: 30.208vw;
 	line-height: 2.03125rem;
 	color: var(--clr-black);
 	margin-left: auto;
+}
+
+@media (max-width: 1700px) {
+	.locations.content {
+		margin-top: 2.5rem;
+	}
+
+	.map-box {
+		width: 48.611vw;
+		height: 60.914vh;
+	}
+
+	.map-box::before {
+		bottom: -1.5625rem;
+		left: 1.5625rem;
+	}
+	
+	.map-box::after {
+		top: 1.5625rem;
+		right: -1.5625rem;
+	}
+	
+	.map::before {
+		top: 1.5625rem;
+		right: -1.5625rem;
+		width: 1.5625rem;
+	}
+	
+	.map::after {
+		bottom: calc(-1.5625rem - 60.914vh);
+		left: 1.5625rem;
+		height: 1.5625rem;
+	}
+
+	.text-box {
+		width: 43.056vw;
+		margin-top: 5rem;
+	}
+
+	.locations .title {
+		line-height: 8.125rem;
+	}
+
+	.locations .text {
+		width: 35.243vw;
+	}
 }

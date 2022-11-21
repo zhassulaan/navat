@@ -169,3 +169,17 @@
 .buttons {
 	margin: 3.125rem 0.3125rem 0 0;
 }
+
+@media (max-width: 1700px) {
+	.home .title {
+		margin-top: 3.75rem;
+	}
+
+	.button {
+		margin-top: 2.5rem;
+	}
+
+	.footer {
+		margin-bottom: 5.625rem;
+	}
+}

@@ -102,3 +102,59 @@ form {
 	line-height: 1.875rem;
 	font-size: 22px;
 }
+
+@media (max-width: 1700px) {
+	.reserv.content {
+		margin-top: 2.5rem;
+	}
+	
+	form {
+		gap: 5.625rem;
+	}
+	
+	.reserv .title {
+		line-height: 8.125rem;
+		margin-bottom: 2.8125rem;
+	}
+	
+	.paragraph {
+		width: 25rem;
+		margin-bottom: 2.1875rem;
+	}
+	
+	.feature-box {
+		width: 5.3125rem;
+		height: 5.3125rem;
+	}
+	
+	.feature-box h6 {
+		font-size: 23px;
+	}
+	
+	.form-box {
+		width: 41.25rem;
+	}
+	
+	.form-box .input-box {
+		margin-top: 3.125rem;
+		padding-bottom: 1.5625rem;
+	}
+	
+	.form-box input,
+	.form-box input::placeholder {
+		font-size: 26px;
+	}
+	
+	.button {
+		height: 5.3125rem;
+	}
+	
+	.button-text {
+		font-size: 26px;
+		padding: 1.71875rem 0;
+	}
+	
+	.confirm .text {
+		font-size: 19px;
+	}
+}

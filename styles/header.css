@@ -66,3 +66,9 @@ header {
 	margin-left: 1.875rem;
 	cursor: pointer;
 }
+
+@media (max-width: 1700px) {
+	.nav-link {
+		font-size: 24px;
+	}
+}
