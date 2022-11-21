@@ -154,6 +154,7 @@
 	border-radius: 50%;
 	background-color: var(--clr-primary-2);
 	overflow: hidden;
+	cursor: pointer;
 }
 
 .mini-image {

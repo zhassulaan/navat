@@ -25,9 +25,52 @@
 }
 
 .map-box {
+	position: relative;
 	width: 53.646vw;
 	height: 37.5rem;
 	background-color: var(--clr-primary-3);
+}
+
+.map {
+	position: relative;
+}
+
+.map-box::before,
+.map-box::after,
+.map::before,
+.map::after {
+	position: absolute;
+	display: block;
+	content: '';
+	background-color: var(--clr-primary-1);
+}
+
+.map-box::before {
+	bottom: -1.875rem;
+	left: 1.875rem;
+	width: 100%;
+	height: 2px;
+}
+
+.map-box::after {
+	top: 1.875rem;
+	right: -1.875rem;
+	width: 2px;
+	height: 100%;
+}
+
+.map::before {
+	top: 1.875rem;
+	right: -1.875rem;
+	width: 1.875rem;
+	height: 2px;
+}
+
+.map::after {
+	bottom: calc(-1.875rem - 37.5rem);
+	left: 1.875rem;
+	width: 2px;
+	height: 1.875rem;
 }
 
 .text-box {
@@ -59,6 +102,7 @@
 }
 
 .locations .text {
+	width: 36.25rem;
 	line-height: 2.03125rem;
 	color: var(--clr-black);
 	margin-left: auto;

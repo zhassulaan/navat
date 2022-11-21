@@ -41,6 +41,7 @@ form {
 	width: 5.625rem;
 	height: 5.625rem;
 	border: 2px solid var(--clr-primary-1);
+	cursor: pointer;
 }
 
 .active-btn {
