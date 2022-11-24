@@ -3,6 +3,12 @@
 	background-color: var(--clr-primary-0);
 }
 
+.contact.content {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
 .contact .title {
 	text-align: center;
 	line-height: 7.5rem;
@@ -37,6 +43,32 @@
 .contact .text {
 	line-height: 3.75rem;
 	font-size: 40px;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	width: 77%;
+	margin: auto auto 1.875rem;
+}
+
+.policy-text {
+	line-height: 1.875rem;
+	font-size: 16px;
+}
+
+.athenaplus {
+	font-size: 16px;
+}
+
+.athenaplus .url {
+	text-decoration: underline;
+	transition: all 0.5s ease-in-out;
+}
+	
+.url:hover {
+	color: var(--clr-primary-1);
+	font-size: 18px;
 }
 
 @media (max-width: 1700px) {
@@ -89,7 +121,8 @@
 }
 
 @media (max-width: 992px) {
-	.contact .boxes {
+	.contact .boxes,
+	.footer {
 		width: 100%;
 	}
 
@@ -105,5 +138,77 @@
 	.contact .text {
 		line-height: 2.5rem;
 		font-size: 22px;
+	}
+}
+
+@media (max-width: 768px) {
+	.contact.content {
+		margin: 1.25rem 0;
+	}
+
+	.contact .title {
+		line-height: 5.625rem;
+		font-size: 68px;
+		margin: 0 0 3.75rem;
+	}
+
+	.contact .boxes {
+		display: block;
+		gap: 0;
+		margin: 0;
+	}
+
+	.right {
+		text-align: left;
+	}
+
+	.info-box {
+		margin-top: 1.875rem;
+	}
+
+	.contact .subtitle {
+		line-height: 2.1875rem;
+		font-size: 22px;
+	}
+	
+	.contact .text {
+		line-height: 2.1875rem;
+		font-size: 20px;
+	}
+
+	.footer {
+		flex-direction: column;
+		gap: 0.625rem;
+		margin-bottom: 0;
+	}
+
+	.policy-text,
+	.athenaplus {
+		text-align: center;
+		line-height: 1.5625rem;
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 480px) {
+	.contact .title {
+		line-height: 3.75rem;
+		font-size: 50px;
+	}
+
+	.contact .subtitle {
+		line-height: 1.875rem;
+		font-size: 20px;
+	}
+	
+	.contact .text {
+		line-height: 1.875rem;
+		font-size: 18px;
+	}
+
+	.policy-text,
+	.athenaplus {
+		line-height: 1.25rem;
+		font-size: 13px;
 	}
 }

@@ -97,6 +97,8 @@
 .menues .subtitle {
 	position: relative;
 	line-height: 2.5rem;
+	font-family: MazzardM-Regular;
+	font-weight: 400;
 	font-size: 30px;
 	margin-bottom: 1.875rem;
 	padding-bottom: 1.25rem;
@@ -328,6 +330,224 @@
 	}
 
 	.menues .decoration {
+		margin-top: 1.25rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.menues.content {
+		margin-top: 1.25rem;
+	}
+
+	.menues.content .header {
+		width: 100%;
+		height: max-content;
+		margin-bottom: 1.875rem;
+		padding: 0;
+	}
+
+	.menues .title {
+		margin-bottom: 0.9375rem;
+		padding-bottom: 1.25rem;
+	}
+
+	.menues .text {
+		font-size: 17px;
+	}
+
+	.menues .boxes {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-areas: 'imageBox1'
+									'textBox1'
+									'imageBox2'
+									'textBox2'
+									'imageBox3'
+									'textBox3'
+									'imageBox4'
+									'textBox4'
+									'imageBox5'
+									'textBox5';
+	}
+
+	#box1 {
+		grid-area: imageBox1;
+	}
+
+	#box2 {
+		grid-area: textBox1;
+	}
+
+	#box3 {
+		grid-area: textBox2;
+	}
+
+	#box4 {
+		grid-area: imageBox2;
+	}
+
+	#box5 {
+		grid-area: imageBox3;
+	}
+
+	#box6 {
+		grid-area: textBox3;
+	}
+
+	#box7 {
+		grid-area: textBox4;
+	}
+
+	#box8 {
+		grid-area: imageBox4;
+	}
+
+	#box9 {
+		grid-area: imageBox5;
+	}
+
+	#box10 {
+		grid-area: textBox5;
+	}
+
+	.menues .text-box,
+	.menues .image-box {
+		width: 100%;
+	}
+
+	.menues .text-box,
+	.menues .image-box {
+		height: 21.5625rem;
+	}
+
+	.menues .image-text {
+		line-height: 3.125rem;
+		font-size: 34px;
+		padding-top: 7.5rem;
+	}	
+
+	.menues .counter {
+		display: none;
+	}
+
+	.menues .paragraph {
+		width: 100%;
+	}
+	
+	.right .paragraph,
+	.left .paragraph {
+		margin: 3.125rem 0 0;
+	}
+
+	.left .subtitle,
+	.left .text {
+		text-align: left;
+	}
+
+	.left .subtitle:before,
+	.right .subtitle:before {
+		left: 0;
+		width: 2.5rem;
+	}
+
+	.menues .subtitle {
+		line-height: 2.5rem;
+		font-size: 30px;
+		margin-bottom: 1.5625rem;
+		padding-bottom: 1.25rem;
+	}
+	
+	.menues .paragraph .text {
+		line-height: 1.875rem;
+		font-size: 20px;
+	}
+
+	.menues .decoration {
+		width: 100%;
+		height: 2.5rem;
+		margin-top: 5rem;
+	}
+}
+
+@media (max-width: 754px) {
+	.menues .subtitle {
+		line-height: 2.1875rem;
+		font-size: 27px;
+		margin-bottom: 1.5625rem;
+		padding-bottom: 1.25rem;
+	}
+
+	.menues .paragraph .text {
+		font-size: 19px;
+	}
+
+	.menues .decoration {
+		margin-top: 3.4375rem;
+	}
+}
+
+@media (max-width: 534px) {
+	.menues .subtitle {
+		font-size: 23px;
+		margin-bottom: 1.25rem;
+		padding-bottom: 0.9375rem;
+	}
+
+	.menues .paragraph .text {
+		line-height: 1.75rem;
+		font-size: 17px;
+	}
+
+	.menues .decoration {
+		margin-top: 4.5625rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.menues.content .header {
+		margin-bottom: 1.25rem;
+	}
+
+	.menues .title {
+		padding-bottom: 0.9375rem;
+	}
+
+	.menues .text {
+		line-height: 1.5625rem;
+		font-size: 15px;
+	}
+	
+	.menues .text-box {
+		height: 17.5rem;
+	}
+
+	.menues .image-box {
+		height: 14.375rem;
+	}
+
+	.menues .image-text {
+		line-height: 1.875rem;
+		font-size: 28px;
+		padding-top: 5.3125rem;
+	}	
+
+	.menues .paragraph {
+		margin-top: 2.1875rem;
+	}
+
+	.menues .subtitle {
+		line-height: 1.5625rem;
+		font-size: 20px;
+		margin-bottom: 0.9375rem;
+	}
+
+	.menues .paragraph .text {
+		line-height: 1.5625rem;
+		font-size: 16px;
+	}
+
+	.menues .decoration {
+		height: 1.25rem;
 		margin-top: 1.25rem;
 	}
 }

@@ -233,3 +233,54 @@
 		height: 43.75vh;
 	}
 }
+
+@media (max-width: 768px) {
+	.locations.content {
+		margin: 1.25rem 0 4.375rem;
+	}
+
+	.map-box,
+	.text-box {
+		width: 100%;
+	}
+
+	.text-box {
+		margin-bottom: 1.875rem;
+	}
+
+	.locations .title {
+		line-height: 5.625rem;
+		margin-bottom: 0.9375rem;
+		padding-bottom: 1.25rem;
+	}
+
+	.locations .text {
+		width: 100%;
+		line-height: 1.875rem;
+		font-size: 18px;
+	}
+
+	.map-box {
+		height: 21.875rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.text-box {
+		margin-bottom: 1.25rem;
+	}
+
+	.locations .title {
+		line-height: 3.75rem;
+		padding-bottom: 0.935rem;
+	}
+
+	.locations .text-box {
+		width: 100%;
+	}
+
+	.locations .text {
+		line-height: 1.5625rem;
+		font-size: 16px;
+	}
+}

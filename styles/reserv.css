@@ -210,7 +210,7 @@ form {
 	
 	.form-box input,
 	.form-box input::placeholder {
-		font-size: 22px;
+		font-size: 23px;
 	}
 	
 	.confirm {
@@ -304,6 +304,12 @@ form {
 		padding-bottom: 1.25rem;
 	}
 
+	.mobile.text {
+		display: block;
+		font-size: 23px;
+		margin-top: 1.875rem;
+	}
+
 	.mobile.feature {
 		display: flex;
 		gap: 1.5rem;
@@ -328,7 +334,84 @@ form {
 	.confirm .text {
 		width: 100%;
 		text-align: center;
-		line-height: 1.875rem;
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.reserv.content {
+		margin: 1.25rem 0 6.25rem;
+	}
+
+	form {
+		gap: 1.25rem;
+	}	
+	
+	.reserv .title {
+		line-height: 5.625rem;
+		margin-bottom: 1.875rem;
+	}
+
+	.button-text {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 480px) {
+	.reserv .title {
+		line-height: 3.75rem;
+		margin-bottom: 1.25rem;
+	}
+
+	.reserv .text {
+		line-height: 1.667rem;
+	}
+		
+	.form-box input,
+	.form-box input::placeholder {
 		font-size: 20px;
+	}
+
+	.form-box .input-box {
+		border-bottom: 0.0655rem solid var(--clr-primary-1);
+		margin-top: 1.25rem;
+	}
+
+	.form-box input {
+		height: 1.875rem;
+	}
+
+	.mobile.text {
+		font-size: 20px;
+		margin-top: 1.25rem;
+	}
+
+	.mobile.feature {
+		gap: 1rem;
+		margin-top: 1.25rem;
+	}
+
+	.feature-box {
+		width: 4.375rem;
+		height: 4.375rem;
+		border: 1px solid var(--clr-primary-1);
+	}
+
+	.feature-box h6 {
+		font-size: 20px;
+	}
+
+	.button {
+		height: 4.375rem;
+	}
+	
+	.button-text {
+		font-size: 22px;
+		padding: 1.25rem 0;
+	}
+
+	.confirm .text {
+		line-height: 1.25rem;
+		font-size: 13px;
 	}
 }

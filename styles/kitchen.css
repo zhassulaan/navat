@@ -307,3 +307,57 @@
 		padding-top: 10rem;
 	}
 }
+
+@media (max-width: 768px) {
+	.kitchen.content {
+		width: 91.111vw;
+		margin: 1.25rem 4.444vw 4.275rem;
+	}
+
+	.kitchen .title {
+		margin-bottom: 1.25rem;
+	}
+
+	.kitchen .image-box {
+		width: calc(100% + 4.446%);
+		margin: 0 -100vw 0 0;
+	}
+
+	.kitchen .image-container {
+		min-width: 15.125rem;
+		max-width: 15.125rem;
+		height: 18.125rem;
+	}
+
+	.kitchen .images {
+		gap: 1rem;
+	}
+	
+	.main-img .image {
+		min-width: 12.625rem;
+		max-width: 12.625rem;
+		height: 18.125rem;
+	}
+
+	.kitchen .image-text {
+		font-size: 28px;
+		padding-top: 7.8125rem;
+	}
+
+	.kitchen .subtitle {
+		line-height: 2.5rem;
+		font-size: 20px;
+		padding-left: 0.625rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.kitchen .paragraph {
+		margin-bottom: 1.25rem;
+	}
+
+	.kitchen .text {
+		line-height: 1.5625rem;
+		font-size: 15px;
+	}
+}
