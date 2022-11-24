@@ -80,6 +80,10 @@ form {
 	color: var(--clr-white);
 }
 
+.mobile {
+	display: none;
+}
+
 .confirm {
 	display: flex;
 	align-items: center;
@@ -144,6 +148,10 @@ form {
 	.form-box input::placeholder {
 		font-size: 26px;
 	}
+
+	.confirm {
+		gap: 2.5625rem;
+	}
 	
 	.button {
 		height: 5.3125rem;
@@ -156,5 +164,171 @@ form {
 	
 	.confirm .text {
 		font-size: 19px;
+	}
+}
+
+@media (max-width: 1440px) {
+	form {
+		gap: 3.75rem;
+	}
+	
+	.reserv .title {
+		line-height: 6.875rem;
+		margin-bottom: 2.5rem;
+	}
+	
+	.paragraph {
+		width: 22.5rem;
+		height: 15rem;
+		margin-bottom: 2.1875rem;
+	}
+
+	.reserv .text {
+		line-height: 1.875rem;
+	}
+	
+	.feature {
+		gap: 0.9375rem;
+	}
+
+	.feature-box {
+		width: 5rem;
+		height: 5rem;
+	}
+	
+	.feature-box h6 {
+		font-size: 21px;
+	}
+	
+	.form-box {
+		width: 36.25rem;
+	}
+	
+	.form-box .input-box {
+		margin-top: 2.8125rem;
+	}
+	
+	.form-box input,
+	.form-box input::placeholder {
+		font-size: 22px;
+	}
+	
+	.confirm {
+		gap: 2.1875rem;
+	}
+
+	.confirm .text {
+		line-height: 1.5625rem;
+	}
+}
+
+@media (max-width: 1280px) {
+	form {
+		gap: 2.5rem;
+	}
+	
+	.feature-box {
+		width: 4.6875rem;
+		height: 4.6875rem;
+	}
+	
+	.form-box {
+		width: 31.25rem;
+	}
+	
+	.confirm {
+		gap: 1.25rem;
+	}
+
+	.button {
+		width: 15rem;
+		height: 5rem;
+	}
+
+	.button-text {
+		font-size: 26px;
+		padding: 1.5625rem 0;
+	}
+	
+	.confirm .text {
+		width: 15rem;
+		line-height: 1.5625rem;
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 992px) {
+	.reserv.container {
+		height: max-content;
+	}
+
+	.reserv.content {
+		margin: 1.875rem 0 7.5rem;
+	}
+
+	form {
+		flex-direction: column;
+		gap: 1.875rem;
+	}	
+
+	.paragraph,
+	.form-box {
+		width: 100%;
+	}
+
+	.reserv .title {
+		line-height: 5rem;
+		color: var(--clr-white);
+	}
+
+	.paragraph {
+		height: max-content;
+		margin: 0;
+	}
+
+	.reserv .text {
+		line-height: 1.875rem;
+	}
+
+	.laptop {
+		display: none;
+	}
+
+	.form-box {
+		margin-top: 0;
+	}
+
+	.form-box .input-box {
+		border-bottom: 0.125rem solid var(--clr-primary-1);
+		margin-top: 1.875rem;
+		padding-bottom: 1.25rem;
+	}
+
+	.mobile.feature {
+		display: flex;
+		gap: 1.5rem;
+		margin: 1.875rem 0;
+	}
+
+	.confirm {
+		display: block;
+		margin-top: 0;
+	}
+
+	.button {
+		width: 100%;
+		height: 4.6875rem;
+		margin-bottom: 1.25rem;
+	}
+	
+	.button-text {
+		padding: 1.40625rem 0;
+	}
+	
+	.confirm .text {
+		width: 100%;
+		text-align: center;
+		line-height: 1.875rem;
+		font-size: 20px;
 	}
 }

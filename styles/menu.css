@@ -106,6 +106,11 @@ h1 {
 .menu .arrow {
 	height: 100%;
 	margin: 10rem -8.75rem 0 0;
+	transition: all 0.3s ease-in-out;
+}
+
+h1:hover ~ .menu .arrow {
+	margin-left: -7.5rem;
 }
 
 .contacts {
@@ -143,6 +148,7 @@ h1 {
 	width: 12.5vw;
 	line-height: 1.875rem;
 	font-size: 18px;
+	color: var(--clr-black);
 	margin-top: 0.625rem;
 }
 
@@ -163,5 +169,101 @@ h1 {
 	.menu .arrow {
 		width: 13.125rem;
 		margin: 7.5rem -7.1875rem 0 0;
+	}
+}
+
+@media (max-width: 1440px) {
+	.menu-item {
+		margin-bottom: 0.9375rem;
+	}
+
+	.menu-item a {
+		line-height: 2.5rem;
+		font-size: 30px;
+	}
+
+	.menu-item img {
+		height: 18.75rem;
+	}
+
+	.menu .arrow {
+		width: 10rem;
+		margin-top: 6.875rem;
+	}
+
+	.contact-box .title {
+		line-height: 1.5625rem;
+		font-size: 20px;
+		margin-bottom: 0.9375rem;
+	}
+	
+	.contact-box .text {
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 1280px) {
+	.menu .boxes {
+		margin-left: 2.5rem;
+	}
+
+	.menu-item a {
+		font-size: 28px;
+	}
+
+	.menu-item img {
+		width: 38.306vw;
+	}
+
+	.contacts {
+		gap: 0.9375rem;
+		width: 35.625rem;
+		padding-top: 1.875rem;
+	}
+
+	.contacts:before {
+		width: calc(14.583vw + 38.306vw);
+	}
+
+	.contact-box .text {
+		width: max-content;
+	}
+
+	.contact-box {
+		width: 11.25rem;
+	}
+
+	.menu .arrow {
+		width: 6.25rem;
+		margin: 5rem -0.3125rem 0 0;
+	}
+	
+	h1 {
+		margin-left: -4.6875rem;
+	}
+}
+
+@media (max-width: 992px) {
+	.menu .boxes {
+		margin: 0;
+	}
+
+	.menu-box ul {
+		width: 8.75rem;
+	}
+
+	.menu-item img {
+		width: 22.5rem;
+		height: 17.1875rem;
+		margin-left: 8.75rem;
+	}
+
+	.menu .arrow {
+		width: 4.375rem;
+		margin: 3.75rem 0 0 -4.375rem;
+	}
+
+	h1 {
+		margin-left: -5rem;
 	}
 }

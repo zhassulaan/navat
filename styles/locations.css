@@ -146,10 +146,90 @@
 	}
 
 	.locations .title {
-		line-height: 8.125rem;
+		line-height: 7.8125rem;
 	}
 
 	.locations .text {
 		width: 35.243vw;
+	}
+}
+
+@media (max-width: 1440px) {
+	.locations.content {
+		margin-top: 3.125rem;
+	}
+
+	.map-box {
+		height: 53.299vh;
+	}
+
+	.map::after {
+		bottom: calc(-1.5625rem - 53.299vh);
+	}
+
+	.text-box {
+		margin-top: 3.75rem;
+	}
+
+	.locations .title {
+		line-height: 6.875rem;
+	}
+
+	.locations .text {
+		line-height: 1.875rem;
+	}
+}
+
+@media (max-width: 1280px) {
+	.locations.content {
+		flex-direction: column-reverse;
+		margin-top: 1.875rem;
+	}
+
+	.map-box,
+	.text-box {
+		width: 92.708vw;
+	}
+
+	.text-box {
+		margin: 0 0 2.5rem;
+	}
+	
+	.locations .title,
+	.locations .text {
+		text-align: center;
+	}
+
+	.locations .title::before {
+		width: 33.333%;
+		left: 33.333%;
+	}
+	
+	.locations .text {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.map-box::before,
+	.map-box::after,
+	.map::before,
+	.map::after {
+		display: none;
+	}
+}
+
+@media (max-width: 992px) {
+	.locations.content {
+		margin: 1.875rem 0 5rem;
+	}
+	
+	.locations .title {
+		line-height: 5rem;
+		margin-bottom: 1.5625rem;
+		padding-bottom: 1.5625rem;
+	}
+
+	.map-box {
+		height: 43.75vh;
 	}
 }

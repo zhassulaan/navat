@@ -173,11 +173,64 @@ p {
 	}
 	
 	h5 {
-		line-height: 3.0625rem;
+		line-height: 3.75rem;
 		font-size: 42px;
 	}
 
 	.text {
 		font-size: 20px;
+	}
+}
+
+@media (max-width: 1440px) {
+	h2 {
+		line-height: 8.125rem;
+		font-size: 135px;
+	}
+
+	h3 {
+		line-height: 6.875rem;
+		font-size: 105px;
+	}
+
+	h4 {
+		line-height: 6.25rem;
+		font-size: 72px;
+	}
+	
+	h5 {
+		line-height: 3.125rem;
+		font-size: 38px;
+	}
+
+	.text {
+		font-size: 19px;
+	}
+
+	.button {
+		height: 4.6875rem;
+	}
+
+	.button-text {
+		padding: 1.40625rem 0;
+	}
+}
+
+@media (max-width: 1280px) {
+	.text {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 992px) {
+	h2, h3, h4 {
+		line-height: 5rem;
+		font-size: 76px;
+	}
+}
+
+@media (max-width: 817px) {
+	h1 {
+		font-size: 110px;
 	}
 }

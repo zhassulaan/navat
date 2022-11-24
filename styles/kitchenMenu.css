@@ -2,7 +2,7 @@
 	margin-top: 1.875rem;
 }
 
-.menues.content .header {
+.menues .header {
 	text-align: center;
 	width: 55rem;
 	margin: 0 auto 3.75rem;
@@ -136,6 +136,7 @@
 	}
 	
 	.menues .title {
+		line-height: 6.25rem;
 		margin-bottom: 1.5625rem;
 		padding-bottom: 1.5625rem;
 	}
@@ -175,5 +176,158 @@
 	
 	.menues .decoration {
 		margin-top: 3.4375rem;
+	}
+}
+
+@media (max-width: 1440px) {
+	.menues.content .header {
+		width: 37.5rem;
+		margin-bottom: 3.125rem;
+	}
+	
+	.menues .title {
+		line-height: 5rem;
+		padding-bottom: 1.25rem;
+	}
+	
+	.menues .text {
+		line-height: 1.875rem;
+	}
+	
+	.menues .text-box,
+	.menues .image-box {
+		height: 25rem;
+	}
+	
+	.menues .image-text,
+	.menues .counter {
+		font-size: 30px;
+	}
+	
+	.menues .image-text {
+		padding-top: 11.40625rem;
+	}
+
+	.menues .counter {
+		margin: 0.9375rem 0 2.1875rem;
+	}
+
+	.menues .paragraph {
+		width: 32vw;
+	}
+	
+	.menues .subtitle {
+		margin-bottom: 1.25rem;
+		padding-bottom: 0.9375rem;
+	}
+	
+	.menues .decoration {
+		height: 1.875rem;
+		margin-top: 3.125rem;
+	}
+}
+
+@media (max-width: 1280px) {
+	.menues .text-box,
+	.menues .image-box {
+		height: 22.5rem;
+	}
+	
+	.menues .image-text,
+	.menues .counter {
+		line-height: 2.5rem;
+		font-size: 26px;
+	}
+	
+	.menues .image-text {
+		padding-top: 10.15625rem;
+	}
+
+	.menues .counter {
+		margin: 0.9375rem 0 2.1875rem;
+	}
+
+	.menues .paragraph {
+		width: 35vw;
+	}
+
+	.right .paragraph {
+		margin-left: 5.556vw;
+	}
+	
+	.left .paragraph {
+		margin-right: 5.556vw;
+	}
+	
+	.menues .subtitle {
+		margin-bottom: 0.9375rem;
+		padding-bottom: 0.625rem;
+	}
+	
+	.menues .paragraph .text {
+		line-height: 1.5625rem;
+		font-size: 17px;
+	}
+	
+	.menues .decoration {
+		margin-top: 3.4375rem;
+	}
+}
+
+@media (max-width: 1026px) {
+	.menues .decoration {
+		margin-top: 1.875rem;
+	}
+}
+
+@media (max-width: 992px) {
+	.menues.content {
+		margin-top: 1.875rem;
+	}
+
+	.menues .header {
+		margin: 0 auto 2.5rem;
+	}
+
+	.menues .title {
+		padding-bottom: 1.5625rem;
+	}
+
+	.menues .text-box,
+	.menues .image-box {
+		height: 20rem;
+	}
+
+	.menues .image-text {
+		width: 70%;
+		margin: 0 auto;
+	}
+	
+	.menues .image-text {
+		padding-top: 7.5rem;
+	}
+	
+	.menues .counter {
+		line-height: 2.1875rem;
+		margin: 0.3125rem 0 0.625rem;
+	}
+	
+	.menues .paragraph .text {
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 848px) {
+	.menues .counter {
+		line-height: 1.875rem;
+	}
+
+	.menues .subtitle {
+		line-height: 1.5625rem;
+		font-size: 24px;
+	}
+
+	.menues .decoration {
+		margin-top: 1.25rem;
 	}
 }

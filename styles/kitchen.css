@@ -30,7 +30,7 @@
 	stroke: var(--clr-black);
 }
 
-.container {
+.kitchenContainer {
 	height: 100vh;
 }
 
@@ -83,7 +83,7 @@
 .kitchen .image-box {
 	width: 65.104vw;
 	overflow: hidden;
-	margin: 1.875rem -4.375rem 0 0;
+	margin: 1.875rem -3.646vw 0 0;
 }
 
 .kitchen .decoration {
@@ -106,7 +106,7 @@
 	background-color: var(--clr-primary-3);
 }
 
-.kitchen .main-img {
+.main-img .image {
 	height: 30rem;
 }
 
@@ -148,15 +148,162 @@
 		line-height: 1.875rem;
 	}
 
+	.kitchen .counter {
+		line-height: 5rem;
+		font-size: 80px;
+	}
+
 	.kitchen .image-container {
 		height: 28.75rem;
 	}
 
-	.kitchen .main-img {
+	.main-img .image {
 		height: 24.6428571rem;
 	}
 
 	.kitchen .image-text {
 		padding-top: 11.875rem;
+	}
+}
+
+@media (max-width: 1440px) {
+	.kitchen.content {
+		margin-top: 1.874rem;
+		gap: 0.9375rem;
+	}
+
+	.kitchen .paragraph {
+		height: 18.75rem;
+		margin-bottom: 1.5625rem;
+	}
+	
+	.kitchen .counter {
+		line-height: 4.375rem;
+		font-size: 65px;
+	}
+	
+	.kitchen .text {
+		line-height: 1.75rem;
+	}
+
+	.kitchen .decoration {
+		height: 3.125rem;
+	}
+
+	.kitchen .images {
+		margin-top: 1.5625rem;
+	}
+
+	.kitchen .image-container {
+		height: 26.25rem;
+	}
+
+	.main-img .image {
+		height: 22.7678571rem;
+	}
+}
+
+@media (max-width: 1280px) {
+	.kitchen .text-box {
+		width: 36.29vw;
+	}
+
+	.kitchen .paragraph {
+		height: max-content;
+	}
+
+	.kitchen .image-box,
+	.kitchen .decoration {
+		width: 58.552vw;
+	}
+
+	.kitchen .image-container {
+		min-width: 33.77vw;
+		height: 42.339vw;
+		max-height: 27.5rem;
+	}
+
+	.main-img .image {
+		height: 35.786vw;
+		max-height: 23.125rem;
+	}
+}
+
+@media (max-width: 992px) {
+	.kitchenContainer {
+		height: max-content;
+	}
+
+	.kitchen.content {
+		flex-direction: column;
+		gap: 0;
+		margin: 1.875rem 0 5rem;
+	}
+
+	.kitchen .text-box {
+		width: 100%;
+	}
+
+	.kitchen .paragraph {
+		margin-bottom: 1.875rem;
+	}
+	
+	.kitchen .text {
+		line-height: 1.875rem;
+	}
+
+	.kitchen .footer,
+	.kitchen .decoration {
+		display: none;
+	}
+
+	.kitchen .image-box {
+		width: calc(100% + 3.64583vw);
+		margin: 0 -3.64583vw 0 0;
+	}
+
+	.kitchen .images {
+		gap: 1.5rem;
+		margin: 0;
+	}
+	
+	.kitchen .image-container {
+		min-width: 18.5625rem;
+		max-width: 18.5625rem;
+		height: 22.5rem;
+	}
+
+	.kitchen .main-img {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	
+	.main-img .image {
+		position: relative;
+		min-width: 16.0625rem;
+		max-width: 16.0625rem;
+		height: 22.5rem;
+	}
+
+	.kitchen .subtitle {
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		transform: rotate(90deg);
+		width: 22.5rem;
+		height: 22.5rem;
+		line-height: 3.125rem;
+		margin: 0 0 0 -100vw;
+		padding-top: 0;
+	}
+	
+	.kitchen .subtitle::before {
+		background-color: transparent;
+	}
+
+	.kitchen .image-text {
+		font-size: 32px;
+		padding-top: 10rem;
 	}
 }

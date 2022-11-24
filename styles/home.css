@@ -85,6 +85,12 @@
 	position: relative;
 	margin-top: 1.875rem;
 	padding-left: 6.875rem;
+	cursor: pointer;
+	transition: all 1s ease-in-out;
+}
+
+.subtitle:hover {
+	padding-left: 7.5rem;
 }
 
 .subtitle:before {
@@ -174,12 +180,59 @@
 	.home .title {
 		margin-top: 3.75rem;
 	}
-
+	
 	.button {
 		margin-top: 2.5rem;
 	}
 
+	.button-text {
+		font-size: 26px;
+	}
+	
 	.footer {
 		margin-bottom: 5.625rem;
+	}
+}
+
+@media (max-width: 1440px) {
+	.home .title {
+		margin-top: 3.3125rem;
+	}
+
+	.subtitle {
+		margin-top: 1.5625rem;
+	}
+
+	.button-text {
+		font-size: 24px;
+	}
+
+	.footer {
+		margin-bottom: 4.375rem;
+	}
+
+	.feature {
+		width: 13.934vw;
+		margin-right: 1.646vw;
+	}
+	
+	.circle {
+		width: 3.125rem;
+		height: 3.125rem;
+	}
+	
+	.buttons {
+		margin: 2.5rem 0.3125rem 0 0;
+	}
+}
+
+@media (max-width: 992px) {
+	.feature {
+		width: 16.406vw;
+		margin-right: 1.823vw;
+	}
+
+	.buttons {
+		display: none;
 	}
 }

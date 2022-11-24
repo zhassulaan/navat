@@ -57,3 +57,53 @@
 		font-size: 34px;
 	}	
 }
+
+@media (max-width: 1440px) {
+	.contact .title {
+		line-height: 5.625rem;
+		font-size: 85px;
+	}
+
+	.contact .boxes {
+		width: 80%;
+	}
+	
+	.contact .subtitle {
+		font-size: 17px;
+	}
+	
+	.contact .text {
+		font-size: 28px;
+	}	
+}
+
+@media (max-width: 1280px) {
+	.contact .title {
+		font-size: 78px;
+	}
+	
+	.contact .boxes {
+		width: 80%;
+		gap: 0;
+	}
+}
+
+@media (max-width: 992px) {
+	.contact .boxes {
+		width: 100%;
+	}
+
+	.contact .title {
+		line-height: 5rem;
+	}
+
+	.contact .subtitle {
+		line-height: 2.5rem;
+		font-size: 24px;
+	}
+	
+	.contact .text {
+		line-height: 2.5rem;
+		font-size: 22px;
+	}
+}

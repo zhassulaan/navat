@@ -49,13 +49,54 @@ function validation() {
 		button.style.display = "none";
 		text.textContent = "Ошибка: заполните обязательные поля и выберите количество персон.";
 		text.style.width = "100%";
-		text.style.fontSize = "30px";
 
 		setTimeout(function() {
 			button.style.display = "block";
 			text.textContent = "Нажав на кнопку “Отправить”, вы соглашаетесь на обработку файлов cookie.";
-			text.style.width = "28.75rem";
-			text.style.fontSize = "22px";
 		}, 3000); 
+
+		if (window.innerWidth > 1770) {
+			text.style.fontSize = "30px";
+
+			setTimeout(function() {
+				text.style.width = "28.75rem";
+				text.style.fontSize = "22px";
+			}, 3000); 
+		}
+		
+		if (window.innerWidth <= 1770) {
+			text.style.fontSize = "26px";
+
+			setTimeout(function() {
+				text.style.width = "28.75rem";
+				text.style.fontSize = "19px";
+			}, 3000); 
+		}
+		
+		if (window.innerWidth <= 1440) {
+			text.style.fontSize = "24px";
+		}
+		
+		if (window.innerWidth <= 1280) {
+			text.style.fontSize = "22px";
+
+			setTimeout(function() {
+				text.style.width = "15rem";
+				text.style.fontSize = "17px";
+			}, 3000); 
+		}
+		
+		if (window.innerWidth <= 1280) {
+			text.style.fontSize = "24px";
+		}
+		
+		if (window.innerWidth <= 1280) {
+			text.style.fontSize = "24px";
+
+			setTimeout(function() {
+				text.style.width = "100%";
+				text.style.fontSize = "20px";
+			}, 3000); 
+		}
 	}
 }
