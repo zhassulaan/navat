@@ -110,9 +110,14 @@ p {
 	height: 100%;
 }
 
+section {
+	height: 100vh;
+}
+
 .content {
-	width: 92.70834vw;
-	margin: 0 auto;
+	width: 100vw;
+	height: 100%;
+	padding: 0 3.64583vw;
 }
 
 .hide {
@@ -125,8 +130,6 @@ p {
 }
 
 .button {
-	width: 23.125rem;
-	height: 5rem;
 	text-align: center;
 	background-color: var(--clr-primary-1);
 	transition: all 0.2s ease-in-out;

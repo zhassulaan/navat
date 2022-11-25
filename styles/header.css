@@ -1,17 +1,19 @@
-header {
+.navbar {
+	position: fixed;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 8.125rem;
-	padding: 1.875rem 0;
+	padding-top: 1.875rem;
+	padding-bottom: 1.875rem;
 }
 
-.header div {
+.navbar div {
 	display: flex;
 	align-items: center;
 }
 
-.header .logo {
+.nav-logo {
 	height: 4.375rem;
 }
 
@@ -78,18 +80,18 @@ header {
 }
 
 @media (max-width: 768px) {
-	.header {
+	.navbar {
 		align-items: start;
 		height: 6.25rem;
 		padding: 2.5rem 0;
 	}
 
-	.header .logo {
+	.nav-logo {
 		height: 2.5rem;
 		margin-top: -0.625rem;
 	}
 
-	.header .nav-menu {
+	.nav-menu {
 		display: none;
 	}
 
@@ -116,7 +118,7 @@ header {
 }
 
 @media (max-width: 480px) {
-	.header {
+	.navbar {
 		height: 6.25rem;
 		padding: 2.5rem 0;
 	}

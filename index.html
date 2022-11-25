@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Navat</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="styles/global.css">
+	<link rel="stylesheet" href="styles/header.css">
+	<link rel="stylesheet" href="styles/home.css">
+	<link rel="stylesheet" href="styles/about.css">
+	<link rel="stylesheet" href="styles/locations.css">
+	<link rel="stylesheet" href="styles/menu.css">
+</head>
+<body>
+	<div class="container">
+		<!-- HEADER -->
+		<header class="navbar content">
+			<div>
+				<img src="assets/logo.svg" alt="Navat's logo" class="nav-logo">
+				<ul class="nav-menu">
+					<li class="nav-item active">
+						<a class="nav-link">Rus</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">Kaz</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">Eng</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="toggle-btn" onclick="toggleMenu()">
+				<p class="nav-link">Меню</p>
+				<svg width="40" height="24" viewBox="0 0 40 24" fill="none" stroke="var(--clr-white)" xmlns="http://www.w3.org/2000/svg" class="toggle">
+					<path d="M0 2L40 2M10 12L40 12M0 22L40 22" stroke-width="3"/>
+				</svg>
+			</div>
+		</header>
+
+		
+		<!-- HERO -->
+		<div class="slider">
+			<figure>
+				<div class="slide">
+					<img src="assets/home/img-1.png" alt="image 1" class="slide-image">
+				</div>
+				
+				<div class="slide">
+					<img src="assets/home/img-2.png" alt="image 2" class="slide-image">
+				</div>
+				
+				<div class="slide">
+					<img src="assets/home/img-3.png" alt="image 3" class="slide-image">
+				</div>
+				
+				<div class="slide">
+					<img src="assets/home/img-4.png" alt="image 4" class="slide-image">
+				</div>
+				
+				<div class="slide">
+					<img src="assets/home/img-5.png" alt="image 5" class="slide-image">
+				</div>
+			</figure>
+		</div>
+		
+		<!-- HOME SECTION -->
+		<section class="home" id="home">
+			<div class="content">
+				<div class="top">
+					<h4 class="title">Лучшее место для отдыха</h4>
+					<h5 class="subtitle">Чайхана Navat</h5>
+
+					<div class="button">
+						<a href="#reserv">
+							<p class="button-text">Забронировать место</p>
+						</a>
+					</div>
+				</div>
+			
+				<div class="bottom">
+					<div class="boxes">
+						<div class="feature">
+							<p class="text">01</p>
+							<div class="circle" onclick="currentSlide(1)">
+								<img src="assets/home/mini-img-1.png" alt="mini image 1" class="mini-image">
+							</div>
+							<div class="feature-line"></div>
+						</div>
+
+						<div class="feature">
+							<p class="text">02</p>
+							<div class="circle" onclick="currentSlide(2)">
+								<img src="assets/home/mini-img-2.png" alt="mini image 2" class="mini-image">
+							</div>
+							<div class="feature-line"></div>
+						</div>
+
+						<div class="feature">
+							<p class="text">03</p>
+							<div class="circle" onclick="currentSlide(3)">
+								<img src="assets/home/mini-img-3.png" alt="mini image 3" class="mini-image">
+							</div>
+							<div class="feature-line"></div>
+						</div>
+
+						<div class="feature">
+							<p class="text">04</p>
+							<div class="circle" onclick="currentSlide(4)">
+								<img src="assets/home/mini-img-4.png" alt="mini image 4" class="mini-image">
+							</div>
+							<div class="feature-line"></div>
+						</div>
+
+						<div class="feature">
+							<p class="text">05</p>
+							<div class="circle" onclick="currentSlide(5)">
+								<img src="assets/home/mini-img-5.png" alt="mini image 5" class="mini-image">
+							</div>
+							<div class="feature-line"></div>
+						</div>
+					</div>
+
+					<div class="buttons">
+						<div class="arrow-btn" onclick="plusSlides(-1)">
+							<svg width="60" height="12" viewBox="0 0 60 12" fill="white" xmlns="http://www.w3.org/2000/svg">
+								<path d="M-3.8147e-06 5.99999L10 0.226493L10 11.7735L-3.8147e-06 5.99999ZM60 7L9 7L9 5L60 5L60 7Z"/>
+							</svg>
+						</div>
+						
+						<div class="arrow-btn" onclick="plusSlides(1)">
+							<svg width="60" height="12" viewBox="0 0 60 12" fill="white" xmlns="http://www.w3.org/2000/svg">
+								<path d="M60 5.99999L50 0.226493L50 11.7735L60 5.99999ZM8.74228e-08 7L51 7L51 5L-8.74228e-08 5L8.74228e-08 7Z"/>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="script/homeCarousel.js"></script>
+
+
+		<!-- ABOUT SECTION -->
+		<section class="about" id="about">
+			<div class="content">
+				<p class="footer-text text mobile">Lorem ipsum dolor sit amet, consectetur elit.</p>
+
+				<div class="corner-box">
+					<p class="text">Эстетика. Стиль. Традиции.</p>
+					<img src="assets/about/ficus.svg" alt="flower" class="flower">
+				</div>
+	
+				<div class="image-box">
+					<div class="big-corner">
+						<!-- <p>Фото интерьера</p> -->
+						<img src="assets/about/big.png" alt="big image">
+					</div>
+	
+					<div class="corner">
+						<div class="images">
+							<img src="assets/about/ficus.svg" alt="ficus" class="ficus">
+							<img src="assets/about/pot.svg" alt="pot" class="pot">
+						</div>
+	
+						<div class="small-corner">
+							<!-- <p>Малое фото интерьера</p> -->
+							<img src="assets/about/small.png" alt="small image">
+						</div>
+						<div class="small-corner-2"></div>
+					</div>
+				</div>
+	
+				<div class="text-box">
+					<h2 class="title">О нас</h2>
+	
+					<div class="paragraph">
+						<p class="text text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<br class="br">
+						<p class="text text2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+	
+					<p class="footer-text text laptop">Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- LOCATIONS SECTION -->
+		<section class="locations" id="locations">
+			<div class="content">
+				<div class="map-box">
+					<div class="map"></div>
+					<iframe id="map_15973597" frameborder="0" class="iframe" width="100%" height="100%" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+					
+					<script type="text/javascript">
+						( 
+							function(e, t) {
+								var r = document.getElementById(e);
+								r.contentWindow.document.open(),
+								r.contentWindow.document.write(atob(t)),
+								r.contentWindow.document.close()
+							} 
+						) (
+							"map_15973597", 
+							"PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7InRpdGxlIjoiUTJoaGFXaGhibUVnVGtGV1FWUT0iLCJkZXNjcmlwdGlvbiI6IlBIQSswSlRRdTlHUElOQ3kwWUhRdGRHRklOQ3cwTHZRdk5DdzBZTFF1TkM5MFliUXRkQ3lJTkM0SU5DejBMN1JnZEdDMExYUXVTRFFzOUMrMFlEUXZ0QzAwTEFnMFlEUXNOR0IwTC9Rc05HRjBMM1JnOUM3SU5HQjBMTFF2dEM0SU5DejBMN1JnZEdDMExYUXY5R0EwTGpRdU5DODBMM1JpOUMxSU5DMDBMTFF0ZEdBMExnZzBZRFF0ZEdCMFlMUXZ0R0EwTERRdlNEQ3EwTm9ZV2xvWVc1aElFNUJWa0ZVd3JzaFBDOXdQZ284Y0Q3Q3EwTm9ZV2xvWVc1aElFNUJWa0ZVd3JzZzRvQ1RJTkdOMFlMUXZpRFFzTkdDMEx6UXZ0R0IwWVRRdGRHQTBMQWcwTDdRc05DMzBMalJnZEN3TENEUXM5QzAwTFVnMFliUXNOR0EwTGpSZ2lEUXN0QyswWUhSZ3RDKzBZZlF2ZEMrMExVZzBMUFF2dEdCMFlMUXRkQy8wWURRdU5DNDBMelJnZEdDMExMUXZpd2cwWUxSZ05DdzBMVFF1TkdHMExqUXZ0QzkwTDNRc05HUElOQzYwWVBSaGRDOTBZOGcwTGdnMExmUXNOQy8wTERRdE5DOTBMN1F0U0RRdnRDeDBZSFF1OUdEMExiUXVOQ3kwTERRdmRDNDBMVXVJTkNYMExUUXRkR0IwWXdnMFlmUmc5Q3kwWUhSZ3RDeTBZUFF0ZEdJMFl3ZzBZSFF0ZEN4MFk4ZzBMSWcwTFBRdnRHQjBZTFJqOUdGSU5HRElOR0IwTFhRdk5HTTBMZ2cwWUVnMFlMUmdOQ3cwTFRRdU5HRzBMalJqOUM4MExnZzBMZ2cwWUhRc05DODBMN1FzZEdMMFlMUXZkR0wwTHdnMExMUXV0R0QwWUhRdnRDOExqd3ZjRDRLUEhBKzBKSWcwTGpRdmRHQzBMWFJnTkdNMExYUmdOQzFJTkM4MFlzZzBMalJnZEMvMEw3UXU5R00wTGZRdnRDeTBMRFF1OUM0SU5HQzBMN1F1OUdNMExyUXZpRFF2ZEN3MFlMUmc5R0EwTERRdTlHTTBMM1JpOUMxSU5DODBMRFJndEMxMFlEUXVOQ3cwTHZSaXpvZzBMelF0ZEN4MExYUXU5R01JTkdBMFlQUmg5QzkwTDdRdVNEUmdOQ3cwTEhRdnRHQzBZc3NJTkM4MFkvUXM5QzYwTGpRdFNEUXROQzQwTExRc05DOTBZc3NJTkdBMExYUXQ5QzkwWXZRdFNEUmd0QyswTC9SaDlDdzBMM1JpeXdnMEx6Umo5Q3owTHJRdU5DMUlOR0kwWkhRdTlDNjBMN1FzdEdMMExVZzBML1F2dEMwMFlQUmlOQzYwTGdzSU5DeTBMN1JnZEdDMEw3Umg5QzkwWXZRdFNEUXZ0R0EwTDNRc05DODBMWFF2ZEdDMFlzdUlOQ1EwTExSZ3RDKzBZRFJnZEM2MExqUXVTRFF0TkM0MExmUXNOQzUwTDBnMFlIUXZ0QzMwTFRRc05HUjBZSWcwTC9SZ05DKzBZSFJndEdBMExEUXZkR0IwWUxRc3RDK0xDRFFzOUMwMExVc0lOR0EwTERSZ2RDLzBMN1F1OUMrMExiUXVOQ3kwWWpRdU5HQjBZd3NJTkdIMFlQUXN0R0IwWUxRc3RHRDBMWFJpTkdNSU5DeTBMN1JnZEdDMEw3Umg5QzkwTDdRdFNEUmd0QzEwTC9RdTlDK0lOQzRJTkM5MExEUmdkQzcwTERRdHRDMDBMRFF0ZEdJMFl6UmdkR1BJTkMwMEw3UXZOQ3cwWWpRdmRDMTBMa2cwTHJSZzlHRjBMM1F0ZEM1TGp3dmNENEtQSEErMEo3Umd0Qy8wWURRc05DMzBMVFF2ZEdEMExuUmd0QzFJTkdESU5DOTBMRFJnU0RSZ2RDdzBMelJpOUMxSU5HUDBZRFF1dEM0MExVZzBZSFF2dEN4MFl2Umd0QzQwWThnMFlIUXN0QyswTFhRdVNEUXR0QzQwTGZRdmRDNElTRFFsOUN3MExzZzBZRFF0ZEdCMFlMUXZ0R0EwTERRdmRDd0lOR0EwTERSZ2RHQjBZZlF1TkdDMExEUXZTRFF2ZEN3SURNd01DRFJoOUMxMEx2UXZ0Q3kwTFhRdWk0ZzBKWFJnZEdDMFl3Z1ZrbFFMZEMzMEw3UXZkR0xJTkM5MExBZ09DRFF1Q0F6TUNEUXY5QyswWUhRc05DMDBMN1JoOUM5MFl2UmhTRFF2TkMxMFlIUmdpd2dOaURSZ3RDKzBML1JoOUN3MEwzUXZ0Q3lJTkM5MExBZ01UQWcwTHpRdGRHQjBZSXVQQzl3UGdvOGNEN1FuaURRc3RDKzBZSFJndEMrMFlmUXZkQyswTHdnMExQUXZ0R0IwWUxRdGRDLzBZRFF1TkM0MEx6UmdkR0MwTExRdFNEQ3EwNUJWa0ZVd3JzZzBZSFF1OUN3MExQUXNOR08wWUlnMEx2UXRkQ3owTFhRdmRDMDBZc3VJTkNTMExYUXROR01JTkN5MFlEUXRkQzgwWThzSU5DLzBZRFF2dEN5MExYUXROR1IwTDNRdmRDKzBMVWcwWU1nMEwzUXNOR0JMQ0RRdDlDdzBZSFJndEN3MExMUXU5R1AwTFhSZ2lEUXQ5Q3cwTEhSaTlHQzBZd2cwTDRnMFlIUmc5QzEwWUxRdFNEUXVDRFJnZEMvMExYUmlOQzYwTFVnMEwvUXZ0Q3kwWUhRdGRDMDBMM1F0ZEN5MEwzUmk5R0ZJTkdGMEx2UXZ0Qy8wTDdSZ2k0OEwzQSsiLCJjb2xvciI6IiNiY2E0OGQiLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6Wzc2Ljg4MjY1Nyw0My4xOTE1NTddfSwiaWQiOjExNjB9XSwibWFwUG9zaXRpb24iOnsibGF0Ijo0My4xOTEzMDA5ODk1NDc5MjYsImxvbiI6NzYuODgyMzE4ODU0MzMxOTcsInpvb20iOjE4fSwiaXNXaGVlbFpvb21FbmFibGVkIjp0cnVlfScpPC9zY3JpcHQ+PHNjcmlwdCBhc3luYz0iIiB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly93d3cuZ29vZ2xldGFnbWFuYWdlci5jb20vZ3RhZy9qcz9pZD1VQS0xNTg4NjYxNjgtMSI+PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPihmdW5jdGlvbihlKXtmdW5jdGlvbiB0KCl7ZGF0YUxheWVyLnB1c2goYXJndW1lbnRzKX13aW5kb3cuZGF0YUxheWVyPXdpbmRvdy5kYXRhTGF5ZXJ8fFtdLHQoImpzIixuZXcgRGF0ZSksdCgiY29uZmlnIixlKSx3aW5kb3cuZ3RhZz10fSkoJ1VBLTE1ODg2NjE2OC0xJyk8L3NjcmlwdD48L2JvZHk+"
+						)
+					</script>
+				</div>
+
+				<div class="text-box">
+					<h4 class="title">Локация</h4>
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</з>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+	<!-- KITCHEN SECTION -->
+	<!-- <section id="kitchen"></section> -->
+
+
+	<!-- MENU SECTION -->
+	<!-- <section></section> -->
+
+
+	<!-- RESERV SECTION -->
+	<!-- <section id="reserv"></section> -->
+
+
+	<!-- CONTACTS SECTION -->
+	<!-- <section id="contacts"></section> -->
+
+
+	<div class="menu container" id="menu">
+		<!-- HEADER -->
+		<header class="header content">
+			<div>
+				<img src="assets/logo.svg" alt="Navat's logo" class="logo">
+				<ul class="nav-menu">
+					<li class="nav-item active">
+						<a class="nav-link">Rus</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">Kaz</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">Eng</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="toggle-btn" onclick="toggleMenu()">
+				<p class="nav-link laptop">Закрыть</p>
+				<img src="../assets/menu/close.svg" alt="close" class="mobile">
+			</div>
+		</header>
+
+		<div class="menu-container content">
+			<div class="boxes">
+				<div class="menu-box">
+					<ul>
+						<li class="menu-item">
+							<a href="#home" class="main">Главная</a>
+							<img src="assets/menu/home.png" alt="about" class="main">
+						</li>
+						<li class="menu-item">
+							<a href="#about" class="about">О нас</a>
+							<img src="assets/menu/about.png" alt="about" class="about">
+						</li>
+						<li class="menu-item">
+							<a href="#locations" class="location">Локация</a>
+							<img src="assets/menu/locations.png" alt="about" class="location">
+						</li>
+						<li class="menu-item">
+							<a href="#kitchen" class="kitchen">Кухня</a>
+							<img src="assets/menu/kitchen.png" alt="about" class="kitchen">
+						</li>
+						<li class="menu-item">
+							<a href="#reserv" class="reserv">Резерв</a>
+							<img src="assets/menu/reserv.png" alt="about" class="reserv">
+						</li>
+						<li class="menu-item">
+							<a href="#contacts" class="contact">Контакты</a>
+							<img src="assets/menu/contacts.png" alt="about" class="contact">
+						</li>
+					</ul>
+				</div>
+
+				<div class="contacts">
+					<div class="contact-box">
+						<p class="title">Телефон:</p>
+						<p class="text">+7 777 123 45 67</p>
+						<p class="text">+7 777 123 45 67</p>
+					</div>
+					<div class="contact-box">
+						<p class="title">Адрес:</p>
+						<a href="https://2gis.kz/almaty/geo/70030076332698031/76.882712971419096,43.191546712987737" class="text">Алматы, Мирас м-н</a>
+					</div>
+					<div class="contact-box">
+						<p class="title">E-mail:</p>
+						<a href="mailto:chaihana.navat.kz@gmail.com" class="text">chaihana.navat.kz@gmail.com</a>
+					</div>
+				</div>
+			</div>
+			
+			<img src="assets/menu/arrow.svg" alt="gold arrow" class="arrow">
+			<h1>Меню</h1>
+		</div>
+	</div>
+
+	<script src="script/menu.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</body>
+</html>

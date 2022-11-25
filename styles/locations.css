@@ -1,8 +1,4 @@
-.locations.container {
-	height: 100vh;
-}
-
-.locations .nav-item:hover::before {
+/* .locations .nav-item:hover::before {
 	background-color: var(--clr-black);
 }
 
@@ -16,18 +12,19 @@
 
 .locations .toggle-btn:hover .toggle {
 	stroke: var(--clr-black);
-}
+} */
 
-.locations.content {
+.locations .content {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 3.125rem;
+	padding-top: 20vh;
+	padding-bottom: 13.3333vh;
 }
 
 .map-box {
 	position: relative;
 	width: 53.646vw;
-	height: 66.667vh;
+	height: 66.6667vh;
 	background-color: var(--clr-primary-3);
 }
 
@@ -49,13 +46,13 @@
 	bottom: -1.875rem;
 	left: 1.875rem;
 	width: 100%;
-	height: 2px;
+	height: 0.125rem;
 }
 
 .map-box::after {
 	top: 1.875rem;
 	right: -1.875rem;
-	width: 2px;
+	width: 0.125rem;
 	height: 100%;
 }
 
@@ -63,19 +60,19 @@
 	top: 1.875rem;
 	right: -1.875rem;
 	width: 1.875rem;
-	height: 2px;
+	height: 0.125rem;
 }
 
 .map::after {
 	bottom: calc(-1.875rem - 66.667vh);
 	left: 1.875rem;
-	width: 2px;
+	width: 0.125rem;
 	height: 1.875rem;
 }
 
-.text-box {
+.locations .text-box {
 	width: 38.021vw;
-	margin-top: 6.875rem;
+	margin-top: 12.2222vh;
 }
 
 .locations .title,
