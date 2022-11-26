@@ -1,11 +1,9 @@
 .navbar {
-	position: fixed;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 8.125rem;
-	padding-top: 1.875rem;
-	padding-bottom: 1.875rem;
+	height: 14.44444vh;
+	padding: 1.875rem 3.64583vw;
 	z-index: 100;
 }
 
@@ -15,7 +13,12 @@
 }
 
 .nav-logo {
-	height: 4.375rem;
+	height: 7.77778vh; 
+	filter: invert(94%) sepia(6%) saturate(3025%) hue-rotate(316deg) brightness(86%) contrast(66%);
+}
+
+.nav-logo:hover {
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(294deg) brightness(105%) contrast(101%);
 }
 
 .nav-menu {

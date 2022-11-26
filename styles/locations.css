@@ -1,4 +1,12 @@
-/* .locations .nav-item:hover::before {
+.locations {
+	background-color: var(--clr-white);
+}
+
+.locations .nav-logo:hover {
+	filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(77deg) brightness(105%) contrast(103%);
+}
+
+.locations .nav-item:hover::before {
 	background-color: var(--clr-black);
 }
 
@@ -12,16 +20,12 @@
 
 .locations .toggle-btn:hover .toggle {
 	stroke: var(--clr-black);
-} */
-
-.locations {
-	background-color: var(--clr-white);
 }
 
 .locations .content {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 20vh;
+	padding-top: 5.55556vh;
 	padding-bottom: 13.3333vh;
 }
 

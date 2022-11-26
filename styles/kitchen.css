@@ -14,21 +14,25 @@
 	}
 }
 
-/* .kitchenHeader .nav-item:hover::before {
+.kitchen .nav-logo:hover {
+	filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(77deg) brightness(105%) contrast(103%);
+}
+
+.kitchen .nav-item:hover::before {
 	background-color: var(--clr-black);
 }
 
-.kitchenHeader .nav-link:hover {
+.kitchen .nav-link:hover {
 	color: var(--clr-black);
 }
 
-.kitchenHeader .toggle-btn:hover .nav-link {
+.kitchen .toggle-btn:hover .nav-link {
 	color: var(--clr-black);
 }
 
-.kitchenHeader .toggle-btn:hover .toggle {
+.kitchen .toggle-btn:hover .toggle {
 	stroke: var(--clr-black);
-} */
+}
 
 .kitchen {
 	background-color: var(--clr-white);
@@ -37,7 +41,7 @@
 .kitchen .content {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 15.5556vh;
+	padding-top: 1.11111vh;
 	padding-bottom: 10vh;
 	gap: 1.041667vw;
 }
