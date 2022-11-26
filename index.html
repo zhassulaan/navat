@@ -16,10 +16,10 @@
 	<link rel="stylesheet" href="styles/kitchenMenu.css">
 	<link rel="stylesheet" href="styles/reserv.css">
 	<link rel="stylesheet" href="styles/contacts.css">
-	<!-- <link rel="stylesheet" href="styles/menu.css"> -->
+	<link rel="stylesheet" href="styles/menu.css">
 </head>
 <body>
-	<div class="container">
+	<div class="container" id="main">
 		<!-- HERO -->
 		<div class="slider">
 			<figure>
@@ -631,8 +631,81 @@
 		</section>
 	</div>
 
-
+	<section class="menu" id="menu">
+		<!-- HEADER -->
+		<header class="navbar">
+			<div>
+				<img src="assets/logo.svg" alt="Navat's logo" class="nav-logo" onclick="window.location.reload(true);">
+				<ul class="nav-menu">
+					<li class="nav-item active">
+						<a class="nav-link">Rus</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">Kaz</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">Eng</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="toggle-btn" onclick="toggleMenu()">
+				<p class="nav-link laptop">Закрыть</p>
+				<svg width="22" height="22" viewBox="0 0 22 22" fill="#BCA48D" xmlns="http://www.w3.org/2000/svg" class="close mobile">
+					<path d="M11 12.3748L1.37498 22L0 20.625L9.62502 10.9998L0.00030378 1.375L1.37528 0L11 9.62485L20.6247 0L21.9997 1.375L12.375 10.9998L22 20.625L20.625 22L11 12.3748Z"/>
+				</svg>
+			</div>
+		</header>
 	
+		<div class="content">
+			<div class="boxes">
+				<ul class="menu-box">
+					<li class="menu-item">
+						<a href="#home" class="main">Главная</a>
+						<img src="assets/menu/home.png" alt="about" class="main">
+					</li>
+					<li class="menu-item">
+						<a href="#about" class="about">О нас</a>
+						<img src="assets/menu/about.png" alt="about" class="about">
+					</li>
+					<li class="menu-item">
+						<a href="#locations" class="location">Локация</a>
+						<img src="assets/menu/locations.png" alt="about" class="location">
+					</li>
+					<li class="menu-item">
+						<a href="#kitchen" class="kitchen">Кухня</a>
+						<img src="assets/menu/kitchen.png" alt="about" class="kitchen">
+					</li>
+					<li class="menu-item">
+						<a href="#reserv" class="reserv">Резерв</a>
+						<img src="assets/menu/reserv.png" alt="about" class="reserv">
+					</li>
+					<li class="menu-item">
+						<a href="#contacts" class="contact">Контакты</a>
+						<img src="assets/menu/contacts.png" alt="about" class="contact">
+					</li>
+				</ul>
+	
+				<div class="contact">
+					<div class="contact-box">
+						<p class="title">Телефон:</p>
+						<p class="text">+7 777 123 45 67</p>
+					</div>
+					<div class="contact-box">
+						<p class="title">Адрес:</p>
+						<a href="https://2gis.kz/almaty/geo/70030076332698031/76.882712971419096,43.191546712987737" class="text">Алматы, Мирас м-н</a>
+					</div>
+					<div class="contact-box">
+						<p class="title">E-mail:</p>
+						<a href="mailto:chaihana.navat.kz@gmail.com" class="text">chaihana.navat.kz@gmail.com</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- <img src="assets/menu/arrow.svg" alt="gold arrow" class="arrow"> -->
+			<!-- <h1>Меню</h1> -->
+		</div>
+	</section>
 
 	<script src="script/menu.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>

@@ -1,11 +1,10 @@
-.menu.container {
-	height: 100vh;
-	background-color: transparent;
-}
-
 .menu {
 	display: none;
 	z-index: 1;
+}
+
+.menu .nav-logo:hover {
+	filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(77deg) brightness(105%) contrast(103%);
 }
 
 .menu .nav-item:hover::before {
@@ -16,35 +15,28 @@
 	color: var(--clr-black);
 }
 
-.menu .toggle-btn:hover .nav-link {
-	color: var(--clr-black);
-}
-
-.menu .toggle-btn:hover .toggle {
-	stroke: var(--clr-black);
+.menu .close:hover {
+	fill: var(--clr-black);
 }
 
 .active {
 	display: block;
 }
 
-.menu-container.content {
+.menu .content {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 1.875rem;
+	padding-top: 3.33333vh;
+	padding-bottom: 13.33333vh;
 }
 
 .menu .boxes {
-	margin: 1.875rem 0 0 5rem;
+	margin: 3.33333vh 0 0 4.16667vw;
 }
 
 .menu-box {
 	position: relative;
-	display: flex;
 	margin-bottom: 1.25rem;
-}
-
-.menu-box ul {
 	width: 14.583vw;
 }
 
@@ -113,7 +105,7 @@ h1:hover ~ .menu .arrow {
 	margin-left: -7.5rem;
 }
 
-.contacts {
+.contact {
 	position: relative;
 	display: flex;
 	gap: 1.25rem;
@@ -121,7 +113,7 @@ h1:hover ~ .menu .arrow {
 	padding-top: 1.875rem;
 }
 
-.contacts:before {
+.contact:before {
 	content: '';
 	position: absolute;
 	top: 0;
