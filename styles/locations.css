@@ -14,6 +14,10 @@
 	stroke: var(--clr-black);
 } */
 
+.locations {
+	background-color: var(--clr-white);
+}
+
 .locations .content {
 	display: flex;
 	justify-content: space-between;

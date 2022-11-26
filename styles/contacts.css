@@ -6,6 +6,7 @@
 	display: flex;
 	flex-direction: column;
 	padding-top: 17.77778vh;
+	padding-bottom: 3.33333vh;;
 }
 
 .contacts .title {
@@ -25,13 +26,14 @@
 
 .info-box {
 	margin-top: 6.66667vh;
+	height: 6.25rem;
 }
 
 .contacts .subtitle {
 	line-height: 1.875rem;
 	font-size: 20px;
 	color: var(--clr-primary-1);
-	margin-bottom: 1.11111vh;
+	margin-bottom: 0.625rem;
 }
 
 .right {
@@ -43,11 +45,11 @@
 	font-size: 40px;
 }
 
-.footer {
+.contacts .footer {
 	display: flex;
 	justify-content: space-between;
 	width: 77%;
-	margin: auto auto 3.33333vh;
+	margin: 24.44444vh auto 0;
 }
 
 .policy-text,
@@ -171,7 +173,7 @@
 		font-size: 20px;
 	}
 
-	.footer {
+	.contacts .footer {
 		flex-direction: column;
 		gap: 0.625rem;
 		margin-bottom: 0;
