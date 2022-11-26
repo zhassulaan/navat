@@ -14,7 +14,7 @@
 	}
 }
 
-.kitchenHeader .nav-item:hover::before {
+/* .kitchenHeader .nav-item:hover::before {
 	background-color: var(--clr-black);
 }
 
@@ -28,16 +28,13 @@
 
 .kitchenHeader .toggle-btn:hover .toggle {
 	stroke: var(--clr-black);
-}
+} */
 
-.kitchenContainer {
-	height: 100vh;
-}
-
-.kitchen.content {
+.kitchen .content {
 	display: flex;
 	justify-content: space-between;
-	margin: 0.625rem 0 5.625rem;
+	padding-top: 8.75rem;
+	padding-bottom: 5.625rem;
 	gap: 1.25rem;
 }
 

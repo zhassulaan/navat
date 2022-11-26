@@ -106,8 +106,8 @@
 }
 
 @media (max-width: 1700px) {
-	.locations.content {
-		margin-top: 2.5rem;
+	.locations {
+		padding-top: 2.5rem;
 	}
 
 	.map-box {
