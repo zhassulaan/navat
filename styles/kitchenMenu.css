@@ -1,32 +1,32 @@
-.menues.content {
+.kitchen-menu .content {
 	margin-top: 1.875rem;
 }
 
-.menues .header {
+.kitchen-menu .header {
 	text-align: center;
 	width: 55rem;
 	margin: 0 auto 3.75rem;
 }
 
-.menues .title,
-.menues .counter {
+.kitchen-menu .title,
+.kitchen-menu .counter {
 	color: var(--clr-primary-1);
 }
 
-.menues .subtitle,
-.menues .text,
-.image-text {
+.kitchen-menu .subtitle,
+.kitchen-menu .text,
+.kitchen-menu .image-text {
 	color: var(--clr-black);
 }
 
-.menues .title {
+.kitchen-menu .title {
 	position: relative;
 	line-height: 6.875rem;
 	margin-bottom: 1.875rem;
 	padding-bottom: 1.875rem;
 }
 
-.menues .title:before {
+.kitchen-menu .title:before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -36,34 +36,34 @@
 	background-color: var(--clr-primary-1);
 }
 
-.menues .text {
+.kitchen-menu .text {
 	line-height: 2.0833rem;
 }
 
-.menues .boxes {
+.kitchen-menu .boxes {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
 
-.menues .text-box,
-.menues .image-box {
+.kitchen-menu .text-box,
+.kitchen-menu .image-box {
 	width: 46.354vw;
 	height: 36.25rem;
 }
 
-.menues .image {
+.kitchen-menu .image {
 	width: 100%;
 	height: 100%;
 	background-color: var(--clr-primary-3);
 }
 
-.menues .image-text,
-.menues .counter {
+.kitchen-menu .image-text,
+.kitchen-menu .counter {
 	line-height: 3.125rem;
 	font-size: 40px;
 }
 
-.menues .image-text {
+.kitchen-menu .image-text {
 	text-align: center;
 	color: var(--clr-black);
 	padding-top: 15rem;
@@ -73,11 +73,11 @@
 	text-align: right;
 }
 
-.menues .counter {
+.kitchen-menu .counter {
 	margin: 1.25rem 0 5rem;
 }
 
-.menues .paragraph {
+.kitchen-menu .paragraph {
 	width: 30.208vw;
 }
 
@@ -94,7 +94,7 @@
 	text-align: right;
 }
 
-.menues .subtitle {
+.kitchen-menu .subtitle {
 	position: relative;
 	line-height: 2.5rem;
 	font-family: MazzardM-Regular;
@@ -104,7 +104,7 @@
 	padding-bottom: 1.25rem;
 }
 
-.menues .subtitle:before {
+.kitchen-menu .subtitle:before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -121,11 +121,11 @@
 	left: 0;
 }
 
-.menues .paragraph .text {
+.kitchen-menu .paragraph .text {
 	line-height: 1.875rem;
 }
 
-.menues .decoration {
+.kitchen-menu .decoration {
 	width: 46.354vw;
 	height: 2.5rem;
 	margin-top: 9.375rem;

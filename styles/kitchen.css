@@ -33,13 +33,13 @@
 .kitchen .content {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 8.75rem;
-	padding-bottom: 5.625rem;
-	gap: 1.25rem;
+	padding-top: 15.5556vh;
+	padding-bottom: 10vh;
+	gap: 1.041667vw;
 }
 
 .kitchen .text-box {
-	width: 30.208vw;
+	width: 30.20833vw;
 }
 
 .kitchen .title,
@@ -48,12 +48,12 @@
 }
 
 .kitchen .title {
-	margin-bottom: 1.875rem;
+	margin-bottom: 3.33333vh;
 }
 
 .kitchen .paragraph {
 	height: 18.125rem;
-	margin-bottom: 3.125rem;
+	margin-bottom: 5.55556vh;
 }
 
 .kitchen .text {
@@ -74,26 +74,24 @@
 }
 
 .kitchen .buttons {
-	margin-bottom: 0.3125rem;
+	margin-bottom: -1.5625rem;
 }
 
 .kitchen .image-box {
 	width: 65.104vw;
 	overflow: hidden;
-	margin: 1.875rem -3.646vw 0 0;
-}
-
-.kitchen .decoration {
-	width: 65.104vw;
+	margin: 3.33333vh -3.646vw 0 0;
+	overflow: hidden;
 }
 
 .kitchen .images {
 	display: flex;
-	gap: 1.25rem;
+	gap: 1.041667vw;
+	margin-top: 2.22222vh;
 }
 
 .kitchen .image-container {
-	min-width: 30.208vw;
+	min-width: 36.25rem;
 	height: 35rem;
 }
 
@@ -107,7 +105,8 @@
 	height: 30rem;
 }
 
-.kitchen .image-text {
+.kitchen .image-text,
+.kitchen .subtitle {
 	line-height: 2.5rem;
 }
 
