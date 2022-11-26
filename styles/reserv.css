@@ -1,35 +1,34 @@
-.reserv.container {
-	height: 100vh;
+.reserv {
 	background-color: var(--clr-primary-0);
 }
 
-.reserv.content {
-	margin-top: 3.125rem;
+.reserv .content {
+	padding-top: 20vh;
+	padding-bottom: 17.77778vh;
 }
 
 form {
 	display: flex;
 	justify-content: center;
-	gap: 6.875rem;
+	gap: 5.7291667vw;
 }
 
 .reserv .title {
 	line-height: 9.375rem;
 	color: var(--clr-primary-1);
-	margin-bottom: 3.125rem;
 }
 
-.paragraph {
+.reserv .paragraph {
 	width: 28.75rem;
 	height: 14.375rem;
-	margin-bottom: 2.5rem;
+	margin: 5.55556vh 0 4.44444vh;
 }
 
 .reserv .text {
 	line-height: 2.1875rem;
 }
 
-.feature {
+.reserv .feature {
 	display: flex;
 	gap: 1.25rem;
 }
@@ -60,43 +59,43 @@ form {
 
 .form-box .input-box {
 	border-bottom: 0.1875rem solid var(--clr-primary-1);
-	margin-top: 3.75rem;
-	padding-bottom: 1.875rem;
+	height: 4.375rem;
+	margin-top: 6.66667vh;
+	padding-bottom: 3.33333vh;
 }
 
-.form-box input {
-	width: 100%;
-	height: 2.5rem;
-	font-family: MazzardM-Light;
-	font-size: 30px;
-	color: var(--clr-white);
-	background: transparent;
-	border: none;
-}
-
+.form-box input,
 .form-box input::placeholder {
 	font-family: MazzardM-Light;
 	font-size: 30px;
 	color: var(--clr-white);
 }
 
-.mobile {
+.form-box input {
+	width: 100%;
+	line-height: 2.5rem;
+	background: transparent;
+	border: none;
+}
+
+.reserv .mobile.text,
+.reserv .mobile.feature {
 	display: none;
 }
 
 .confirm {
 	display: flex;
 	align-items: center;
-	gap: 2.625rem;
-	margin-top: 4.375rem;
+	gap: 2.1875vw;
+	margin-top: 7.77778vh;
 }
 
-.button {
+.reserv .button {
 	width: 17.5rem;
 	height: 5.625rem;
 }
 
-.button-text {
+.reserv .button-text {
 	font-size: 30px;
 	padding: 1.875rem 0;
 }
@@ -121,7 +120,7 @@ form {
 		margin-bottom: 2.8125rem;
 	}
 	
-	.paragraph {
+	.reserv .paragraph {
 		width: 25rem;
 		margin-bottom: 2.1875rem;
 	}
@@ -153,11 +152,11 @@ form {
 		gap: 2.5625rem;
 	}
 	
-	.button {
+	.reserv .button {
 		height: 5.3125rem;
 	}
 	
-	.button-text {
+	.reserv .button-text {
 		font-size: 26px;
 		padding: 1.71875rem 0;
 	}
@@ -177,7 +176,7 @@ form {
 		margin-bottom: 2.5rem;
 	}
 	
-	.paragraph {
+	.reserv .paragraph {
 		width: 22.5rem;
 		height: 15rem;
 		margin-bottom: 2.1875rem;
@@ -187,7 +186,7 @@ form {
 		line-height: 1.875rem;
 	}
 	
-	.feature {
+	.reserv .feature {
 		gap: 0.9375rem;
 	}
 
@@ -240,12 +239,12 @@ form {
 		gap: 1.25rem;
 	}
 
-	.button {
+	.reserv .button {
 		width: 15rem;
 		height: 5rem;
 	}
 
-	.button-text {
+	.reserv .button-text {
 		font-size: 26px;
 		padding: 1.5625rem 0;
 	}
@@ -258,11 +257,7 @@ form {
 }
 
 @media (max-width: 992px) {
-	.reserv.container {
-		height: max-content;
-	}
-
-	.reserv.content {
+	.reserv .content {
 		margin: 1.875rem 0 7.5rem;
 	}
 
@@ -271,7 +266,7 @@ form {
 		gap: 1.875rem;
 	}	
 
-	.paragraph,
+	.reserv .paragraph,
 	.form-box {
 		width: 100%;
 	}
@@ -281,7 +276,7 @@ form {
 		color: var(--clr-white);
 	}
 
-	.paragraph {
+	.reserv .paragraph {
 		height: max-content;
 		margin: 0;
 	}
@@ -290,7 +285,7 @@ form {
 		line-height: 1.875rem;
 	}
 
-	.laptop {
+	.reserv .laptop {
 		display: none;
 	}
 
@@ -304,13 +299,13 @@ form {
 		padding-bottom: 1.25rem;
 	}
 
-	.mobile.text {
+	.reserv .mobile.text {
 		display: block;
 		font-size: 23px;
 		margin-top: 1.875rem;
 	}
 
-	.mobile.feature {
+	.reserv .mobile.feature {
 		display: flex;
 		gap: 1.5rem;
 		margin: 1.875rem 0;
@@ -321,13 +316,13 @@ form {
 		margin-top: 0;
 	}
 
-	.button {
+	.reserv .button {
 		width: 100%;
 		height: 4.6875rem;
 		margin-bottom: 1.25rem;
 	}
 	
-	.button-text {
+	.reserv .button-text {
 		padding: 1.40625rem 0;
 	}
 	
@@ -352,7 +347,7 @@ form {
 		margin-bottom: 1.875rem;
 	}
 
-	.button-text {
+	.reserv .button-text {
 		font-size: 24px;
 	}
 }
@@ -381,12 +376,12 @@ form {
 		height: 1.875rem;
 	}
 
-	.mobile.text {
+	.reserv .mobile.text {
 		font-size: 20px;
 		margin-top: 1.25rem;
 	}
 
-	.mobile.feature {
+	.reserv .mobile.feature {
 		gap: 1rem;
 		margin-top: 1.25rem;
 	}
@@ -401,11 +396,11 @@ form {
 		font-size: 20px;
 	}
 
-	.button {
+	.reserv .button {
 		height: 4.375rem;
 	}
 	
-	.button-text {
+	.reserv .button-text {
 		font-size: 22px;
 		padding: 1.25rem 0;
 	}

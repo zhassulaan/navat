@@ -1,46 +1,44 @@
-.contact.container {
-	height: 100vh;
+.contacts {
 	background-color: var(--clr-primary-0);
 }
 
-.contact.content {
-	height: 100%;
+.contacts .content {
 	display: flex;
 	flex-direction: column;
+	padding-top: 17.77778vh;
 }
 
-.contact .title {
+.contacts .title {
 	text-align: center;
 	line-height: 7.5rem;
 	font-size: 120px;
-	margin-top: 1.875rem;
 }
 
-.contact .boxes {
+.contacts .boxes {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	justify-content: space-between;
 	gap: 0 25%;
 	width: 77%;
-	margin: 1.25rem auto 0;
+	margin: 2.22222vh auto 0;
 }
 
 .info-box {
-	margin-top: 3.75rem;
+	margin-top: 6.66667vh;
 }
 
-.contact .subtitle {
+.contacts .subtitle {
 	line-height: 1.875rem;
 	font-size: 20px;
 	color: var(--clr-primary-1);
-	margin-bottom: 0.625rem;
+	margin-bottom: 1.11111vh;
 }
 
 .right {
 	text-align: right;
 }
 
-.contact .text {
+.contacts .text {
 	line-height: 3.75rem;
 	font-size: 40px;
 }
@@ -49,15 +47,12 @@
 	display: flex;
 	justify-content: space-between;
 	width: 77%;
-	margin: auto auto 1.875rem;
+	margin: auto auto 3.33333vh;
 }
 
-.policy-text {
-	line-height: 1.875rem;
-	font-size: 16px;
-}
-
+.policy-text,
 .athenaplus {
+	line-height: 1.875rem;
 	font-size: 16px;
 }
 
@@ -72,87 +67,87 @@
 }
 
 @media (max-width: 1700px) {
-	.contact .title {
+	.contacts .title {
 		line-height: 6.875rem;
 		font-size: 100px;
 	}
 
-	.contact .boxes {
+	.contacts .boxes {
 		width: 80%;
 	}
 	
-	.contact .subtitle {
+	.contacts .subtitle {
 		font-size: 18px;
 	}
 	
-	.contact .text {
+	.contacts .text {
 		font-size: 34px;
 	}	
 }
 
 @media (max-width: 1440px) {
-	.contact .title {
+	.contacts .title {
 		line-height: 5.625rem;
 		font-size: 85px;
 	}
 
-	.contact .boxes {
+	.contacts .boxes {
 		width: 80%;
 	}
 	
-	.contact .subtitle {
+	.contacts .subtitle {
 		font-size: 17px;
 	}
 	
-	.contact .text {
+	.contacts .text {
 		font-size: 28px;
 	}	
 }
 
 @media (max-width: 1280px) {
-	.contact .title {
+	.contacts .title {
 		font-size: 78px;
 	}
 	
-	.contact .boxes {
+	.contacts .boxes {
 		width: 80%;
 		gap: 0;
 	}
 }
 
 @media (max-width: 992px) {
-	.contact .boxes,
+	.contacts .boxes,
 	.footer {
 		width: 100%;
 	}
 
-	.contact .title {
+	.contacts .title {
 		line-height: 5rem;
 	}
 
-	.contact .subtitle {
+	.contacts .subtitle {
 		line-height: 2.5rem;
 		font-size: 24px;
 	}
 	
-	.contact .text {
+	.contacts .text {
 		line-height: 2.5rem;
 		font-size: 22px;
 	}
 }
 
 @media (max-width: 768px) {
-	.contact.content {
+	.contacts.content {
 		margin: 1.25rem 0;
 	}
 
-	.contact .title {
+	.contacts .title {
 		line-height: 5.625rem;
 		font-size: 68px;
 		margin: 0 0 3.75rem;
 	}
 
-	.contact .boxes {
+	.contacts .boxes {
 		display: block;
 		gap: 0;
 		margin: 0;
@@ -166,12 +161,12 @@
 		margin-top: 1.875rem;
 	}
 
-	.contact .subtitle {
+	.contacts .subtitle {
 		line-height: 2.1875rem;
 		font-size: 22px;
 	}
 	
-	.contact .text {
+	.contacts .text {
 		line-height: 2.1875rem;
 		font-size: 20px;
 	}
@@ -191,17 +186,17 @@
 }
 
 @media (max-width: 480px) {
-	.contact .title {
+	.contacts .title {
 		line-height: 3.75rem;
 		font-size: 50px;
 	}
 
-	.contact .subtitle {
+	.contacts .subtitle {
 		line-height: 1.875rem;
 		font-size: 20px;
 	}
 	
-	.contact .text {
+	.contacts .text {
 		line-height: 1.875rem;
 		font-size: 18px;
 	}

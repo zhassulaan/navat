@@ -120,7 +120,8 @@ section {
 	padding: 0 3.64583vw;
 }
 
-.hide {
+.hide,
+.mobile {
 	display: none;
 }
 

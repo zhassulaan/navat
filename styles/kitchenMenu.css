@@ -37,7 +37,7 @@
 }
 
 .kitchen-menu .text {
-	line-height: 2.0833rem;
+	line-height: 2.08333rem;
 }
 
 .kitchen-menu .boxes {
@@ -49,6 +49,7 @@
 .kitchen-menu .image-box {
 	width: 46.354vw;
 	height: 36.25rem;
+	overflow: hidden;
 }
 
 .kitchen-menu .image {
@@ -126,130 +127,129 @@
 }
 
 .kitchen-menu .decoration {
-	width: 46.354vw;
 	height: 2.5rem;
 	margin-top: 9.375rem;
 }
 
 @media (max-width: 1700px) {
-	.menues.content .header {
+	.kitchen-menu .header {
 		width: 45rem;
 		margin-bottom: 3.125rem;
 	}
 	
-	.menues .title {
+	.kitchen-menu .title {
 		line-height: 6.25rem;
 		margin-bottom: 1.5625rem;
 		padding-bottom: 1.5625rem;
 	}
 	
-	.menues .text {
+	.kitchen-menu .text {
 		line-height: 2.0833rem;
 	}
 	
-	.menues .text-box,
-	.menues .image-box {
+	.kitchen-menu .text-box,
+	.kitchen-menu .image-box {
 		height: 28.125rem;
 	}
 	
-	.menues .image-text,
-	.menues .counter {
+	.kitchen-menu .image-text,
+	.kitchen-menu .counter {
 		font-size: 34px;
 	}
 	
-	.menues .image-text {
+	.kitchen-menu .image-text {
 		padding-top: 12.96875rem;
 	}
 
-	.menues .counter {
+	.kitchen-menu .counter {
 		margin-bottom: 3.125rem;
 	}
 
-	.menues .paragraph {
+	.kitchen-menu .paragraph {
 		width: 30vw;
 	}
 	
-	.menues .subtitle {
+	.kitchen-menu .subtitle {
 		line-height: 2.1875rem;
 		font-size: 26px;
 		margin-bottom: 1.875rem;
 		padding-bottom: 1.25rem;
 	}
 	
-	.menues .decoration {
+	.kitchen-menu .decoration {
 		margin-top: 3.4375rem;
 	}
 }
 
 @media (max-width: 1440px) {
-	.menues.content .header {
+	.kitchen-menu .header {
 		width: 37.5rem;
 		margin-bottom: 3.125rem;
 	}
 	
-	.menues .title {
+	.kitchen-menu .title {
 		line-height: 5rem;
 		padding-bottom: 1.25rem;
 	}
 	
-	.menues .text {
+	.kitchen-menu .text {
 		line-height: 1.875rem;
 	}
 	
-	.menues .text-box,
-	.menues .image-box {
+	.kitchen-menu .text-box,
+	.kitchen-menu .image-box {
 		height: 25rem;
 	}
 	
-	.menues .image-text,
-	.menues .counter {
+	.kitchen-menu .image-text,
+	.kitchen-menu .counter {
 		font-size: 30px;
 	}
 	
-	.menues .image-text {
+	.kitchen-menu .image-text {
 		padding-top: 11.40625rem;
 	}
 
-	.menues .counter {
+	.kitchen-menu .counter {
 		margin: 0.9375rem 0 2.1875rem;
 	}
 
-	.menues .paragraph {
+	.kitchen-menu .paragraph {
 		width: 32vw;
 	}
 	
-	.menues .subtitle {
+	.kitchen-menu .subtitle {
 		margin-bottom: 1.25rem;
 		padding-bottom: 0.9375rem;
 	}
 	
-	.menues .decoration {
+	.kitchen-menu .decoration {
 		height: 1.875rem;
 		margin-top: 3.125rem;
 	}
 }
 
 @media (max-width: 1280px) {
-	.menues .text-box,
-	.menues .image-box {
+	.kitchen-menu .text-box,
+	.kitchen-menu .image-box {
 		height: 22.5rem;
 	}
 	
-	.menues .image-text,
-	.menues .counter {
+	.kitchen-menu .image-text,
+	.kitchen-menu .counter {
 		line-height: 2.5rem;
 		font-size: 26px;
 	}
 	
-	.menues .image-text {
+	.kitchen-menu .image-text {
 		padding-top: 10.15625rem;
 	}
 
-	.menues .counter {
+	.kitchen-menu .counter {
 		margin: 0.9375rem 0 2.1875rem;
 	}
 
-	.menues .paragraph {
+	.kitchen-menu .paragraph {
 		width: 35vw;
 	}
 
@@ -261,101 +261,101 @@
 		margin-right: 5.556vw;
 	}
 	
-	.menues .subtitle {
+	.kitchen-menu .subtitle {
 		margin-bottom: 0.9375rem;
 		padding-bottom: 0.625rem;
 	}
 	
-	.menues .paragraph .text {
+	.kitchen-menu .paragraph .text {
 		line-height: 1.5625rem;
 		font-size: 17px;
 	}
 	
-	.menues .decoration {
+	.kitchen-menu .decoration {
 		margin-top: 3.4375rem;
 	}
 }
 
 @media (max-width: 1026px) {
-	.menues .decoration {
+	.kitchen-menu .decoration {
 		margin-top: 1.875rem;
 	}
 }
 
 @media (max-width: 992px) {
-	.menues.content {
+	.kitchen-menu .content {
 		margin-top: 1.875rem;
 	}
 
-	.menues .header {
+	.kitchen-menu .header {
 		margin: 0 auto 2.5rem;
 	}
 
-	.menues .title {
+	.kitchen-menu .title {
 		padding-bottom: 1.5625rem;
 	}
 
-	.menues .text-box,
-	.menues .image-box {
+	.kitchen-menu .text-box,
+	.kitchen-menu .image-box {
 		height: 20rem;
 	}
 
-	.menues .image-text {
+	.kitchen-menu .image-text {
 		width: 70%;
 		margin: 0 auto;
 	}
 	
-	.menues .image-text {
+	.kitchen-menu .image-text {
 		padding-top: 7.5rem;
 	}
 	
-	.menues .counter {
+	.kitchen-menu .counter {
 		line-height: 2.1875rem;
 		margin: 0.3125rem 0 0.625rem;
 	}
 	
-	.menues .paragraph .text {
+	.kitchen-menu .paragraph .text {
 		font-size: 17px;
 	}
 }
 
 @media (max-width: 848px) {
-	.menues .counter {
+	.kitchen-menu .counter {
 		line-height: 1.875rem;
 	}
 
-	.menues .subtitle {
+	.kitchen-menu .subtitle {
 		line-height: 1.5625rem;
 		font-size: 24px;
 	}
 
-	.menues .decoration {
+	.kitchen-menu .decoration {
 		margin-top: 1.25rem;
 	}
 }
 
 @media (max-width: 768px) {
-	.menues.content {
+	.kitchen-menu .content {
 		margin-top: 1.25rem;
 	}
 
-	.menues.content .header {
+	.kitchen-menu .header {
 		width: 100%;
 		height: max-content;
 		margin-bottom: 1.875rem;
 		padding: 0;
 	}
 
-	.menues .title {
+	.kitchen-menu .title {
 		margin-bottom: 0.9375rem;
 		padding-bottom: 1.25rem;
 	}
 
-	.menues .text {
+	.kitchen-menu .text {
 		font-size: 17px;
 	}
 
-	.menues .boxes {
+	.kitchen-menu .boxes {
 		display: grid;
 		grid-template-columns: auto;
 		grid-template-areas: 'imageBox1'
@@ -410,27 +410,27 @@
 		grid-area: textBox5;
 	}
 
-	.menues .text-box,
-	.menues .image-box {
+	.kitchen-menu .text-box,
+	.kitchen-menu .image-box {
 		width: 100%;
 	}
 
-	.menues .text-box,
-	.menues .image-box {
+	.kitchen-menu .text-box,
+	.kitchen-menu .image-box {
 		height: 21.5625rem;
 	}
 
-	.menues .image-text {
+	.kitchen-menu .image-text {
 		line-height: 3.125rem;
 		font-size: 34px;
 		padding-top: 7.5rem;
 	}	
 
-	.menues .counter {
+	.kitchen-menu .counter {
 		display: none;
 	}
 
-	.menues .paragraph {
+	.kitchen-menu .paragraph {
 		width: 100%;
 	}
 	
@@ -450,19 +450,19 @@
 		width: 2.5rem;
 	}
 
-	.menues .subtitle {
+	.kitchen-menu .subtitle {
 		line-height: 2.5rem;
 		font-size: 30px;
 		margin-bottom: 1.5625rem;
 		padding-bottom: 1.25rem;
 	}
 	
-	.menues .paragraph .text {
+	.kitchen-menu .paragraph .text {
 		line-height: 1.875rem;
 		font-size: 20px;
 	}
 
-	.menues .decoration {
+	.kitchen-menu .decoration {
 		width: 100%;
 		height: 2.5rem;
 		margin-top: 5rem;
@@ -470,83 +470,83 @@
 }
 
 @media (max-width: 754px) {
-	.menues .subtitle {
+	.kitchen-menu .subtitle {
 		line-height: 2.1875rem;
 		font-size: 27px;
 		margin-bottom: 1.5625rem;
 		padding-bottom: 1.25rem;
 	}
 
-	.menues .paragraph .text {
+	.kitchen-menu .paragraph .text {
 		font-size: 19px;
 	}
 
-	.menues .decoration {
+	.kitchen-menu .decoration {
 		margin-top: 3.4375rem;
 	}
 }
 
 @media (max-width: 534px) {
-	.menues .subtitle {
+	.kitchen-menu .subtitle {
 		font-size: 23px;
 		margin-bottom: 1.25rem;
 		padding-bottom: 0.9375rem;
 	}
 
-	.menues .paragraph .text {
+	.kitchen-menu .paragraph .text {
 		line-height: 1.75rem;
 		font-size: 17px;
 	}
 
-	.menues .decoration {
+	.kitchen-menu .decoration {
 		margin-top: 4.5625rem;
 	}
 }
 
 @media (max-width: 480px) {
-	.menues.content .header {
+	.kitchen-menu .header {
 		margin-bottom: 1.25rem;
 	}
 
-	.menues .title {
+	.kitchen-menu .title {
 		padding-bottom: 0.9375rem;
 	}
 
-	.menues .text {
+	.kitchen-menu .text {
 		line-height: 1.5625rem;
 		font-size: 15px;
 	}
 	
-	.menues .text-box {
+	.kitchen-menu .text-box {
 		height: 17.5rem;
 	}
 
-	.menues .image-box {
+	.kitchen-menu .image-box {
 		height: 14.375rem;
 	}
 
-	.menues .image-text {
+	.kitchen-menu .image-text {
 		line-height: 1.875rem;
 		font-size: 28px;
 		padding-top: 5.3125rem;
 	}	
 
-	.menues .paragraph {
+	.kitchen-menu .paragraph {
 		margin-top: 2.1875rem;
 	}
 
-	.menues .subtitle {
+	.kitchen-menu .subtitle {
 		line-height: 1.5625rem;
 		font-size: 20px;
 		margin-bottom: 0.9375rem;
 	}
 
-	.menues .paragraph .text {
+	.kitchen-menu .paragraph .text {
 		line-height: 1.5625rem;
 		font-size: 16px;
 	}
 
-	.menues .decoration {
+	.kitchen-menu .decoration {
 		height: 1.25rem;
 		margin-top: 1.25rem;
 	}

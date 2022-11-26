@@ -14,7 +14,9 @@
 	<link rel="stylesheet" href="styles/locations.css">
 	<link rel="stylesheet" href="styles/kitchen.css">
 	<link rel="stylesheet" href="styles/kitchenMenu.css">
-	<link rel="stylesheet" href="styles/menu.css">
+	<link rel="stylesheet" href="styles/reserv.css">
+	<link rel="stylesheet" href="styles/contacts.css">
+	<!-- <link rel="stylesheet" href="styles/menu.css"> -->
 </head>
 <body>
 	<div class="container">
@@ -367,93 +369,120 @@
 			</div>
 		</div>
 		<script src="script/kitchenPage.js"></script>
-	</div>
-
-
-	<!-- RESERV SECTION -->
-	<!-- <section id="reserv"></section> -->
-
-
-	<!-- CONTACTS SECTION -->
-	<!-- <section id="contacts"></section> -->
-
-
-	<div class="menu container" id="menu">
-		<!-- HEADER -->
-		<header class="header content">
-			<div>
-				<img src="assets/logo.svg" alt="Navat's logo" class="logo">
-				<ul class="nav-menu">
-					<li class="nav-item active">
-						<a class="nav-link">Rus</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link">Kaz</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link">Eng</a>
-					</li>
-				</ul>
-			</div>
-			
-			<div class="toggle-btn" onclick="toggleMenu()">
-				<p class="nav-link laptop">Закрыть</p>
-				<img src="../assets/menu/close.svg" alt="close" class="mobile">
-			</div>
-		</header>
-
-		<div class="menu-container content">
-			<div class="boxes">
-				<div class="menu-box">
-					<ul>
-						<li class="menu-item">
-							<a href="#home" class="main">Главная</a>
-							<img src="assets/menu/home.png" alt="about" class="main">
-						</li>
-						<li class="menu-item">
-							<a href="#about" class="about">О нас</a>
-							<img src="assets/menu/about.png" alt="about" class="about">
-						</li>
-						<li class="menu-item">
-							<a href="#locations" class="location">Локация</a>
-							<img src="assets/menu/locations.png" alt="about" class="location">
-						</li>
-						<li class="menu-item">
-							<a href="#kitchen" class="kitchen">Кухня</a>
-							<img src="assets/menu/kitchen.png" alt="about" class="kitchen">
-						</li>
-						<li class="menu-item">
-							<a href="#reserv" class="reserv">Резерв</a>
-							<img src="assets/menu/reserv.png" alt="about" class="reserv">
-						</li>
-						<li class="menu-item">
-							<a href="#contacts" class="contact">Контакты</a>
-							<img src="assets/menu/contacts.png" alt="about" class="contact">
-						</li>
-					</ul>
-				</div>
-
-				<div class="contacts">
-					<div class="contact-box">
-						<p class="title">Телефон:</p>
-						<p class="text">+7 777 123 45 67</p>
-						<p class="text">+7 777 123 45 67</p>
+		
+		
+		<!-- RESERV SECTION -->
+		<section class="reserv" id="reserv">
+			<div class="content">
+				<form id="form" action="mailto:zhassik.s@gmail.com" method="post" enctype="text/plain">
+					<div class="text-box">
+						<h3 class="title">Резерв</h3>
+	
+						<div class="paragraph">
+							<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<br>
+							<p class="text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+	
+						<div class="feature laptop" id="feature">
+							<div class="feature-box" id="box01" onclick="selectNumber(this.id)">
+								<h6>1-2</h6>
+							</div>
+							<div class="feature-box" id="box02" onclick="selectNumber(this.id)">
+								<h6>2-4</h6>
+							</div>
+							<div class="feature-box" id="box03" onclick="selectNumber(this.id)">
+								<h6>4-8</h6>
+							</div>
+							<div class="feature-box" id="box04" onclick="selectNumber(this.id)">
+								<h6>8-12</h6>
+							</div>
+						</div>
 					</div>
-					<div class="contact-box">
-						<p class="title">Адрес:</p>
+	
+					<div class="form-box">
+						<div class="input-box">
+							<input type="text" id="user" name="user" placeholder="Ваше имя*"/>
+						</div>
+						<div class="input-box">
+							<input type="tel" id="phone" name="phone" placeholder="Ваш телефон*" pattern="^\d{3}?\d{4}?\d{2}?\d{2}$"/>
+						</div>
+						<div class="input-box">
+							<input type="text" id="message" name="message" placeholder="Ваше сообщение:"/>
+						</div>
+						
+						<p class="text mobile">Количество персон:</p>
+	
+						<div class="feature mobile" id="feature">
+							<div class="feature-box" id="box11" onclick="selectNumber(this.id)">
+								<h6>1-2</h6>
+							</div>
+							<div class="feature-box" id="box12" onclick="selectNumber(this.id)">
+								<h6>2-4</h6>
+							</div>
+							<div class="feature-box" id="box13" onclick="selectNumber(this.id)">
+								<h6>4-8</h6>
+							</div>
+							<div class="feature-box" id="box14" onclick="selectNumber(this.id)">
+								<h6>8-12</h6>
+							</div>
+						</div>
+	
+						<div class="confirm">
+							<div class="button" id="button" onclick="validation()">
+								<p class="button-text">Отправить</p>
+							</div>
+							
+							<p class="text" id="text">Нажав на кнопку “Отправить”, вы соглашаетесь на обработку файлов cookie.</p>
+						</div>
+					</div>
+
+					<script src="script/formValidation.js"></script>
+					<script src="script/placeSelect.js"></script>
+					<script src="script/inputMask.js"></script>
+				</form>
+			</div>
+		</section>
+		
+		
+		<!-- CONTACTS SECTION -->
+		<section class="contacts" id="contacts">
+			<div class="content">
+				<h4 class="title">Контакты</h4>
+
+				<div class="boxes">
+					<div class="info-box">
+						<h6 class="subtitle">Телефон:</h6>
+						<a href="tel:+77778251111" class="text">+7 777 825 11 11</a>
+					</div>
+					<div class="info-box right">
+						<h6 class="subtitle">Адрес:</h6>
 						<a href="https://2gis.kz/almaty/geo/70030076332698031/76.882712971419096,43.191546712987737" class="text">Алматы, Мирас м-н</a>
 					</div>
-					<div class="contact-box">
-						<p class="title">E-mail:</p>
+					<div class="info-box">
+						<h6 class="subtitle">E-mail:</h6>
 						<a href="mailto:chaihana.navat.kz@gmail.com" class="text">chaihana.navat.kz@gmail.com</a>
 					</div>
+					<div class="info-box right">
+						<h6 class="subtitle">СОЦ. СЕТИ:</h6>
+						<a href="https://api.whatsapp.com/send?phone=77778251111&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83" class="text">WhatsApp   </a>
+						<a href="https://www.instagram.com/navat.com.kz" class="text">   Instagram</a>
+					</div>
+				</div>
+				
+				<div class="footer">
+					<p class="policy-text">@Navat <script>document.write(new Date().getFullYear())</script>. Все права защищены.</p>
+					<p class="athenaplus">
+						Сайт создан: 
+						<a href="http://athenaplus.kz/" class="url">athenaplus.kz</a>
+					</p>
 				</div>
 			</div>
-			
-			<img src="assets/menu/arrow.svg" alt="gold arrow" class="arrow">
-			<h1>Меню</h1>
-		</div>
+		</section>
 	</div>
+
+
+	
 
 	<script src="script/menu.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
