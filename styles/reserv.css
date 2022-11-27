@@ -107,22 +107,12 @@ form {
 }
 
 @media (max-width: 1700px) {
-	.reserv.content {
-		margin-top: 2.5rem;
-	}
-	
-	form {
-		gap: 5.625rem;
-	}
-	
 	.reserv .title {
 		line-height: 8.125rem;
-		margin-bottom: 2.8125rem;
 	}
 	
 	.reserv .paragraph {
 		width: 25rem;
-		margin-bottom: 2.1875rem;
 	}
 	
 	.feature-box {
@@ -138,18 +128,9 @@ form {
 		width: 41.25rem;
 	}
 	
-	.form-box .input-box {
-		margin-top: 3.125rem;
-		padding-bottom: 1.5625rem;
-	}
-	
 	.form-box input,
 	.form-box input::placeholder {
 		font-size: 26px;
-	}
-
-	.confirm {
-		gap: 2.5625rem;
 	}
 	
 	.reserv .button {
@@ -167,10 +148,6 @@ form {
 }
 
 @media (max-width: 1440px) {
-	form {
-		gap: 3.75rem;
-	}
-	
 	.reserv .title {
 		line-height: 6.875rem;
 		margin-bottom: 2.5rem;
@@ -179,7 +156,6 @@ form {
 	.reserv .paragraph {
 		width: 22.5rem;
 		height: 15rem;
-		margin-bottom: 2.1875rem;
 	}
 
 	.reserv .text {
@@ -203,29 +179,17 @@ form {
 		width: 36.25rem;
 	}
 	
-	.form-box .input-box {
-		margin-top: 2.8125rem;
-	}
-	
 	.form-box input,
 	.form-box input::placeholder {
 		font-size: 23px;
 	}
 	
-	.confirm {
-		gap: 2.1875rem;
-	}
-
 	.confirm .text {
 		line-height: 1.5625rem;
 	}
 }
 
 @media (max-width: 1280px) {
-	form {
-		gap: 2.5rem;
-	}
-	
 	.feature-box {
 		width: 4.6875rem;
 		height: 4.6875rem;
@@ -235,10 +199,6 @@ form {
 		width: 31.25rem;
 	}
 	
-	.confirm {
-		gap: 1.25rem;
-	}
-
 	.reserv .button {
 		width: 15rem;
 		height: 5rem;

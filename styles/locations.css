@@ -114,10 +114,6 @@
 }
 
 @media (max-width: 1700px) {
-	.locations {
-		padding-top: 2.5rem;
-	}
-
 	.map-box {
 		width: 48.611vw;
 		height: 60.914vh;
@@ -145,9 +141,8 @@
 		height: 1.5625rem;
 	}
 
-	.text-box {
+	.locations .text-box {
 		width: 43.056vw;
-		margin-top: 5rem;
 	}
 
 	.locations .title {
@@ -160,22 +155,6 @@
 }
 
 @media (max-width: 1440px) {
-	.locations.content {
-		margin-top: 3.125rem;
-	}
-
-	.map-box {
-		height: 53.299vh;
-	}
-
-	.map::after {
-		bottom: calc(-1.5625rem - 53.299vh);
-	}
-
-	.text-box {
-		margin-top: 3.75rem;
-	}
-
 	.locations .title {
 		line-height: 6.875rem;
 	}
@@ -186,18 +165,19 @@
 }
 
 @media (max-width: 1280px) {
-	.locations.content {
+	.locations .content {
 		flex-direction: column-reverse;
-		margin-top: 1.875rem;
+		padding-top: 0;
+		padding-bottom: 8.75vh;
 	}
 
 	.map-box,
-	.text-box {
+	.locations .text-box {
 		width: 92.708vw;
 	}
 
-	.text-box {
-		margin: 0 0 2.5rem;
+	.locations .text-box {
+		margin: 0 0 2.5vh;
 	}
 	
 	.locations .title,

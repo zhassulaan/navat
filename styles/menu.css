@@ -215,13 +215,13 @@ h1:hover ~ .menu .arrow {
 		width: 38.306vw;
 	}
 
-	.contacts {
+	.contact-box {
 		gap: 0.9375rem;
 		width: 35.625rem;
 		padding-top: 1.875rem;
 	}
 
-	.contacts:before {
+	.contact-box:before {
 		width: calc(14.583vw + 38.306vw);
 	}
 
@@ -272,7 +272,7 @@ h1:hover ~ .menu .arrow {
 	.menu .logo,
 	.menu-item img,
 	.menu .arrow,
-	.contacts {
+	.contact-box {
 		display: none;
 	}
 
