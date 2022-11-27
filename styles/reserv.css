@@ -14,18 +14,18 @@ form {
 }
 
 .reserv .title {
-	line-height: 9.375rem;
+	line-height: 16.66667vh;
 	color: var(--clr-primary-1);
 }
 
 .reserv .paragraph {
 	width: 28.75rem;
-	height: 14.375rem;
+	height: 25.55556vh;
 	margin: 5.55556vh 0 4.44444vh;
 }
 
 .reserv .text {
-	line-height: 2.1875rem;
+	line-height: 3.88889vh;
 }
 
 .reserv .feature {
@@ -59,7 +59,7 @@ form {
 
 .form-box .input-box {
 	border-bottom: 0.1875rem solid var(--clr-primary-1);
-	height: 4.375rem;
+	height: 7.77778vh;
 	margin-top: 6.66667vh;
 	padding-bottom: 3.33333vh;
 }

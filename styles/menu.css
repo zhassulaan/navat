@@ -30,118 +30,126 @@
 	padding-bottom: 13.33333vh;
 }
 
-.menu .boxes {
+.boxes1 {
 	margin: 3.33333vh 0 0 4.16667vw;
 }
 
 .menu-box {
 	position: relative;
-	margin-bottom: 1.25rem;
-	width: 14.583vw;
+	width: 49.479167vw;
+	margin-bottom: 1.875rem;
+	padding-bottom: 1.25rem;
 }
 
 .menu-item {
 	width: max-content;
+	width: 14.583334vw;
 	cursor: pointer;
 	margin-bottom: 0.625rem;
 }
 
-.menu-item a {
+.menu-link {
 	line-height: 3.75rem;
 	font-size: 40px;
 	color: var(--clr-black);
 }
 
-.menu-item a:hover {
+.menu-link:hover {
 	color: var(--clr-primary-1);
 }
 
 .menu-item img {
 	position: absolute;
 	display: block;
-	width: 34.896vw;
-	height: 24.375rem;
+	width: 34.89583vw;
+	height: 20.3125vw;
 	top: 0.625rem;
-	margin-left: 14.583vw;
+	margin-left: 14.583334vw;
 }
 
-.menu-item .main:not(:hover) + img.main {
+.menu-item #home:not(:hover) + img.main {
 	display: none;
 }
 
-.menu-item .about:not(:hover) + img.about {
+.menu-item #about:not(:hover) + img.about {
 	display: none;
 }
 
-.menu-item .location:not(:hover) + img.location {
+.menu-item #locations:not(:hover) + img.location {
 	display: none;
 }
 
-.menu-item .kitchen:not(:hover) + img.kitchen {
+.menu-item #kitchen:not(:hover) + img.kitchen {
 	display: none;
 }
 
-.menu-item .reserv:not(:hover) + img.reserv {
+.menu-item #reserv:not(:hover) + img.reserv {
 	display: none;
 }
 
-.menu-item .contact:not(:hover) + img.contact {
+.menu-item #contacts:not(:hover) + img.contact {
 	display: none;
 }
 
-h1 {
-	width: 31.25vw;
-	text-align: right;
-	word-wrap: break-word;
-}
-
-.menu .arrow {
-	height: 100%;
-	margin: 10rem -8.75rem 0 0;
-	transition: all 0.3s ease-in-out;
-}
-
-h1:hover ~ .menu .arrow {
-	margin-left: -7.5rem;
-}
-
-.contact {
-	position: relative;
-	display: flex;
-	gap: 1.25rem;
-	width: 49.479vw;
-	padding-top: 1.875rem;
-}
-
-.contact:before {
+.menu-box:before {
 	content: '';
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	width: 100%;
 	height: 0.1875rem;
 	background-color: var(--clr-primary-1);
 }
 
 .contact-box {
-	width: 14.583vw;
+	position: relative;
+	display: flex;
+	gap: 1.041667vw;
 }
 
-.contact-box p {
-	line-height: 1.875rem;
+.contact-box div {
+	width: 14.583333vw;
+}
+
+.contact-box .title,
+.contact-box .text {
 	color: var(--clr-black);
 }
 
 .contact-box .title {
+	line-height: 1.875rem;
 	font-size: 22px;
 	margin-bottom: 1.25rem;
 }
 
 .contact-box .text {
 	width: 12.5vw;
-	line-height: 1.875rem;
+	line-height: 2.1875rem;
 	font-size: 18px;
-	color: var(--clr-black);
 	margin-top: 0.625rem;
+}
+
+.boxes2 {
+	position: relative;
+	left: -31.25vw;
+}
+
+h1 {
+	position: absolute;
+	top: 0;
+	width: 31.25vw;
+	text-align: right;
+	word-wrap: break-word;
+}
+
+.boxes2 .arrow {
+	position: absolute;
+	top: 0;
+	margin: 10rem 0 0 -6.875rem;
+	transition: all 0.3s ease-in-out;
+}
+
+h1:hover ~ .menu .arrow {
+	margin-left: -7.5rem;
 }
 
 @media (max-width: 1700px) {

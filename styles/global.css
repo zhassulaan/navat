@@ -224,6 +224,16 @@ section {
 }
 
 @media (max-width: 1280px) {
+	h4 {
+		line-height: 5.3125rem;
+		font-size: 58px;
+	}
+	
+	h5 {
+		line-height: 2.5rem;
+		font-size: 28px;
+	}
+
 	.text {
 		font-size: 20px;
 	}
