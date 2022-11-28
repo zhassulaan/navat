@@ -17,13 +17,13 @@ function currentSlide(n) {
 	showSlides(slideIndex = n);
 }
 
-// let i = 1; 
-// function volgendefoto() {
-// 	i < 6 ? i += 1 : i = 1; 
-// 	showSlides(i)
-// }
+let i = 1; 
+function volgendefoto() {
+	i < 6 ? i += 1 : i = 1; 
+	showSlides(i)
+}
 
-// setInterval(volgendefoto, 8000);
+setInterval(volgendefoto, 8000);
 
 function showSlides(n) {
 	for (let j = 0; j < 5; j++)

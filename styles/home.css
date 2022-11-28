@@ -73,7 +73,6 @@
 }
 
 .slide-image {
-	width: 100%;
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -88,6 +87,7 @@
 
 .home .subtitle {
 	position: relative;
+	width: max-content;
 	margin: 3.3333vh 0 6.6667vh;
 	padding-left: 6.875rem;
 	cursor: pointer;
@@ -115,6 +115,7 @@
 
 .home .button-text {
 	font-size: 28px;
+	padding: 1.5625rem 0;
 }
 
 .home .bottom {
@@ -159,7 +160,7 @@
 	font-family: HistoryPro-Two;
 	font-size: 20px;
 	font-weight: 400;
-	margin-top: 2.5rem;
+	margin-top: 4.444444vh;
 }
 
 .circle {
@@ -208,31 +209,114 @@
 	}
 }
 
-/* @media (max-width: 992px) {
+@media (max-width: 992px) {
 	.home .title {
-		line-height: 5rem;
+		line-height: 8.888889vh;
 		font-size: 60px;
-		margin-top: 5.625rem;
 	}
 	
 	.home .subtitle {
-		line-height: 2.5rem;
+		line-height: 4.444444vh;
 		font-size: 32px;
-		margin-top: 1.875rem;
 	}
 
 	.home .button {
 		width: 100%;
-		margin-top: 1.875rem;
+		height: 4.375rem;
 	}
 
-	.home .feature {
-		flex-direction: column;
-		width: 16.406vw;
-		margin-right: 1.823vw;
+	.home .button-text {
+		padding: 1.25rem 0;
 	}
 
 	.home .buttons {
 		display: none;
 	}
-} */
+
+	.home .feature {
+		width: 16.685306vw;
+		margin-right: 1.664499vw;
+	}
+	
+	.home .feature:before {
+		height: 0.125rem;
+	}
+
+	.home .text {
+		font-size: 18px;
+		margin-top: 3.333333vh;
+	}
+
+	.circle {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.home .content {
+		padding-top: 11.25vh;
+		padding-bottom: 13.75vh
+	}	
+
+	.home .title {
+		line-height: 8.125vh;
+		font-size: 44px;
+	}
+
+	.home .subtitle {
+		line-height: 5vh;
+		font-size: 28px;
+		margin: 3.75vh 0;
+		padding-left: 3.75rem;
+	}
+
+	.home .subtitle:before {
+		width: 3.125rem;
+		height: 0.0625rem;
+	}
+	
+	
+	.home .bottom {
+		margin-top: 12.5vh;
+	}
+	
+	.home .feature {
+		flex-direction: column-reverse;
+		align-items: center;
+		width: 16.666667vw;
+		margin-right: 1.944444vw;
+		padding: 0;
+	}
+
+	.home .feature:before,
+	.feature-line {
+		height: 0.125rem;
+		top: 7.5vh;
+	}
+
+	.home .text {
+		margin-top: 5vh;
+	}
+}
+
+@media (max-width: 480px) {
+	.home .content {
+		padding-top: 11.25vh;
+		padding-bottom: 13.75vh
+	}	
+
+	.home .title {
+		line-height: 5.625vh;
+		font-size: 30px;
+	}
+
+	.home .subtitle {
+		font-size: 20px;
+		padding-left: 2.875rem;
+	}
+
+	.home .subtitle:before {
+		width: 2.5rem;
+	}
+}

@@ -204,14 +204,10 @@
 }
 
 @media (max-width: 992px) {
-	.locations.content {
-		margin: 1.875rem 0 5rem;
-	}
-	
 	.locations .title {
 		line-height: 5rem;
-		margin-bottom: 1.5625rem;
-		padding-bottom: 1.5625rem;
+		margin-bottom: 3.33333vh;
+		padding-bottom: 3.33333vh;
 	}
 
 	.map-box {
@@ -221,22 +217,17 @@
 
 @media (max-width: 768px) {
 	.locations.content {
-		margin: 1.25rem 0 4.375rem;
-	}
-
-	.map-box,
-	.text-box {
-		width: 100%;
+		margin: 2.5vh 0 8.75vh;
 	}
 
 	.text-box {
-		margin-bottom: 1.875rem;
+		margin-bottom: 3.75vh;
 	}
 
 	.locations .title {
 		line-height: 5.625rem;
-		margin-bottom: 0.9375rem;
-		padding-bottom: 1.25rem;
+		margin-bottom: 1.875rem;
+		padding-bottom: 2.5vh;
 	}
 
 	.locations .text {
@@ -246,18 +237,18 @@
 	}
 
 	.map-box {
-		height: 21.875rem;
+		height: 43.75vh;
 	}
 }
 
 @media (max-width: 480px) {
 	.text-box {
-		margin-bottom: 1.25rem;
+		margin-bottom: 2.5vh;
 	}
 
 	.locations .title {
 		line-height: 3.75rem;
-		padding-bottom: 0.935rem;
+		padding-bottom: 1.875vh;
 	}
 
 	.locations .text-box {

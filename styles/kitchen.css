@@ -219,14 +219,10 @@
 }
 
 @media (max-width: 992px) {
-	.kitchenContainer {
-		height: max-content;
-	}
-
-	.kitchen.content {
+	.kitchen .content {
 		flex-direction: column;
 		gap: 0;
-		margin: 1.875rem 0 5rem;
+		margin: 3.33333vh 0 8.88889vh;
 	}
 
 	.kitchen .text-box {
@@ -234,11 +230,12 @@
 	}
 
 	.kitchen .paragraph {
+		height: max-content;
 		margin-bottom: 1.875rem;
 	}
 	
 	.kitchen .text {
-		line-height: 1.875rem;
+		line-height: 1.5625rem;
 	}
 
 	.kitchen .footer,

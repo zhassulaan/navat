@@ -11,7 +11,7 @@
 
 .contacts .title {
 	text-align: center;
-	line-height: 7.5rem;
+	line-height: 13.333333vh;
 	font-size: 120px;
 }
 
@@ -26,7 +26,7 @@
 
 .info-box {
 	margin-top: 6.66667vh;
-	height: 6.25rem;
+	height: 11.111111vh;
 }
 
 .contacts .subtitle {
@@ -36,7 +36,7 @@
 	margin-bottom: 0.625rem;
 }
 
-.right {
+.contacts .right {
 	text-align: right;
 }
 
@@ -119,34 +119,35 @@
 
 @media (max-width: 992px) {
 	.contacts .boxes,
-	.footer {
+	.contacts .footer {
 		width: 100%;
 	}
 
 	.contacts .title {
-		line-height: 5rem;
+		line-height: 8.888889vh;
 	}
 
 	.contacts .subtitle {
-		line-height: 2.5rem;
+		line-height: 4.444444vh;
 		font-size: 24px;
 	}
 	
 	.contacts .text {
-		line-height: 2.5rem;
+		line-height: 4.444444vh;
 		font-size: 22px;
 	}
 }
 
 @media (max-width: 768px) {
-	.contacts.content {
-		margin: 1.25rem 0;
+	.contacts .content {
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 
 	.contacts .title {
 		line-height: 5.625rem;
 		font-size: 68px;
-		margin: 0 0 3.75rem;
+		margin: 0 0 7.5vh;
 	}
 
 	.contacts .boxes {
@@ -155,34 +156,35 @@
 		margin: 0;
 	}
 
-	.right {
+	.contacts .right {
 		text-align: left;
 	}
 
 	.info-box {
-		margin-top: 1.875rem;
+		height: max-content;
+		margin-top: 3.75vh;
 	}
 
 	.contacts .subtitle {
-		line-height: 2.1875rem;
+		line-height: 3.75vh;
 		font-size: 22px;
 	}
 	
 	.contacts .text {
-		line-height: 2.1875rem;
+		line-height: 3.75vh;
 		font-size: 20px;
 	}
 
 	.contacts .footer {
 		flex-direction: column;
 		gap: 0.625rem;
-		margin-bottom: 0;
+		margin: 7.5vh 0 2.5vh;
 	}
 
 	.policy-text,
 	.athenaplus {
 		text-align: center;
-		line-height: 1.5625rem;
+		line-height: 3.125vh;
 		font-size: 14px;
 	}
 }
@@ -194,18 +196,16 @@
 	}
 
 	.contacts .subtitle {
-		line-height: 1.875rem;
 		font-size: 20px;
 	}
 	
 	.contacts .text {
-		line-height: 1.875rem;
 		font-size: 18px;
 	}
 
 	.policy-text,
 	.athenaplus {
-		line-height: 1.25rem;
+		line-height: 2.5vh;
 		font-size: 13px;
 	}
 }

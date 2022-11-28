@@ -31,6 +31,7 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	scroll-behavior: smooth;
 }
 
 html,
@@ -38,10 +39,6 @@ body {
 	font-weight: 300;
    font-style: normal;
 	color: var(--clr-white);
-}
-
-html {
-	scroll-behavior: smooth;
 }
 
 ul {
@@ -99,6 +96,19 @@ p {
 	font-size: 20px;
 }
 
+.nav-logo {
+	cursor: pointer;
+}
+
+.title {
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+}
+
+.title:hover {
+	transform: scale(1.03);
+}
+
 .text {
 	font-size: 23px;
 }
@@ -146,7 +156,6 @@ section {
 
 .button-text {
 	line-height: 1.875rem;
-	padding: 1.5625rem 0;
 }
 
 .arrow-btn {
@@ -235,7 +244,7 @@ section {
 	}
 
 	.text {
-		font-size: 20px;
+		font-size: 19px;
 	}
 }
 
@@ -243,6 +252,10 @@ section {
 	h2, h3, h4 {
 		line-height: 5rem;
 		font-size: 76px;
+	}
+
+	.text {
+		font-size: 17px;
 	}
 }
 
@@ -254,13 +267,16 @@ section {
 
 @media (max-width: 768px) {
 	.content {
-		width: 91.111%;
-		margin: 0 4.446%;
+		padding: 0 4.444446vw;
 	}
-
+	
 	h1, h2, h3, h4 {
-		line-height: 5.625rem;
+		line-height: 3.75rem;
 		font-size: 68px;
+	}
+	
+	.text {
+		font-size: 15px;
 	}
 }
 
