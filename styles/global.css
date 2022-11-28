@@ -100,15 +100,6 @@ p {
 	cursor: pointer;
 }
 
-.title {
-	transition: all 0.5s ease-in-out;
-	cursor: pointer;
-}
-
-.title:hover {
-	transform: scale(1.03);
-}
-
 .text {
 	font-size: 23px;
 }

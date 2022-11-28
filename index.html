@@ -20,6 +20,31 @@
 </head>
 <body>
 	<div class="container" id="main">
+		<!-- HEADER -->
+		<header class="navbar">
+			<div>
+				<img src="assets/logo.svg" alt="Navat's logo" class="nav-logo" onclick="window.location.reload(true);">
+				<ul class="nav-menu">
+					<li class="nav-item active">
+						<a class="nav-link">Rus</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">Kaz</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">Eng</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="toggle-btn" onclick="openNavbar()">
+				<p class="nav-link">Меню</p>
+				<svg width="40" height="24" viewBox="0 0 40 24" fill="none" stroke="var(--clr-primary-1)" xmlns="http://www.w3.org/2000/svg" class="toggle">
+					<path d="M0 2L40 2M10 12L40 12M0 22L40 22" stroke-width="3"/>
+				</svg>
+			</div>
+		</header>
+
 		<!-- HOME SECTION -->
 		<section class="home" id="home">
 			<!-- HERO -->
@@ -48,29 +73,7 @@
 			</div>
 
 			<!-- HEADER -->
-			<header class="navbar">
-				<div>
-					<img src="assets/logo.svg" alt="Navat's logo" class="nav-logo" onclick="window.location.reload(true);">
-					<ul class="nav-menu">
-						<li class="nav-item active">
-							<a class="nav-link">Rus</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Kaz</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Eng</a>
-						</li>
-					</ul>
-				</div>
-				
-				<div class="toggle-btn" onclick="openNavbar()">
-					<p class="nav-link">Меню</p>
-					<svg width="40" height="24" viewBox="0 0 40 24" fill="none" stroke="var(--clr-white)" xmlns="http://www.w3.org/2000/svg" class="toggle">
-						<path d="M0 2L40 2M10 12L40 12M0 22L40 22" stroke-width="3"/>
-					</svg>
-				</div>
-			</header>
+			<header class="navbar2"></header>
 
 			<div class="content">
 				<div class="top">
@@ -149,29 +152,7 @@
 		<!-- ABOUT SECTION -->
 		<section class="about" id="about">
 			<!-- HEADER -->
-			<header class="navbar">
-				<div>
-					<img src="assets/logo.svg" alt="Navat's logo" class="nav-logo" onclick="window.location.reload(true);">
-					<ul class="nav-menu">
-						<li class="nav-item active">
-							<a class="nav-link">Rus</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Kaz</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Eng</a>
-						</li>
-					</ul>
-				</div>
-				
-				<div class="toggle-btn" onclick="openNavbar()">
-					<p class="nav-link">Меню</p>
-					<svg width="40" height="24" viewBox="0 0 40 24" fill="none" stroke="var(--clr-primary-1)" xmlns="http://www.w3.org/2000/svg" class="toggle">
-						<path d="M0 2L40 2M10 12L40 12M0 22L40 22" stroke-width="3"/>
-					</svg>
-				</div>
-			</header>
+			<header class="navbar2"></header>
 			
 			<div class="content">
 				<p class="footer-text text mobile">Lorem ipsum dolor sit amet, consectetur elit.</p>
@@ -219,29 +200,7 @@
 		<!-- LOCATIONS SECTION -->
 		<section class="locations" id="locations">
 			<!-- HEADER -->
-			<header class="navbar">
-				<div>
-					<img src="assets/logo.svg" alt="Navat's logo" class="nav-logo" onclick="window.location.reload(true);">
-					<ul class="nav-menu">
-						<li class="nav-item active">
-							<a class="nav-link">Rus</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Kaz</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Eng</a>
-						</li>
-					</ul>
-				</div>
-				
-				<div class="toggle-btn" onclick="openNavbar()">
-					<p class="nav-link">Меню</p>
-					<svg width="40" height="24" viewBox="0 0 40 24" fill="none" stroke="var(--clr-primary-1)" xmlns="http://www.w3.org/2000/svg" class="toggle">
-						<path d="M0 2L40 2M10 12L40 12M0 22L40 22" stroke-width="3"/>
-					</svg>
-				</div>
-			</header>
+			<header class="navbar2"></header>
 
 			<div class="content">
 				<div class="map-box">
@@ -274,29 +233,7 @@
 		<!-- KITCHEN SECTION -->
 		<section class="kitchen" id="kitchen">
 			<!-- HEADER -->
-			<header class="navbar">
-				<div>
-					<img src="assets/logo.svg" alt="Navat's logo" class="nav-logo" onclick="window.location.reload(true);">
-					<ul class="nav-menu">
-						<li class="nav-item active">
-							<a class="nav-link">Rus</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Kaz</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Eng</a>
-						</li>
-					</ul>
-				</div>
-				
-				<div class="toggle-btn" onclick="openNavbar()">
-					<p class="nav-link">Меню</p>
-					<svg width="40" height="24" viewBox="0 0 40 24" fill="none" stroke="var(--clr-primary-1)" xmlns="http://www.w3.org/2000/svg" class="toggle">
-						<path d="M0 2L40 2M10 12L40 12M0 22L40 22" stroke-width="3"/>
-					</svg>
-				</div>
-			</header>
+			<header class="navbar2"></header>
 			
 			<div class="content">
 				<div class="text-box">
@@ -354,6 +291,12 @@
 				</div>
 			</div>
 		</section>
+		<!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script type="text/javascript">
+			$(document).on('mouseover', '.image-container', function() {
+				$(this).addClass('active').siblings().removeClass('active');
+			});
+		</script> -->
 		<script src="script/kitchenCarousel.js"></script>
 
 		
@@ -361,29 +304,7 @@
 		<!-- MENU SECTION -->
 		<div class="kitchen-menu" id="kitchen-menu">
 			<!-- HEADER -->
-			<header class="navbar">
-				<div>
-					<img src="assets/logo.svg" alt="Navat's logo" class="nav-logo" onclick="window.location.reload(true);">
-					<ul class="nav-menu">
-						<li class="nav-item active">
-							<a class="nav-link">Rus</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Kaz</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Eng</a>
-						</li>
-					</ul>
-				</div>
-				
-				<div class="toggle-btn" onclick="openNavbar()">
-					<p class="nav-link">Меню</p>
-					<svg width="40" height="24" viewBox="0 0 40 24" fill="none" stroke="var(--clr-primary-1)" xmlns="http://www.w3.org/2000/svg" class="toggle">
-						<path d="M0 2L40 2M10 12L40 12M0 22L40 22" stroke-width="3"/>
-					</svg>
-				</div>
-			</header>
+			<header class="navbar2"></header>
 			
 			<div class="content">
 				<div class="header">
@@ -474,29 +395,7 @@
 		<!-- RESERV SECTION -->
 		<section class="reserv" id="reserv">
 			<!-- HEADER -->
-			<header class="navbar">
-				<div>
-					<img src="assets/logo.svg" alt="Navat's logo" class="nav-logo" onclick="window.location.reload(true);">
-					<ul class="nav-menu">
-						<li class="nav-item active">
-							<a class="nav-link">Rus</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Kaz</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Eng</a>
-						</li>
-					</ul>
-				</div>
-				
-				<div class="toggle-btn" onclick="openNavbar()">
-					<p class="nav-link">Меню</p>
-					<svg width="40" height="24" viewBox="0 0 40 24" fill="none" stroke="var(--clr-primary-1)" xmlns="http://www.w3.org/2000/svg" class="toggle">
-						<path d="M0 2L40 2M10 12L40 12M0 22L40 22" stroke-width="3"/>
-					</svg>
-				</div>
-			</header>
+			<header class="navbar2"></header>
 
 			<div class="content">
 				<form id="form" action="mailto:zhassik.s@gmail.com" method="post" enctype="text/plain">
@@ -573,29 +472,7 @@
 		<!-- CONTACTS SECTION -->
 		<section class="contacts" id="contacts">
 			<!-- HEADER -->
-			<header class="navbar">
-				<div>
-					<img src="assets/logo.svg" alt="Navat's logo" class="nav-logo" onclick="window.location.reload(true);">
-					<ul class="nav-menu">
-						<li class="nav-item active">
-							<a class="nav-link">Rus</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Kaz</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">Eng</a>
-						</li>
-					</ul>
-				</div>
-				
-				<div class="toggle-btn" onclick="openNavbar()">
-					<p class="nav-link">Меню</p>
-					<svg width="40" height="24" viewBox="0 0 40 24" fill="none" stroke="var(--clr-primary-1)" xmlns="http://www.w3.org/2000/svg" class="toggle">
-						<path d="M0 2L40 2M10 12L40 12M0 22L40 22" stroke-width="3"/>
-					</svg>
-				</div>
-			</header>
+			<header class="navbar2"></header>
 
 			<div class="content">
 				<h4 class="title">Контакты</h4>
@@ -658,6 +535,7 @@
 				</svg>
 			</div>
 		</header>
+		<header class="navbar2"></header>
 	
 		<div class="content">
 			<div class="boxes1">
