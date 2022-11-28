@@ -296,6 +296,10 @@
 		top: 7.5vh;
 	}
 
+	.feature-line {
+		left: 0;
+	}
+
 	.home .text {
 		margin-top: 5vh;
 	}
