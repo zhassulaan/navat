@@ -10,11 +10,16 @@
 }
 
 .navbar2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
 	height: 14.44444vh;
 	padding: 3.333333vh 3.64583vw;
 }
 
-.navbar div {
+.navbar div,
+.navbar2 div {
 	display: flex;
 	align-items: center;
 }
@@ -91,7 +96,8 @@
 }
 
 @media (max-width: 992px) {
-	.navbar {
+	.navbar,
+	.navbar2 {
 		padding: 3.888889vh 3.64583vw;
 	}
 
@@ -107,7 +113,8 @@
 }
 
 @media (max-width: 768px) {
-	.navbar {
+	.navbar,
+	.navbar2 {
 		align-items: start;
 		padding: 5vh 4.44444vw;
 	}
