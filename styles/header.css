@@ -26,10 +26,33 @@
 
 .nav-logo {
 	height: 7.77778vh; 
-	filter: invert(94%) sepia(6%) saturate(3025%) hue-rotate(316deg) brightness(86%) contrast(66%);
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(294deg) brightness(105%) contrast(101%);
 }
 
 .nav-logo:hover {
+	filter: invert(94%) sepia(6%) saturate(3025%) hue-rotate(316deg) brightness(86%) contrast(66%);
+}
+
+.navbar1 .nav-logo {
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(294deg) brightness(105%) contrast(101%);
+}
+
+.navbar1 .nav-logo:hover {
+	filter: invert(94%) sepia(6%) saturate(3025%) hue-rotate(316deg) brightness(86%) contrast(66%);
+}
+
+.navbar2 .nav-logo,
+.navbar3 .nav-logo,
+.navbar4 .nav-logo {
+	filter: invert(94%) sepia(6%) saturate(3025%) hue-rotate(316deg) brightness(86%) contrast(66%);
+}
+
+.navbar2 .nav-logo:hover,
+.navbar3 .nav-logo:hover {
+	filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(77deg) brightness(105%) contrast(103%);
+}
+
+.navbar4 .nav-logo:hover {
 	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(294deg) brightness(105%) contrast(101%);
 }
 
@@ -53,36 +76,105 @@
 	bottom: 0;
 	width: 80%;
 	height: 0.125rem;
+	background-color: var(--clr-white);
+}
+
+.navbar1 .nav-item.active:before {
+	background-color: var(--clr-white);
+}
+
+.navbar2 .nav-item.active:before,
+.navbar3 .nav-item.active:before,
+.navbar4 .nav-item.active:before {
 	background-color: var(--clr-primary-1);
 }
 
-.nav-item:hover::before {
+.nav-item:hover::before,
+.navbar1 .nav-item:hover::before {
+	background-color: var(--clr-primary-1);
+}
+
+.navbar2 .nav-item:hover::before,
+.navbar3 .nav-item:hover::before {
+	background-color: var(--clr-black);
+}
+
+.navbar4 .nav-item:before {
 	background-color: var(--clr-white);
 }
 
 .nav-link {
 	line-height: 1.875rem;
 	font-size: 27px;
-	color: var(--clr-primary-1);
 	cursor: pointer;
 }
 
-.nav-link:hover {
+.navbar1 .nav-link {
 	color: var(--clr-white);
 }
 
-.toggle-btn:hover .nav-link {
+.navbar2 .nav-link,
+.navbar3 .nav-link,
+.navbar4 .nav-link {
+	color: var(--clr-primary-1);
+}
+
+.nav-link:hover,
+.navbar1 .nav-link:hover {
+	color: var(--clr-primary-1);
+}
+
+.navbar2 .nav-link:hover,
+.navbar3 .nav-link:hover {
+	color: var(--clr-black);
+}
+
+.navbar4 .nav-link:hover {
 	color: var(--clr-white);
 }
 
-.toggle-btn:hover .toggle {
+.toggle-btn:hover .nav-link,
+.navbar1 .toggle-btn:hover .nav-link {
+	color: var(--clr-primary-1);
+}
+
+.navbar2 .toggle-btn:hover .nav-link,
+.navbar3 .toggle-btn:hover .nav-link {
+	color: var(--clr-black);
+}
+
+.navbar4 .toggle-btn:hover .nav-link {
+	color: var(--clr-white);
+}
+
+.toggle-btn:hover .toggle,
+.navbar1 .toggle-btn:hover .toggle {
+	stroke: var(--clr-primary-1);
+}
+
+.navbar2 .toggle-btn:hover .toggle,
+.navbar3 .toggle-btn:hover .toggle {
+	stroke: var(--clr-black);
+}
+
+.navbar4 .toggle-btn:hover .toggle {
 	stroke: var(--clr-white);
 }
 
 .toggle {
-	color: var(--clr-primary-1);
 	margin-left: 1.875rem;
 	cursor: pointer;
+}
+
+.toggle,
+.navbar1 .toggle {
+	stroke: var(--clr-white);
+}
+
+.navbar2 .toggle,
+.navbar3 .toggle,
+.navbar4 .toggle {
+	stroke: var(--clr-primary-1);
 }
 
 .mobile {

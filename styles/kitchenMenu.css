@@ -3,26 +3,6 @@
 	scroll-snap-align: start;
 }
 
-.kitchen-menu .nav-logo:hover {
-	filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(77deg) brightness(105%) contrast(103%);
-}
-
-.kitchen-menu .nav-item:hover::before {
-	background-color: var(--clr-black);
-}
-
-.kitchen-menu .nav-link:hover {
-	color: var(--clr-black);
-}
-
-.kitchen-menu .toggle-btn:hover .nav-link {
-	color: var(--clr-black);
-}
-
-.kitchen-menu .toggle-btn:hover .toggle {
-	stroke: var(--clr-black);
-}
-
 .kitchen-menu .content {
 	height: max-content;
 	margin-top: 1.875rem;

@@ -1,22 +1,7 @@
-@keyframes animateIn {
-	from {
-		width: 0;
-	} to {
-		width: auto;
-	}
-}
-
-@keyframes animateOut {
-	from {
-		width: auto;
-	} to {
-		width: 0;
-	}
-}
-
 .menu {
 	position: absolute;
-	top: 0;
+	top: 0; 
+	right: 0;
 	width: 0; 
 	background-color: var(--clr-white);
 	overflow: hidden;

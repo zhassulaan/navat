@@ -14,26 +14,6 @@
 	}
 }
 
-.kitchen .nav-logo:hover {
-	filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(77deg) brightness(105%) contrast(103%);
-}
-
-.kitchen .nav-item:hover::before {
-	background-color: var(--clr-black);
-}
-
-.kitchen .nav-link:hover {
-	color: var(--clr-black);
-}
-
-.kitchen .toggle-btn:hover .nav-link {
-	color: var(--clr-black);
-}
-
-.kitchen .toggle-btn:hover .toggle {
-	stroke: var(--clr-black);
-}
-
 .kitchen {
 	background-color: var(--clr-white);
 }

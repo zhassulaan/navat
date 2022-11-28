@@ -1,35 +1,24 @@
-console.log(window.offset().top);
-console.log("qwf");
+const element = document.getElementById("main");
+const navbar = document.getElementsByClassName("navbar");
+const menuHeight = document.getElementById("kitchen-menu");
+const height = window.innerHeight;
 
-// $(function() {
-// 	// this applies bg color to your bg elements, instead of css.
-// 	let bgs = $('div.bg');
-// 	bgs.each(function(index, el) {
-// 	  let isEven = (index % 2 == 0);
-// 	  if (isEven) {
-// 		 $(el).addClass('black');
-// 	  } else {
-// 		 $(el).addClass('white');
-// 	  }
-// 	})
-//  });
- 
-//  $(window).on('scroll', function(e) {
-// 	  let texts = $('span.link');
-// 	  let bgs = $('div.bg');
- 
-// 	  // nested because each span has different bounds.
-// 	  for (let span of texts) {
-// 			let span_offset = $(span).offset().top+50;
- 
-// 			for (let bg of bgs) {
-// 				 let offset = $(bg).offset().top;
-// 				 if (offset >= span_offset &&
-// 					  offset <= span_offset + $(bg).outerHeight()) {
-// 					  let isBlack = $(bg).hasClass('black');
-// 					  let clr = isBlack ? 'black' : 'white';
-// 					  $(span).css('color', clr);
-// 				 }
-// 			}
-// 	  }
-//  });
+$(element).scroll(function() {
+	if ($(element).scrollTop() < height) {
+		$(navbar).removeClass("navbar3");
+		$(navbar).removeClass("navbar4");
+		$(navbar).addClass("navbar1");
+	} else if ($(element).scrollTop() < 2 * height - 1) {
+		$(navbar).removeClass("navbar1");
+		$(navbar).removeClass("navbar3");
+		$(navbar).addClass("navbar4");
+	} else if ($(element).scrollTop() < 4 * height + menuHeight.clientHeight - 1) {
+		$(navbar).removeClass("navbar1");
+		$(navbar).removeClass("navbar4");
+		$(navbar).addClass("navbar3");
+	} else if ($(element).scrollTop() < 6 * height + menuHeight.clientHeight - 1) {
+		$(navbar).removeClass("navbar1");
+		$(navbar).removeClass("navbar3");
+		$(navbar).addClass("navbar4");
+	}
+});
