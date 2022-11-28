@@ -3,7 +3,7 @@
 	top: 0;
 	left: -100%;
 	background-color: var(--clr-white);
-	z-index: 1;
+	z-index: 10;
 }
 
 .menu .nav-logo:hover {
