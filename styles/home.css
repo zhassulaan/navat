@@ -39,9 +39,9 @@
 .slide-image {
 	height: 100vh;
 	width: 100%;
-	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
 	float: left;
 }
 

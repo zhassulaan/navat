@@ -12,15 +12,7 @@ $(element).scroll(function() {
 		$(navbar).removeClass("navbar1");
 		$(navbar).removeClass("navbar3");
 		$(navbar).addClass("navbar4");
-	} else if ($(element).scrollTop() < 3 * height + menuHeight.clientHeight) {
-		$(navbar).removeClass("navbar1");
-		$(navbar).removeClass("navbar4");
-		$(navbar).addClass("navbar3");
 	} else if ($(element).scrollTop() < 4 * height + menuHeight.clientHeight) {
-		$(navbar).removeClass("navbar1");
-		$(navbar).removeClass("navbar3");
-		$(navbar).addClass("navbar4");
-	} else if ($(element).scrollTop() < 5 * height + menuHeight.clientHeight) {
 		$(navbar).removeClass("navbar1");
 		$(navbar).removeClass("navbar4");
 		$(navbar).addClass("navbar3");
