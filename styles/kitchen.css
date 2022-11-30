@@ -89,6 +89,7 @@
 	width: 100%;
 	height: 100%;
 	background-color: var(--clr-primary-3);
+	overflow: hidden;
 }
 
 .kitchen .image-bc:before {
@@ -108,7 +109,6 @@
 
 .kitchen .image,
 .kitchen .image2 {
-	width: 100%;
 	height: 100%;
 }
 
@@ -233,6 +233,7 @@
 @media (max-width: 992px) {
 	.kitchen .content {
 		flex-direction: column;
+		justify-content: start;
 		gap: 0;
 		padding: 3.33333vh 4.444vw 8.88889vh;
 	}
