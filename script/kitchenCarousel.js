@@ -12,8 +12,6 @@ let imgs = [image1.src, image2.src, image3.src];
 let kitchenIndex = 0;
 let kitchenIndex2 = 1;
 let kitchenIndex3 = 2;
-console.log(imgs[kitchenIndex]);
-console.log(image1.src);
 function carousel(n) {
 	if (kitchenIndex == 0 && n == -1)
 		kitchenIndex = 2;
@@ -38,16 +36,16 @@ function carousel(n) {
 
 	counter.style.animation = "fadeCounter 0.5s ease-in-out";
 	subtitle.style.animation = "fadeCounter 0.3s ease-in-out";
-	image1.children[0].style.animation = "fade 0.8s ease-in-out";
-	image2.children[0].style.animation = "fade 0.8s ease-in-out";
-	image3.children[0].style.animation = "fade 0.8s ease-in-out";
+	image1.style.animation = "fade 0.8s ease-in-out";
+	image2.style.animation = "fade 0.8s ease-in-out";
+	image3.style.animation = "fade 0.8s ease-in-out";
 
 	myHand = setTimeout(function() {
 		counter.style.animation = '';
 		subtitle.style.animation = '';
-		image1.children[0].style.animation = '';
-		image2.children[0].style.animation = '';
-		image3.children[0].style.animation = '';
+		image1.style.animation = '';
+		image2.style.animation = '';
+		image3.style.animation = '';
 	}, 800);
 
 	counter.textContent = numbs[kitchenIndex];
