@@ -234,7 +234,7 @@
 	.kitchen .content {
 		flex-direction: column;
 		gap: 0;
-		margin: 3.33333vh 0 8.88889vh;
+		padding: 3.33333vh 4.444vw 8.88889vh;
 	}
 
 	.kitchen .text-box {
@@ -307,9 +307,9 @@
 }
 
 @media (max-width: 768px) {
-	.kitchen.content {
+	.kitchen .content {
 		width: 91.111vw;
-		margin: 1.25rem 4.444vw 4.275rem;
+		padding: 1.25rem 4.444vw 4.275rem;
 	}
 
 	.kitchen .title {

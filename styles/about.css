@@ -125,7 +125,7 @@
 
 .about .title {
 	line-height: 7.5rem;
-	font-size: 120px;
+	font-size: 100px;
 	margin: 0 0 2.5rem -18.75rem;
 }
 
@@ -233,7 +233,8 @@
 	}
 
 	.about .title {
-		font-size: 96px;
+		line-height: 6.875rem;
+		font-size: 92px;
 	}
 
 	.about .text {
