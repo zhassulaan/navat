@@ -124,8 +124,7 @@
 }
 
 .about .title {
-	line-height: 7.5rem;
-	font-size: 100px;
+	width: max-content;
 	margin: 0 0 2.5rem -18.75rem;
 }
 
@@ -188,6 +187,7 @@
 	}
 
 	.about .title {
+		width: max-content;
 		margin: 0 0 1.875rem -18.75rem;
 	}
 
@@ -230,11 +230,6 @@
 
 	.small-corner-2 {
 		bottom: 2.5rem;
-	}
-
-	.about .title {
-		line-height: 6.875rem;
-		font-size: 92px;
 	}
 
 	.about .text {
@@ -295,11 +290,8 @@
 		margin-bottom: 3.125rem;
 	}
 	
-	
 	.about .title {
-		line-height: 6.25rem;
-		font-size: 88px;
-		margin: 0 0 1.5625rem -16rem;
+		margin: 0 0 1.5625rem -15rem;
 	}
 
 	.about .text1 {
@@ -386,11 +378,6 @@
 		margin: 0;
 	}
 
-	.about .title {
-		line-height: 5rem;
-		font-size: 76px;
-	}
-
 	.about .paragraph {
 		margin: 3.75vh 0 5vh;
 	}
@@ -411,10 +398,6 @@
 }
 
 @media (max-width: 768px) {
-	.about .title {
-		line-height: 3.75rem;
-		font-size: 68px;
-	}
 
 	.about .paragraph {
 		margin: 3.75vh 0 5vh;
@@ -443,11 +426,6 @@
 		top: 25%;
 		left: 13.4375rem;
 		width: 6.875rem;
-	}
-
-	.about .title {
-		line-height: 3.75rem;
-		font-size: 50px;
 	}
 
 	.about .text {

@@ -23,7 +23,7 @@ function volgendefoto() {
 	showSlides(i)
 }
 
-setInterval(volgendefoto, 8000);
+setInterval(volgendefoto, 5000);
 
 function showSlides(n) {
 	for (let j = 0; j < 5; j++)
@@ -33,26 +33,26 @@ function showSlides(n) {
 		slideIndex = 1;
 		slider.style.left = "0";
 		slider.style.transition = "all 1s ease-in-out";
-		line[n - 1].style.animation = "line 8s ease-in-out";
+		line[n - 1].style.animation = "line 5s ease-in-out";
 	} if (n === 2) {
 		slideIndex = 2;
 		slider.style.left = "-100%";
 		slider.style.transition = "all 1s ease-in-out";
-		line[n - 1].style.animation = "line 8s ease-in-out";
+		line[n - 1].style.animation = "line 5s ease-in-out";
 	} if (n === 3) {
 		slideIndex = 3;
 		slider.style.left = "-200%";
 		slider.style.transition = "all 1s ease-in-out";
-		line[n - 1].style.animation = "line 8s ease-in-out";
+		line[n - 1].style.animation = "line 5s ease-in-out";
 	} if (n === 4) {
 		slideIndex = 4;
 		slider.style.left = "-300%";
 		slider.style.transition = "all 1s ease-in-out";
-		line[n - 1].style.animation = "line 8s ease-in-out";
+		line[n - 1].style.animation = "line 5s ease-in-out";
 	} if (n === 5) {
 		slideIndex = 5;
 		slider.style.left = "-400%";
 		slider.style.transition = "all 1s ease-in-out";
-		line[n - 1].style.animation = "line 8s ease-in-out";
+		line[n - 1].style.animation = "line 5s ease-in-out";
 	}
 }
