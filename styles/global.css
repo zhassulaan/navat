@@ -40,6 +40,11 @@ body {
 	color: var(--clr-white);
 }
 
+body {
+	transform: translate3d(0px, 0px, 0px);
+	transition: all 700ms ease;
+}
+
 ul {
 	list-style-type: none;
 }
