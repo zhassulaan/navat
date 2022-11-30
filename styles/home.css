@@ -36,7 +36,11 @@
 	opacity: 0.4;
 }
 
-.slide-image {
+.slide-image.mobile {
+	display: none;
+}
+
+.slide-image.laptop {
 	height: 100vh;
 	width: 100%;
 	background-position: center;
@@ -219,6 +223,19 @@
 }
 
 @media (max-width: 768px) {
+	.slide-image.laptop {
+		display: none;
+	}
+	
+	.slide-image.mobile {
+		display: block;
+		width: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		float: left;
+	}
+
 	.home .content {
 		padding-top: 11.25vh;
 		padding-bottom: 13.75vh
