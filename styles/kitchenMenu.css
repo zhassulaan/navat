@@ -1,4 +1,5 @@
 .kitchen-menu {
+	width: 100vw;
 	background-color: var(--clr-white);
 	scroll-snap-align: start;
 }
