@@ -17,8 +17,6 @@
 	<link rel="stylesheet" href="styles/reserv.css">
 	<link rel="stylesheet" href="styles/contacts.css">
 	<link rel="stylesheet" href="styles/menu.css">
-	<!-- JS -->
-	<script src="script/scroll.js"></script>
 </head>
 <body>
 	<div class="container" id="main">
@@ -80,13 +78,11 @@
 				</figure>
 			</div>
 
-			<!-- HEADER -->
-			<header class="navbar2"></header>
-
+			
 			<div class="content">
 				<div class="top">
-					<h4 class="title">Лучшее место для отдыха</h4>
-					<h5 class="subtitle">Чайхана Navat</h5>
+					<h4 class="title">НОВАЯ ЧАЙХАНА NAVAT</h4>
+					<h5 class="subtitle">Такого Вы Еще Не Видели</h5>
 
 					<div class="button">
 						<a href="#reserv">
@@ -159,9 +155,6 @@
 
 		<!-- ABOUT SECTION -->
 		<section class="about" id="about">
-			<!-- HEADER -->
-			<header class="navbar2"></header>
-			
 			<div class="content">
 				<p class="footer-text text mobile">Познакомьтесь с новым “Navat”, листайте вниз</p>
 
@@ -186,7 +179,9 @@
 							<!-- <p>Малое фото интерьера</p> -->
 							<img src="assets/about/small.png" alt="small image">
 						</div>
-						<div class="small-corner-2"></div>
+						<div class="small-corner-2">
+							<img src="assets/about/small.png" alt="small image">
+						</div>
 					</div>
 				</div>
 	
@@ -207,9 +202,6 @@
 		
 		<!-- KITCHEN SECTION -->
 		<section class="kitchen" id="kitchen">
-			<!-- HEADER -->
-			<header class="navbar2"></header>
-			
 			<div class="content">
 				<div class="text-box">
 					<h3 class="title">Кухня</h3>
@@ -282,10 +274,7 @@
 
 		
 		<!-- MENU SECTION -->
-		<!-- <div class="kitchen-menu" id="kitchen-menu"> -->
-			<!-- HEADER -->
-			<!-- <header class="navbar2"></header>
-			
+		<section class="kitchen-menu" id="kitchen-menu">
 			<div class="content">
 				<div class="header">
 					<h4 class="title">МЕНЮ</h4>
@@ -368,15 +357,12 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<script src="script/kitchenPage.js"></script> -->
+		</section>
+		<script src="script/kitchenPage.js"></script>
 		
 		
 		<!-- LOCATIONS SECTION -->
 		<section class="locations" id="locations">
-			<!-- HEADER -->
-			<header class="navbar2"></header>
-
 			<div class="content">
 				<div class="map-box">
 					<div class="map"></div>
@@ -399,7 +385,7 @@
 
 				<div class="text-box">
 					<h4 class="title">Локация</h4>
-					<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</з>
+					<p class="text">Мы находимся в экологически чистом районе города Алматы. Свежий ветренный воздух с гор и соседство с парком подогреет аппетит и произведет лучшие впечатления.</з>
 				</div>
 			</div>
 		</section>
@@ -407,9 +393,6 @@
 		
 		<!-- RESERV SECTION -->
 		<section class="reserv" id="reserv">
-			<!-- HEADER -->
-			<header class="navbar2"></header>
-
 			<div class="content">
 				<form id="form" action="mailto:zhassik.s@gmail.com" method="post" enctype="text/plain">
 					<div class="text-box">
@@ -484,9 +467,6 @@
 		
 		<!-- CONTACTS SECTION -->
 		<section class="contacts" id="contacts">
-			<!-- HEADER -->
-			<header class="navbar2"></header>
-
 			<div class="content">
 				<h4 class="title">Контакты</h4>
 
@@ -561,12 +541,12 @@
 						<img src="assets/menu/about.png" alt="about" class="about">
 					</li>
 					<li class="menu-item">
-						<a href="#locations" class="menu-link" id="locations" onclick="clickLink()">Локация</a>
-						<img src="assets/menu/locations.png" alt="about" class="location">
-					</li>
-					<li class="menu-item">
 						<a href="#kitchen" class="menu-link" id="kitchen" onclick="clickLink()">Кухня</a>
 						<img src="assets/menu/kitchen.png" alt="about" class="kitchen">
+					</li>
+					<li class="menu-item">
+						<a href="#locations" class="menu-link" id="locations" onclick="clickLink()">Локация</a>
+						<img src="assets/menu/locations.png" alt="about" class="location">
 					</li>
 					<li class="menu-item">
 						<a href="#reserv" class="menu-link" id="reserv" onclick="clickLink()">Резерв</a>

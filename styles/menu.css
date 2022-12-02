@@ -9,22 +9,6 @@
 	z-index: 11;
 }
 
-.menu .nav-logo:hover {
-	filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(77deg) brightness(105%) contrast(103%);
-}
-
-.menu .nav-item:hover::before {
-	background-color: var(--clr-black);
-}
-
-.menu .nav-link:hover {
-	color: var(--clr-black);
-}
-
-.menu .close:hover {
-	fill: var(--clr-black);
-}
-
 .active {
 	display: block;
 }
