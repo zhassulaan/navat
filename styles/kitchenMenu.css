@@ -1,5 +1,5 @@
 .kitchen-menu {
-	width: 100vw;
+	width: 100%;
 	background-color: var(--clr-white);
 	scroll-snap-align: start;
 }
@@ -7,6 +7,8 @@
 .kitchen-menu .content {
 	height: max-content;
 	padding-top: 1.875rem;
+	margin-top: 14.444444vh;
+	margin-bottom: 7.5rem;
 }
 
 .kitchen-menu .header {
@@ -70,17 +72,17 @@
 	transform: scale(1.05);
 }
 
-.kitchen-menu .image-text,
+/* .kitchen-menu .image-text, */
 .kitchen-menu .counter {
 	line-height: 3.125rem;
 	font-size: 40px;
 }
 
-.kitchen-menu .image-text {
+/* .kitchen-menu .image-text {
 	text-align: center;
 	color: var(--clr-black);
 	padding-top: 15rem;
-}
+} */
 
 .right .counter {
 	text-align: right;
@@ -141,11 +143,12 @@
 
 .kitchen-menu .paragraph .text {
 	line-height: 1.875rem;
+	font-size: 20px;
 }
 
 .kitchen-menu .decoration {
 	height: 2.5rem;
-	margin-top: 9.375rem;
+	/* margin-top: 9.375rem; */
 }
 
 @media (max-width: 1700px) {
@@ -166,17 +169,17 @@
 	
 	.kitchen-menu .text-box,
 	.kitchen-menu .image-box {
-		height: 28.125rem;
+		height: 32.1rem;
 	}
 	
-	.kitchen-menu .image-text,
+	/* .kitchen-menu .image-text, */
 	.kitchen-menu .counter {
 		font-size: 34px;
 	}
 	
-	.kitchen-menu .image-text {
+	/* .kitchen-menu .image-text {
 		padding-top: 12.96875rem;
-	}
+	} */
 
 	.kitchen-menu .counter {
 		margin-bottom: 3.125rem;
@@ -186,15 +189,16 @@
 		width: 30vw;
 	}
 	
+	.kitchen-menu .paragraph .text {
+		line-height: 1.625rem;
+		font-size: 17px;
+	}
+
 	.kitchen-menu .subtitle {
 		line-height: 2.1875rem;
 		font-size: 26px;
 		margin-bottom: 1.875rem;
 		padding-bottom: 1.25rem;
-	}
-	
-	.kitchen-menu .decoration {
-		margin-top: 3.4375rem;
 	}
 }
 
@@ -215,17 +219,17 @@
 	
 	.kitchen-menu .text-box,
 	.kitchen-menu .image-box {
-		height: 25rem;
+		height: 27.1871rem;
 	}
 	
-	.kitchen-menu .image-text,
+	/* .kitchen-menu .image-text, */
 	.kitchen-menu .counter {
 		font-size: 30px;
 	}
 	
-	.kitchen-menu .image-text {
+	/* .kitchen-menu .image-text {
 		padding-top: 11.40625rem;
-	}
+	} */
 
 	.kitchen-menu .counter {
 		margin: 0.9375rem 0 2.1875rem;
@@ -234,33 +238,38 @@
 	.kitchen-menu .paragraph {
 		width: 32vw;
 	}
+
+	.kitchen-menu .paragraph .text {
+		line-height: 1.5rem;
+		font-size: 16px;
+	}
 	
 	.kitchen-menu .subtitle {
+		font-size: 24px;
 		margin-bottom: 1.25rem;
 		padding-bottom: 0.9375rem;
 	}
 	
 	.kitchen-menu .decoration {
 		height: 1.875rem;
-		margin-top: 3.125rem;
 	}
 }
 
 @media (max-width: 1280px) {
 	.kitchen-menu .text-box,
 	.kitchen-menu .image-box {
-		height: 22.5rem;
+		height: 24.16653rem;
 	}
 	
-	.kitchen-menu .image-text,
+	/* .kitchen-menu .image-text, */
 	.kitchen-menu .counter {
 		line-height: 2.5rem;
 		font-size: 26px;
 	}
 	
-	.kitchen-menu .image-text {
+	/* .kitchen-menu .image-text {
 		padding-top: 10.15625rem;
-	}
+	} */
 
 	.kitchen-menu .counter {
 		margin: 0.9375rem 0 2.1875rem;
@@ -279,23 +288,14 @@
 	}
 	
 	.kitchen-menu .subtitle {
+		font-size: 22px;
 		margin-bottom: 0.9375rem;
 		padding-bottom: 0.625rem;
 	}
-	
-	.kitchen-menu .paragraph .text {
-		line-height: 1.5625rem;
-		font-size: 17px;
-	}
-	
-	.kitchen-menu .decoration {
-		margin-top: 3.4375rem;
-	}
-}
 
-@media (max-width: 1026px) {
-	.kitchen-menu .decoration {
-		margin-top: 1.875rem;
+	.kitchen-menu .paragraph .text {
+		line-height: 1.25rem;
+		font-size: 14px;
 	}
 }
 
@@ -310,25 +310,27 @@
 
 	.kitchen-menu .text-box,
 	.kitchen-menu .image-box {
-		height: 20rem;
+		height: 18.729rem;
 	}
 
-	.kitchen-menu .image-text {
+	/* .kitchen-menu .image-text {
 		width: 70%;
 		margin: 0 auto;
-	}
-	
-	.kitchen-menu .image-text {
 		padding-top: 7.5rem;
-	}
+	} */
 	
 	.kitchen-menu .counter {
 		line-height: 2.1875rem;
 		margin: 0.3125rem 0 0.625rem;
 	}
+
+	.kitchen-menu .subtitle {
+		font-size: 19px;
+	}
 	
 	.kitchen-menu .paragraph .text {
-		font-size: 17px;
+		line-height: 1.125rem;
+		font-size: 12px;
 	}
 }
 
@@ -340,10 +342,6 @@
 	.kitchen-menu .subtitle {
 		line-height: 1.5625rem;
 		font-size: 24px;
-	}
-
-	.kitchen-menu .decoration {
-		margin-top: 1.25rem;
 	}
 }
 
@@ -423,24 +421,35 @@
 		grid-area: textBox5;
 	}
 
-	.kitchen-menu .text-box,
 	.kitchen-menu .image-box {
-		width: 100%;
+		width: 62.5vw;
+		height: 43.82552083vw;
+	}
+	
+	.kitchen-menu .text-box {
+		width: 62.5vw;
+		height: max-content;
+		margin: 0 auto;
 	}
 
-	.kitchen-menu .text-box,
-	.kitchen-menu .image-box {
-		height: 21.5625rem;
-	}
-
-	.kitchen-menu .image-text {
+	/* .kitchen-menu .image-text {
 		line-height: 3.125rem;
 		font-size: 34px;
 		padding-top: 7.5rem;
-	}	
+	}	 */
 
+	.kitchen-menu img.laptop,
 	.kitchen-menu .counter {
 		display: none;
+	}
+	
+	.kitchen-menu img.mobile {
+		display: block;
+	}
+
+	.kitchen-menu .image-box img {
+		width: 100%;
+		height: max-content;
 	}
 
 	.kitchen-menu .paragraph {
@@ -450,6 +459,11 @@
 	.right .paragraph,
 	.left .paragraph {
 		margin: 3.125rem 0 0;
+	}
+
+	.kitchen-menu .image:hover,
+	.kitchen-menu .paragraph:hover {
+		transform: none;
 	}
 
 	.left .subtitle,
@@ -465,20 +479,20 @@
 
 	.kitchen-menu .subtitle {
 		line-height: 2.5rem;
-		font-size: 30px;
+		font-size: 21px;
 		margin-bottom: 1.5625rem;
 		padding-bottom: 1.25rem;
 	}
 	
 	.kitchen-menu .paragraph .text {
-		line-height: 1.875rem;
-		font-size: 20px;
+		height: max-content;
+		line-height: 1.5625rem;
+		font-size: 17px;
 	}
 
 	.kitchen-menu .decoration {
 		width: 100%;
 		height: 2.5rem;
-		margin-top: 5rem;
 	}
 }
 
@@ -493,9 +507,15 @@
 	.kitchen-menu .paragraph .text {
 		font-size: 19px;
 	}
+}
 
-	.kitchen-menu .decoration {
-		margin-top: 3.4375rem;
+@media (max-width: 650px) {
+	.kitchen-menu .subtitle {
+		font-size: 20px;
+	}
+
+	.kitchen-menu .paragraph .text {
+		font-size: 16px;
 	}
 }
 
@@ -509,10 +529,6 @@
 	.kitchen-menu .paragraph .text {
 		line-height: 1.75rem;
 		font-size: 17px;
-	}
-
-	.kitchen-menu .decoration {
-		margin-top: 4.5625rem;
 	}
 }
 
@@ -529,6 +545,11 @@
 		line-height: 1.5625rem;
 		font-size: 15px;
 	}
+
+	.kitchen-menu .image-box,
+	.kitchen-menu .text-box {
+		width: 100%;
+	}
 	
 	.kitchen-menu .text-box {
 		height: 17.5rem;
@@ -538,11 +559,11 @@
 		height: 14.375rem;
 	}
 
-	.kitchen-menu .image-text {
+	/* .kitchen-menu .image-text {
 		line-height: 1.875rem;
 		font-size: 28px;
 		padding-top: 5.3125rem;
-	}	
+	}	 */
 
 	.kitchen-menu .paragraph {
 		margin-top: 2.1875rem;
@@ -550,18 +571,17 @@
 
 	.kitchen-menu .subtitle {
 		line-height: 1.5625rem;
-		font-size: 20px;
+		font-size: 18px;
 		margin-bottom: 0.9375rem;
 	}
 
 	.kitchen-menu .paragraph .text {
 		height: 9.375rem;
 		line-height: 1.5625rem;
-		font-size: 16px;
+		font-size: 15px;
 	}
 
 	.kitchen-menu .decoration {
 		height: 1.25rem;
-		margin-top: 1.25rem;
 	}
 }

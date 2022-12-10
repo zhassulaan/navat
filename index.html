@@ -19,6 +19,11 @@
 	<link rel="stylesheet" href="styles/menu.css">
 </head>
 <body>
+	<div class="alert" id="alert">
+		<img src="assets/rotate.svg" alt="Поверните устройство"/>
+		<p class="text">Поверните устройство</p>
+	</div>
+
 	<div class="container" id="main">
 		<!-- HEADER -->
 		<header class="navbar">
@@ -52,28 +57,28 @@
 			<div class="slider">
 				<figure>
 					<div class="slide">
-						<img src="assets/home/img-1.png" alt="image 1" class="slide-image laptop">
-						<img src="assets/home/img-1-mobile.png" alt="image 1" class="slide-image mobile">
+						<img src="assets/home/img1.jpg" alt="image 1" class="slide-image laptop">
+						<img src="assets/home/img1-mobile.svg" alt="image 1" class="slide-image mobile">
 					</div>
 					
 					<div class="slide">
-						<img src="assets/home/img-2.png" alt="image 2" class="slide-image laptop">
-						<img src="assets/home/img-2-mobile.png" alt="image 2" class="slide-image mobile">
+						<img src="assets/home/img2.jpeg" alt="image 2" class="slide-image laptop">
+						<img src="assets/home/img2-mobile.svg" alt="image 2" class="slide-image mobile">
 					</div>
 					
 					<div class="slide">
-						<img src="assets/home/img-3.png" alt="image 3" class="slide-image laptop">
-						<img src="assets/home/img-3-mobile.png" alt="image 3" class="slide-image mobile">
+						<img src="assets/home/img3.jpg" alt="image 3" class="slide-image laptop">
+						<img src="assets/home/img3-mobile.svg" alt="image 3" class="slide-image mobile">
 					</div>
 					
 					<div class="slide">
-						<img src="assets/home/img-4.png" alt="image 4" class="slide-image laptop">
-						<img src="assets/home/img-4-mobile.png" alt="image 4" class="slide-image mobile">
+						<img src="assets/home/img4.jpg" alt="image 4" class="slide-image laptop">
+						<img src="assets/home/img4-mobile.svg" alt="image 4" class="slide-image mobile">
 					</div>
 					
 					<div class="slide">
-						<img src="assets/home/img-5.png" alt="image 5" class="slide-image laptop">
-						<img src="assets/home/img-5-mobile.png" alt="image 5" class="slide-image mobile">
+						<img src="assets/home/img5.jpg" alt="image 5" class="slide-image laptop">
+						<img src="assets/home/img5-mobile.svg" alt="image 5" class="slide-image mobile">
 					</div>
 				</figure>
 			</div>
@@ -81,12 +86,12 @@
 			
 			<div class="content">
 				<div class="top">
-					<h4 class="title">НОВАЯ ЧАЙХАНА NAVAT</h4>
+					<h4 class="title"><span class="new">Новая</span> Чайхана NAVAT</h4>
 					<h5 class="subtitle">Такого Вы Еще Не Видели</h5>
 
 					<div class="button">
 						<a href="#reserv">
-							<p class="button-text">Забронировать место</p>
+							<p class="button-text">Резерв столика</p>
 						</a>
 					</div>
 				</div>
@@ -94,41 +99,46 @@
 				<div class="bottom">
 					<div class="boxes">
 						<div class="feature">
-							<p class="text">01</p>
+							<p class="text text2">01</p>
+							<p class="text text1">Круто!</p>
 							<div class="circle" onclick="currentSlide(1)">
-								<img src="assets/home/mini-img-1.png" alt="mini image 1" class="mini-image">
+								<img src="assets/home/img1.jpg" alt="mini image 1" class="mini-image">
 							</div>
 							<div class="feature-line"></div>
 						</div>
 
 						<div class="feature">
-							<p class="text">02</p>
+							<p class="text text2">02</p>
+							<p class="text text1">Необычно!</p>
 							<div class="circle" onclick="currentSlide(2)">
-								<img src="assets/home/mini-img-2.png" alt="mini image 2" class="mini-image">
+								<img src="assets/home/img2.jpeg" alt="mini image 2" class="mini-image">
 							</div>
 							<div class="feature-line"></div>
 						</div>
 
 						<div class="feature">
-							<p class="text">03</p>
+							<p class="text text2">03</p>
+							<p class="text text1">Вау!</p>
 							<div class="circle" onclick="currentSlide(3)">
-								<img src="assets/home/mini-img-3.png" alt="mini image 3" class="mini-image">
+								<img src="assets/home/img3.jpg" alt="mini image 3" class="mini-image">
 							</div>
 							<div class="feature-line"></div>
 						</div>
 
 						<div class="feature">
-							<p class="text">04</p>
+							<p class="text text2">04</p>
+							<p class="text text1">Завораживает!</p>
 							<div class="circle" onclick="currentSlide(4)">
-								<img src="assets/home/mini-img-4.png" alt="mini image 4" class="mini-image">
+								<img src="assets/home/img4.jpg" alt="mini image 4" class="mini-image">
 							</div>
 							<div class="feature-line"></div>
 						</div>
 
 						<div class="feature">
-							<p class="text">05</p>
+							<p class="text text2">05</p>
+							<p class="text text1">Свежо!</p>
 							<div class="circle" onclick="currentSlide(5)">
-								<img src="assets/home/mini-img-5.png" alt="mini image 5" class="mini-image">
+								<img src="assets/home/img5.jpg" alt="mini image 5" class="mini-image">
 							</div>
 							<div class="feature-line"></div>
 						</div>
@@ -156,7 +166,7 @@
 		<!-- ABOUT SECTION -->
 		<section class="about" id="about">
 			<div class="content">
-				<p class="footer-text text mobile">Познакомьтесь с новым “Navat”, листайте вниз</p>
+				<p class="footer-text text mobile">Готовьтесь удивляться и вдохновляться вместе с нами!</p>
 
 				<div class="corner-box">
 					<p class="text">Эстетика. Стиль. Традиции.</p>
@@ -165,8 +175,8 @@
 	
 				<div class="image-box">
 					<div class="big-corner">
+						<img src="assets/about/big-image.png" alt="big image">
 						<!-- <p>Фото интерьера</p> -->
-						<img src="assets/about/big.png" alt="big image">
 					</div>
 	
 					<div class="corner">
@@ -176,25 +186,28 @@
 						</div>
 	
 						<div class="small-corner">
+							<img src="assets/about/small-image.svg" alt="small image" class="laptop">
+							<img src="assets/about/small-image.svg" alt="small image" class="mobile">
 							<!-- <p>Малое фото интерьера</p> -->
-							<img src="assets/about/small.png" alt="small image">
 						</div>
 						<div class="small-corner-2">
-							<img src="assets/about/small.png" alt="small image">
+							<img src="assets/about/small-image.png" alt="small image">
 						</div>
 					</div>
 				</div>
 	
 				<div class="text-box">
-					<h2 class="title">О нас</h2>
+					<h2 class="title">Скоро открытие</h2>
 	
 					<div class="paragraph">
-						<p class="text text1">Сеть ресторанов “Navat”, завоевываем доверие восточным гостеприимством и традиционной кухней. Создаем восточный колорит Центральной Азии с 2014 года. Наша цель – создавать новый, яркий опыт и vibe для наших гостей.</p>
+						<p class="text text1">Новой, сенсационной, непохожей на своих «сестёр» - ПЯТОЙ ЧАЙХАНЫ NAVAT В АЛМАТЫ!</p>
 						<br class="br">
-						<p class="text text2">Отражаем лучшие достоинства Центральной Азии, как через кухню и изысканные вкусы, так и через устои и отличный сервис.</p>
+						<p class="text text1">Целых три этажа инновационного дизайна, премиальной отделки, панорамных окон, роскошной мебели, и, конечно, наша гордость — открытая кухня с тандыром, где каждый желающий сможет наблюдать процесс готовки!</p>
+						<br class="br">
+						<p class="text text2">Неизменным останется только одно — легендарный вкус наших блюд.</p>
 					</div>
 	
-					<p class="footer-text text laptop">Познакомьтесь с новым “Navat”, листайте вниз</p>
+					<p class="footer-text text laptop">Готовьтесь удивляться и вдохновляться вместе с нами!</p>
 				</div>
 			</div>
 		</section>
@@ -235,29 +248,30 @@
 					<img src="assets/kitchen/decoration1.svg" alt="decoration" class="decoration">
 
 					<div class="images">
-						<div class="image-container main-img" id="box1">
+						<div class="image-container main-img">
 							<div class="main-image-bc">
-								<img src="assets/home/img-4.png" alt="" class="image2" id="image21">
-								<img src="assets/home/img-1.png" alt="" class="image" id="image1">
-								<!-- <h6 class="image-text" id="box1">ФОТО1</h6> -->
+								<img src="assets/kitchen/image-047.jpg" alt="национальная кухня" class="image2" id="image21">
+								<img src="assets/kitchen/image-047.jpg" alt="национальная кухня" class="image image1" id="image1">
+								<img src="assets/kitchen/kitchen-img.svg" alt="национальная кухня" class="image mobile" id="image1">
+								<!-- <h6 class="image-text" id="box1">ФОТО</h6> -->
 							</div>
 
 							<h6 class="subtitle" id="subtitle">НАЦИОНАЛЬНАЯ КУХНЯ</h6>
 						</div>
 
-						<div class="image-container" id="img2">
+						<div class="image-container">
 							<div class="image-bc">
-								<img src="assets/home/img-5.png" alt="" class="image2" id="image22">
-								<img src="assets/home/img-2.png" alt="" class="image" id="image2">
-								<!-- <h6 class="image-text" id="box2">ФОТО2</h6> -->
+								<img src="assets/kitchen/image-048.jpg" alt="европейская кухня" class="image2" id="image22">
+								<img src="assets/kitchen/image-048.jpg" alt="европейская кухня" class="image image1" id="image2">
+								<!-- <h6 class="image-text" id="box2">ФОТО</h6> -->
 							</div>
 						</div>
 
-						<div class="image-container" id="img3">
+						<div class="image-container">
 							<div class="image-bc">
-								<img src="assets/home/img-2.png" alt="" class="image2" id="image23">
-								<img src="assets/home/img-3.png" alt="" class="image" id="image3">
-								<!-- <h6 class="image-text" id="box3">ФОТО3</h6> -->
+								<img src="assets/kitchen/image-053.jpg" alt="восточная кухня" class="image2" id="image23">
+								<img src="assets/kitchen/image-053.jpg" alt="восточная кухня" class="image image1" id="image3">
+								<!-- <h6 class="image-text" id="box3">ФОТО</h6> -->
 							</div>
 						</div>
 					</div>
@@ -265,34 +279,33 @@
 			</div>
 		</section>
 		<script src="script/kitchenCarousel.js"></script>
-		<!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-		<script type="text/javascript">
-			$(document).on('mouseover', '.image-container', function() {
-				$(this).addClass('active').siblings().removeClass('active');
-			});
-		</script> -->
 
 		
-		<!-- MENU SECTION -->
+		<!-- KITCHEN MENU SECTION -->
 		<div class="kitchen-menu" id="kitchen-menu">
 			<div class="content">
 				<div class="header">
 					<h4 class="title">МЕНЮ</h4>
-					<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p class="text">Ознакомьтесь с нашим обновленным меню. Лучшие позиции как традиционной кухни так и совершенно новый взгляд на полюбившиеся блюда.</p>
 				</div>
 				
 				<div class="boxes">
 					<div class="image-box" id="box1">
 						<div class="image">
-							<h6 class="image-text">ФОТО блюда/позиции</h6>
+							<!-- <h6 class="image-text">ФОТО блюда/позиции</h6> -->
+							<img src="assets/kitchen/image1.jpg" alt="бешбармак с каниной" class="laptop">
+							<img src="assets/kitchen/image1_1.png" alt="бешбармак с каниной" class="mobile">
 						</div>
 					</div>
 	
 					<div class="text-box right" id="box2">
 						<h6 class="counter">01</h6>
 						<div class="paragraph">
-							<p class="subtitle">Заголовок</p>
-							<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p class="subtitle">БЕШБАРМАК С КОНИНОЙ</p>
+							<p class="text">
+								Отборная конина, тонкое тесто, идеально ровные кольца лука, рассыпчатый картофель, питательная и ароматная сорпа - бешбармак в Чайхане NAVAT ничем не отличается от домашнего. Разве что вам не придётся напрягаться.
+								Мы можем приготовить для вас как большое блюдо для семейного торжества, так и среднюю тарелку только для вас. Ведь для бешбармака больше не нужно искать особого случая, побалуйте себя прямо сейчас!
+							</p>
 						</div>
 						<img src="assets/kitchen/decoration2.svg" alt="decoration" class="decoration">
 					</div>
@@ -300,29 +313,36 @@
 					<div class="text-box left" id="box3">
 						<h6 class="counter">02</h6>
 						<div class="paragraph">
-							<p class="subtitle">Заголовок</p>
-							<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p class="subtitle">КАЗАХСКИЕ СЛАДОСТИ</p>
+							<p class="text">
+								Удивительно, но казахские сладости - вкусные, безвредные и, более того, даже полезные! Секреты приготовления этих лакомств наши бабушки с трепетом передавили из поколения в поколение. И это чувствуется - аромат домашнего уюта и заботы словно обволакивает вас изнутри, как только вы пробуете курт, жент или иримшик! 
+								А что может быть лучше тёплых семейных  посиделок за чашечкой чая и тарелкой казахский сладостей?…
+							</p>
 						</div>
 						<img src="assets/kitchen/decoration2.svg" alt="decoration" class="decoration">
 					</div>
 	
 					<div class="image-box" id="box4">
 						<div class="image">
-							<h6 class="image-text">ФОТО блюда/позиции</h6>
+							<!-- <h6 class="image-text">ФОТО блюда/позиции</h6> -->
+							<img src="assets/kitchen/image2.png" alt="казахские сладости" class="laptop">
+							<img src="assets/kitchen/image2_1.png" alt="казахские сладости" class="mobile">
 						</div>
 					</div>
 	
 					<div class="image-box" id="box5">
 						<div class="image">
-							<h6 class="image-text">ФОТО блюда/позиции</h6>
+							<!-- <h6 class="image-text">ФОТО блюда/позиции</h6> -->
+							<img src="assets/kitchen/image3.png" alt="плов праздничный" class="laptop">
+							<img src="assets/kitchen/image3_1.png" alt="плов праздничный" class="mobile">
 						</div>
 					</div>
 					
 					<div class="text-box right" id="box6">
 						<h6 class="counter">03</h6>
 						<div class="paragraph">
-							<p class="subtitle">Заголовок</p>
-							<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p class="subtitle">ПЛОВ ПРАЗДНИЧНЫЙ</p>
+							<p class="text">У каждого из нас случаются такие дни, когда безумно хочется вкусного и настоящего плова! Так, чтобы рис был рассыпчатым, а мясо таяло во рту! О том, чтобы в блюде оказался ещё и сочный изюм, жгучий перец и даже ломтики казы - порой остаётся только мечтать! Но шеф-повар Чайханы NAVAT учёл абсолютно все пожелания. Разумеется, без секретных ингредиентов и техники приготовления от шефа тут не обошлось!</p>
 						</div>
 						<img src="assets/kitchen/decoration2.svg" alt="decoration" class="decoration">
 					</div>
@@ -330,35 +350,38 @@
 					<div class="text-box left" id="box7">
 						<h6 class="counter">04</h6>
 						<div class="paragraph">
-							<p class="subtitle">Заголовок</p>
-							<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p class="subtitle">КУЫРДАК ПО-ДОМАШНЕМУ</p>
+							<p class="text">Куырдак - это нежнейшие ломтики мяса и мягкий картофель, приготовленные на душистом курдючном жире! Проще говоря, блюдо для истинных ценителей и гурманов. Удивительно, но куырдак тушат очень быстро и ловко, поэтому издревле казахи готовили это блюдо, чтобы накормить семью после длинного рабочего дня или угощали им внезапно нагрянувших гостей издалека.</p>
 						</div>
 						<img src="assets/kitchen/decoration2.svg" alt="decoration" class="decoration">
 					</div>
 	
 					<div class="image-box" id="box8">
 						<div class="image">
-							<h6 class="image-text">ФОТО блюда/позиции</h6>
+							<!-- <h6 class="image-text">ФОТО блюда/позиции</h6> -->
+							<img src="assets/kitchen/image4.png" alt="куырдак по-домашнему" class="laptop">
+							<img src="assets/kitchen/image4_1.png" alt="куырдак по-домашнему" class="mobile">
 						</div>
 					</div>
 	
 					<div class="image-box" id="box9">
 						<div class="image">
-							<h6 class="image-text">ФОТО блюда/позиции</h6>
+							<!-- <h6 class="image-text">ФОТО блюда/позиции</h6> -->
+							<img src="assets/kitchen/image5.png" alt="лагман по-домашнему" class="laptop">
+							<img src="assets/kitchen/image5_1.png" alt="лагман по-домашнему" class="mobile">
 						</div>
 					</div>
 					
 					<div class="text-box right" id="box10">
 						<h6 class="counter">05</h6>
 						<div class="paragraph">
-							<p class="subtitle">Заголовок</p>
-							<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p class="subtitle">ЛАГМАН ПО-ДОМАШНЕМУ</p>
+							<p class="text">Если раньше хорошей келин считалась та, что умеет тянуть лапшу для лагмана, то сейчас девушкам достаточно знать, где в городе это блюдо готовят лучше всего! Ответ очевиден - в Чайхане NAVAT! А всё потому что наши повара готовят его с особой любовью - лапша получается идеального диаметра, мясо настолько мягкое, что его практически не нужно жевать, овощи аккуратно похрустывают, а бульон получается наваристым и ароматным!</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<script src="script/kitchenPage.js"></script>
 		
 		
 		<!-- LOCATIONS SECTION -->
@@ -394,7 +417,7 @@
 		<!-- RESERV SECTION -->
 		<section class="reserv" id="reserv">
 			<div class="content">
-				<form id="form" action="mailto:zhassik.s@gmail.com" method="post" enctype="text/plain">
+				<form id="form" action="mailto:chaihana.navat.kz@gmail.com" method="post" enctype="text/plain">
 					<div class="text-box">
 						<h3 class="title">Резерв</h3>
 	
@@ -534,7 +557,7 @@
 				<ul class="menu-box">
 					<li class="menu-item">
 						<a href="#home" class="menu-link" id="home" onclick="clickLink()">Главная</a>
-						<img src="assets/menu/home.png" alt="about" class="main">
+						<img src="assets/menu/home.png" alt="main" class="main">
 					</li>
 					<li class="menu-item">
 						<a href="#about" class="menu-link" id="about" onclick="clickLink()">О нас</a>
@@ -542,19 +565,19 @@
 					</li>
 					<li class="menu-item">
 						<a href="#kitchen" class="menu-link" id="kitchen" onclick="clickLink()">Кухня</a>
-						<img src="assets/menu/kitchen.png" alt="about" class="kitchen">
+						<img src="assets/menu/kitchen.png" alt="kitchen" class="kitchen">
+					</li>
+					<li class="menu-item">
+						<a href="#kitchen-menu" class="menu-link" id="kitchen-menu" onclick="clickLink()">Меню</a>
+						<img src="assets/menu/kitchen-menu.png" alt="kitchen-menu" class="kitchen-menu">
 					</li>
 					<li class="menu-item">
 						<a href="#locations" class="menu-link" id="locations" onclick="clickLink()">Локация</a>
-						<img src="assets/menu/locations.png" alt="about" class="location">
+						<img src="assets/menu/locations.png" alt="locations" class="location">
 					</li>
 					<li class="menu-item">
 						<a href="#reserv" class="menu-link" id="reserv" onclick="clickLink()">Резерв</a>
-						<img src="assets/menu/reserv.png" alt="about" class="reserv">
-					</li>
-					<li class="menu-item">
-						<a href="#contacts" class="menu-link" id="contacts" onclick="clickLink()">Контакты</a>
-						<img src="assets/menu/contacts.png" alt="about" class="contact">
+						<img src="assets/menu/reserv.png" alt="reserv" class="reserv">
 					</li>
 				</ul>
 	

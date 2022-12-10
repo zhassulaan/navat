@@ -84,15 +84,15 @@
 }
 
 .main-image-bc,
-.kitchen .image-bc {
+.image-bc {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	background-color: var(--clr-primary-3);
+	/* background-color: var(--clr-primary-3); */
 	overflow: hidden;
 }
 
-.kitchen .image-bc:before {
+.image-bc:before {
 	position: absolute;
 	content: '';
 	display: block;
@@ -109,6 +109,7 @@
 
 .kitchen .image,
 .kitchen .image2 {
+	width: max-content;
 	height: 100%;
 }
 
@@ -147,12 +148,12 @@
 	background-color: var(--clr-primary-1);
 }
 
-.kitchen .image-text {
+/* .kitchen .image-text {
 	font-size: 40px;
 	text-align: center;
 	color: var(--clr-black);
-	padding-top: 15rem;
-}
+	padding-top: 11.875rem;
+} */
 
 @media (max-width: 1700px) {
 	.kitchen .counter {
@@ -167,10 +168,6 @@
 
 	.main-image-bc {
 		height: 26.25rem;
-	}
-
-	.kitchen .image-text {
-		padding-top: 11.875rem;
 	}
 }
 
@@ -301,15 +298,15 @@
 		background-color: transparent;
 	}
 
-	.kitchen .image-text {
+	/* .kitchen .image-text {
 		font-size: 32px;
 		padding-top: 10rem;
-	}
+	} */
 }
 
 @media (max-width: 768px) {
 	.kitchen .content {
-		width: 91.111vw;
+		width: 100%;
 		padding: 1.25rem 4.444vw 4.275rem;
 	}
 
@@ -318,7 +315,7 @@
 	}
 
 	.kitchen .image-box {
-		width: calc(100% + 4.446%);
+		width: 100%;
 		margin: 0 -100vw 0 0;
 	}
 
@@ -329,24 +326,44 @@
 	}
 
 	.kitchen .images {
-		gap: 1rem;
+		gap: 0;
+	}
+	
+	.kitchen .image-container {
+		display: none;
+	}
+	
+	.kitchen .main-img {
+		display: block;
+		width: 100%;
 	}
 	
 	.main-image-bc {
-		min-width: 12.625rem;
-		max-width: 12.625rem;
+		max-width: 91.11112vw;
+		min-width: 91.11112vw;
 		height: 18.125rem;
 	}
 
-	.kitchen .image-text {
-		font-size: 28px;
-		padding-top: 7.8125rem;
+	.kitchen .image,
+	.kitchen .image2 {
+		width: 100%;
 	}
 
+	.kitchen .image2,
+	.kitchen .image1 {
+		display: none;
+	}
+
+	/* .kitchen .image-text {
+		font-size: 28px;
+		padding-top: 7.8125rem;
+	} */
+
 	.kitchen .subtitle {
-		line-height: 2.5rem;
+		display: none;
+		/* line-height: 2.5rem;
 		font-size: 20px;
-		padding-left: 0.625rem;
+		padding-left: 0.625rem; */
 	}
 }
 
@@ -358,5 +375,9 @@
 	.kitchen .text {
 		line-height: 1.5625rem;
 		font-size: 15px;
+	}
+
+	.kitchen .main-img {
+		height: 15.625rem;
 	}
 }
