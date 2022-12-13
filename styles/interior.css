@@ -62,6 +62,12 @@
 	width: 100%;
 }
 
+.interior .shade {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
 .interior .image-box .image-title {
 	font-size: 30px;
 }
