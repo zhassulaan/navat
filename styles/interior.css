@@ -19,6 +19,14 @@
 	overflow: hidden;
 }
 
+.interior .image-mid {
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 100%;
+	color: var(--clr-white);
+}
+
 .interior .image-text {
 	position: absolute;
 	bottom: 0;
