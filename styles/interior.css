@@ -58,8 +58,8 @@
 	height: 100%;
 }
 
-.interior .image-box img {
-	width: 100%;
+.interior img {
+	height: 100%;
 }
 
 .interior .shade {
@@ -113,10 +113,6 @@
 .interior .text-box .image-container {
 	width: 14.58333vw;
 	height: 23.33333vh;
-}
-
-.interior .text-box img {
-	height: 100%;
 }
 
 .interior .text-box .image-mid {
