@@ -15,7 +15,7 @@ $(element).scroll(function() {
 		$(navbar).removeClass("navbar1");
 		$(navbar).removeClass("navbar4");
 		$(navbar).addClass("navbar3");
-	} else if ($(element).scrollTop() < 7 * height) {
+	} else if ($(element).scrollTop() < 6 * height) {
 		$(navbar).removeClass("navbar1");
 		$(navbar).removeClass("navbar3");
 		$(navbar).addClass("navbar4");
