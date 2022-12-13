@@ -70,7 +70,7 @@
 	display: none;
 }
 
-.menu-item #kitchen-menu:not(:hover) + img.kitchen-menu {
+.menu-item #interior:not(:hover) + img.interior {
 	display: none;
 }
 
