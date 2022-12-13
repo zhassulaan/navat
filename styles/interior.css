@@ -5,7 +5,7 @@
 .interior .content {
 	display: flex;
 	gap: 1.041667vw;
-	padding-top: 7.77778vh;
+	padding-top: 6.666667vh;
 	padding-bottom: 15.55556vh;
 }
 
@@ -122,4 +122,8 @@
 	bottom: 0;
 	font-size: 16px;
 	margin: 0 0 2.222222vh 2.222222vh;
+}
+
+@media (max-width: 1700px) {
+
 }
