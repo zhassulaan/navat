@@ -10,7 +10,7 @@
 }
 
 .interior .image-box {
-	height: 62.222222vh;
+	height: calc(56.666667vh + 3.125rem);
 	margin-top: 1.111111vh;
 }
 
