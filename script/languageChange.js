@@ -1,4 +1,4 @@
-let langs = document.querySelector(".nav-menu"),
+let langs = document.querySelectorAll(".nav-menu"),
 	link = document.querySelectorAll(".nav-item"),
 	// header = document.querySelector("header"),
 	home = document.querySelector(".home"),
@@ -16,8 +16,13 @@ let langs = document.querySelector(".nav-menu"),
 
 link.forEach(el => {
 	el.addEventListener("click", () => {
-		langs.querySelector(".active").classList.remove("active");
-		el.classList.add("active");
+		if (window.innerWidth > 768) {
+			langs[0].querySelector(".active").classList.remove("active");
+			el.classList.add("active");
+		} else {
+			langs[1].querySelector(".active").classList.remove("active");
+			el.classList.add("active");
+		}
  
 		let attr = el.getAttribute("language");
  
