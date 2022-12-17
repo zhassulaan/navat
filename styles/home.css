@@ -50,6 +50,10 @@
 	margin-top: -160px;
 }
 
+.home {
+	background-color: var(--clr-primary-2);
+}
+
 .home .content {
 	padding-top: 8.888889vh;
 	padding-bottom: 12.777778vh;
