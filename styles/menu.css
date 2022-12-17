@@ -9,6 +9,10 @@
 	z-index: 11;
 }
 
+.menu .nav-menu {
+	display: none;
+}
+
 .active {
 	display: block;
 }
@@ -255,6 +259,10 @@ h1 {
 	.menu .arrow,
 	.contact-box {
 		display: none;
+	}
+
+	.menu .nav-menu {
+		display: block;
 	}
 
 	.menu .nav-menu {
