@@ -20,12 +20,11 @@ form {
 
 .reserv .paragraph {
 	width: 28.75rem;
-	height: 25.55556vh;
-	margin: 5.55556vh 0 4.44444vh;
+	margin: 5vh 0;
 }
 
 .reserv .text {
-	line-height: 3.88889vh;
+	line-height: 3.33333vh;
 }
 
 .reserv .feature {
@@ -65,7 +64,7 @@ form {
 .form-box .input-box {
 	border-bottom: 0.1875rem solid var(--clr-primary-1);
 	height: 7.77778vh;
-	margin-top: 6.66667vh;
+	margin-top: 5vh;
 	padding-bottom: 3.33333vh;
 }
 
@@ -107,7 +106,7 @@ form {
 
 .confirm .text {
 	width: 28.75rem;
-	line-height: 1.875rem;
+	line-height: 2.5rem;
 	font-size: 22px;
 }
 
@@ -160,7 +159,6 @@ form {
 	
 	.reserv .paragraph {
 		width: 22.5rem;
-		height: 15rem;
 	}
 
 	.reserv .text {
@@ -249,7 +247,8 @@ form {
 
 	.reserv .paragraph {
 		height: max-content;
-		margin: 0;
+		margin: 1.5vh 0!important;
+		margin-bottom:0!important;
 	}
 
 	.reserv .text {
@@ -285,8 +284,9 @@ form {
 
 	.reserv .mobile.feature {
 		display: flex;
+		justify-content: space-between;
 		gap: 1.5rem;
-		margin: 2.5vh 0 3.75vh;
+		margin: 2.5vh 0 3vh;
 	}
 
 	.confirm {
@@ -334,7 +334,7 @@ form {
 
 	.form-box .input-box {
 		border-bottom: 0.0655rem solid var(--clr-primary-1);
-		margin-top: 1.25rem;
+		margin-top: 3vh!important;
 	}
 
 	.reserv .mobile.text {

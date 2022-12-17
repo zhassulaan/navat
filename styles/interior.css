@@ -1,14 +1,28 @@
+.slaider .swiper,
+.titleM,
+.textM,
+.buttons-mobile {
+	display: none;
+}
+
 .interior {
 	background-color: var(--clr-white);
+}
+
+.vip,
+.children {
+	background-color: var(--clr-primary-0);
 }
 
 .interior .content {
 	display: flex;
 	gap: 1.041667vw;
 	padding-top: 6.666667vh;
+	padding-bottom: 15.55556vh;
 }
 
 .interior .image-box {
+	width: 50%;
 	height: calc(56.666667vh + 3.125rem);
 	margin-top: 1.111111vh;
 }
@@ -63,6 +77,10 @@
 	font-size: 30px;
 }
 
+.interior-line {
+	display: none;
+}
+
 .interior .text-box {
 	width: 45.83333vw;
 	height: 63.333333vh;
@@ -78,7 +96,11 @@
 .interior .counter,
 .interior .title {
 	line-height: 10vh;
-	font-size: 90px;
+	font-size: 70px;
+}
+
+.interior .counter {
+	opacity: 0.2;
 }
 
 .interior .title {
@@ -92,6 +114,14 @@
 	text-align: right;
 	color: var(--clr-black);
 	margin-left: auto;
+}
+
+.vip .text {
+	color:var(--clr-white);
+}
+
+.children .text {
+	color:var(--clr-white);
 }
 
 .interior .buttons {
@@ -117,13 +147,13 @@
 	position: absolute;
 	bottom: 0;
 	font-size: 16px;
-	margin: 0 0 2.222222vh 1.041667vw;
+	margin: 0 0 2.222222vh 2.222222vh;
 }
 
 @media (max-width: 1700px) {
 	.interior .counter,
 	.interior .title {
-		font-size: 82px;
+		font-size: 60px;
 	}
 }
 
@@ -138,7 +168,7 @@
 
 	.interior .counter,
 	.interior .title {
-		font-size: 70px;
+		font-size: 55px;
 	}
 
 	.interior .image-text p,
@@ -159,7 +189,7 @@
 
 	.interior .counter,
 	.interior .title {
-		font-size: 62px;
+		font-size: 42px;
 	}
 	
 	.interior .image-text p,
@@ -170,11 +200,80 @@
 }
 
 @media (max-width: 992px) {
+	/* Slaider Swiper for Mobail */
+	.slaider {
+		height: max-content;
+	}
+	
+	.slaider .swiper {
+		display: block;
+		color: #000000;
+	}
+	
+	.swiper {
+		width: 100%;
+		height: 87%;
+	}
+
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #fff;
+
+		/* Center slide text vertically */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+	}
+
+	.swiper-slide img {
+		display: block;
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+
+	.slaider .mySwiper .swiper-wrapper .swiper-slide {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		height: fit-content;
+	}
+	
+	.titleM, 
+	.textM {
+		display: block;
+	}
+	
+	.titleM {
+		text-align: left;
+		color: #bca48d;
+		margin-bottom: 0.33333vh;
+		line-height: 5rem;
+		 font-size: 35px;
+		text-align: start;
+	}
+
+	/* The End Slaider Swiper for Mobail */
+	.text {
+		font-size: 16px;
+	}
+
 	.interior .content {
-		flex-direction: column-reverse;
+		flex-direction: column;
 		justify-content: start;
 		gap: 0;
-		padding-top: 2.5vh;
+		padding-top: 0;
 		padding-bottom: 5.625vh;
 	}
 
@@ -185,11 +284,38 @@
 		display: none;
 	}
 
-	.interior .image-box {
-		height: 50vh;
+	.interior .buttons-mobile {
+		display: flex;
+		width: max-content;
 		margin: 0 auto;
 	}
-	
+
+	.interior .image-box {
+		display: none;
+		position: relative;
+		height: 50vh;
+		margin: 0 auto;
+		padding-bottom: 3.75vh;
+	}
+
+	.interior-line {
+		display: none;
+		position: absolute;
+		bottom: 0;
+		width: 25%;
+		height: 0.0625rem;
+		background-color: var(--clr-primary-1);
+	}
+
+	.interior .image-box:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		width: 0;
+		height: 0.0625rem;
+		background-color: var(--clr-primary-2);
+	}
+
 	.interior .image-box .image-title {
 		font-size: 24px;
 	}
@@ -204,6 +330,7 @@
 	}
 
 	.interior .text-box {
+		display: none;
 		width: 100%;
 		height: max-content;
 	}
@@ -214,21 +341,23 @@
 
 	.interior .title {
 		line-height: 5rem;
-		font-size: 76px;
+		text-align: start;
+		font-size: 66px;
 	}
 
 	.interior .text {
 		width: 100%;
 		height: max-content;
+		line-height: 3.125vh;
 		text-align: left;
 		margin: 0 0 2.5vh;
 	}
 }
 
 @media (max-width: 768px) {
-	.interior .image-box {
+	/* .interior .image-box {
 		width: 100%;
-	}
+	} */
 
 	.interior .image-box .image-title {
 		font-size: 21px;
@@ -238,16 +367,9 @@
 		margin-bottom: 3.125vh;
 	}
 
-	.interior .counter,
 	.interior .title {
 		line-height: 3.75rem;
 		font-size: 68px;
-	}
-}
-
-@media (max-width: 768px) {
-	.interior .image-box {
-		width: 100%;
 	}
 }
 
@@ -261,11 +383,16 @@
 	}
 
 	.interior .image-box {
-		height: 94.444444vw;
+		height: 42.5vh;
 	}
 
-	.interior .counter,
 	.interior .title {
 		font-size: 50px;
+	}
+}
+
+@media (max-width: 375px) {
+ 	.titleM {
+		font-size: 32px;
 	}
 }

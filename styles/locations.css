@@ -148,7 +148,7 @@
 	.locations .content {
 		flex-direction: column-reverse;
 		padding-top: 0;
-		padding-bottom: 8.75vh;
+		padding-bottom: 10vh;
 	}
 
 	.map-box,
