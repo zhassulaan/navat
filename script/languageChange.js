@@ -117,7 +117,7 @@ let data = {
 		footer: ["@Navat 2022. All rights reserved.", "The site was created by: athenaplus.kz"]
 	},
 	kazakh: {
-		menu: "Мәзір",
+		menu: "Мазір",
 		menu_text: ["Телефон:", "Әлеу. желілер"],
 		title: ["Жана шайхана NAVAT", "Жакында ашылады", "Ашык ас Yй", "VIP-залдар", "Интерьер", "Балалар кабаты", "Орналасуы", "Резерв", "Байланыстар"],
 		subtitle: "| Президенттік саябақ",
