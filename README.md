@@ -1,2 +1,2 @@
-# navat
+# New Navat
 East Dishes
