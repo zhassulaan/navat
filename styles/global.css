@@ -196,7 +196,7 @@ section {
 
 	h2, h4 {
 		line-height: 12.777778vh;
-		font-size: 85px;
+		font-size: 65px;
 	}
 	
 	h5 {
@@ -206,11 +206,6 @@ section {
 }
 
 @media (max-width: 1440px) {
-	h2 {
-		line-height: 14.444444vh;
-		font-size: 135px;
-	}
-
 	h3 {
 		line-height: 6.875rem;
 		font-size: 105px;
@@ -218,7 +213,7 @@ section {
 
 	h2, h4 {
 		line-height: 6.25rem;
-		font-size: 72px;
+		font-size: 55px;
 	}
 	
 	h5 {

@@ -106,7 +106,7 @@ form {
 
 .confirm .text {
 	width: 28.75rem;
-	line-height: 2.5rem;
+	line-height: 2.5vh;
 	font-size: 22px;
 }
 
@@ -160,10 +160,6 @@ form {
 	.reserv .paragraph {
 		width: 22.5rem;
 	}
-
-	.reserv .text {
-		line-height: 1.875rem;
-	}
 	
 	.reserv .feature {
 		gap: 0.9375rem;
@@ -185,10 +181,6 @@ form {
 	.form-box input,
 	.form-box input::placeholder {
 		font-size: 23px;
-	}
-	
-	.confirm .text {
-		line-height: 1.5625rem;
 	}
 }
 
